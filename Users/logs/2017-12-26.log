@@ -1,0 +1,22 @@
+2017-12-26 23:27:08.4914 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-26 23:27:29.4709 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-26 23:27:47.3313 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-26 23:27:47.4715 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 4
+2017-12-26 23:27:47.5505 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 4
+2017-12-26 23:30:43.9139 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-26 23:30:54.8028 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-26 23:32:54.3496 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-26 23:32:54.4092 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-26 23:32:54.4272 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-26 23:33:40.6104 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-26 23:33:40.6104 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 9
+2017-12-26 23:33:40.6237 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 9
+2017-12-26 23:40:39.1337 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-26 23:40:53.1684 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-26 23:40:53.1879 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-26 23:40:53.1879 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-26 23:41:20.8843 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-26 23:41:35.3665 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-26 23:41:35.3753 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 10
+2017-12-26 23:41:35.3753 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 10
+2017-12-26 23:45:33.3189 | INFO | Users.Controllers.UsersController | Request GET

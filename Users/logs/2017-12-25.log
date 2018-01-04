@@ -1,0 +1,87 @@
+2017-12-25 01:55:56.2632 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 01:56:17.8401 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 01:59:06.5130 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:02:54.4090 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:03:07.7018 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:03:22.6658 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:04:07.0781 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:06:07.7642 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:06:21.9389 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:06:48.3807 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:16:42.2564 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:16:48.4600 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:17:02.3003 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:18:22.8750 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:27:26.2388 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:28:28.3762 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:30:08.9936 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 02:30:27.0372 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:30:28.0704 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 02:30:28.1216 | INFO | Users.Controllers.UsersController | Request GET with ID = 1
+2017-12-25 02:30:28.2331 | INFO | Users.Controllers.UsersController | Success request GET with ID = 1
+2017-12-25 02:30:28.4288 | INFO | Users.Controllers.UsersController | Request GET with ID = 0
+2017-12-25 02:30:28.4288 | ERROR | Users.Controllers.UsersController | ERROR request GET with ID = 0. Not found ID
+2017-12-25 02:30:28.4469 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 02:30:28.4719 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:30:29.4135 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:30:29.6668 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:30:29.6788 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 02:41:10.3742 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 03:12:29.8842 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 03:13:17.0697 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 03:14:22.5101 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 03:14:22.8510 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 03:17:01.3553 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 03:17:28.5055 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 18:39:01.6651 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 18:40:26.7021 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 6
+2017-12-25 18:40:27.1265 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 6
+2017-12-25 19:05:30.2725 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 19:06:30.2767 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 19:10:04.8121 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 19:10:42.6088 | INFO | Users.Controllers.UsersController | Request PUT with ID = 4 FIO = Rodionov Adress = Kaluga Leninskiy prsp 34 Phone = 89603409898 IdFines = 4
+2017-12-25 19:10:42.6364 | INFO | Users.Controllers.UsersController | ABORTED request PUT with ID = 4 FIO = Rodionov Adress = Kaluga Leninskiy prsp 34 Phone = 89603409898 IdFines = 4. Bad ID and data.ID.
+2017-12-25 19:11:04.1552 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 19:11:22.6756 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 19:12:37.5292 | INFO | Users.Controllers.UsersController | Request PUT with ID = 4 FIO = Rodionov Adress = Kaluga Leninskiy prsp 34 Phone = 89603409898 IdFines = 4
+2017-12-25 19:12:37.5292 | INFO | Users.Controllers.UsersController | ABORTED request PUT with ID = 4 FIO = Rodionov Adress = Kaluga Leninskiy prsp 34 Phone = 89603409898 IdFines = 4. Bad ID and data.ID.
+2017-12-25 19:13:17.3177 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 19:14:16.4437 | INFO | Users.Controllers.UsersController | Request PUT with ID = 4 FIO = Rodionov Adress = Kaluga Leninskiy prsp 34 Phone = 89603409898 IdFines = 0
+2017-12-25 19:14:16.4437 | INFO | Users.Controllers.UsersController | ABORTED request PUT with ID = 4 FIO = Rodionov Adress = Kaluga Leninskiy prsp 34 Phone = 89603409898 IdFines = 0. Bad ID and data.ID.
+2017-12-25 19:14:19.9480 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 19:16:13.6796 | INFO | Users.Controllers.UsersController | Request PUT with ID = 4 FIO = Rodionov Adress = Kaluga Leninskiy prsp 34 Phone = 89603409898 IdFines = 0
+2017-12-25 19:16:13.6796 | INFO | Users.Controllers.UsersController | ABORTED request PUT with ID = 4 FIO = Rodionov Adress = Kaluga Leninskiy prsp 34 Phone = 89603409898 IdFines = 0. Bad ID and data.ID.
+2017-12-25 19:52:42.8140 | INFO | Users.Controllers.UsersController | Request PUT with ID = 4 FIO = Rodionov Adress = Kaluga Leninskiy prsp 34 Phone = 89603409898 IdFines = 0
+2017-12-25 19:52:46.6110 | INFO | Users.Controllers.UsersController | Success request PUT with ID = 4 FIO = Rodionov Adress = Kaluga Leninskiy prsp 34 Phone = 89603409898 IdFines = 0.
+2017-12-25 19:52:57.4711 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 19:55:37.1113 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 19:57:24.9642 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 19:57:38.4448 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 19:57:39.7454 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 19:57:39.7711 | INFO | Users.Controllers.UsersController | Request GET with ID = 1
+2017-12-25 19:57:39.7798 | INFO | Users.Controllers.UsersController | Success request GET with ID = 1
+2017-12-25 19:57:39.9339 | INFO | Users.Controllers.UsersController | Request GET with ID = 0
+2017-12-25 19:57:39.9459 | ERROR | Users.Controllers.UsersController | ERROR request GET with ID = 0. Not found ID
+2017-12-25 19:57:39.9710 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 19:57:39.9920 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 19:57:41.4344 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 19:57:41.4635 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 19:57:41.4777 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 19:57:41.9809 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 19:57:42.0050 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 20:22:36.8045 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 20:23:01.5794 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 20:23:51.9107 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 20:23:58.4709 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 20:30:10.0469 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 20:31:47.4088 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 20:31:47.6520 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 20:31:48.0187 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 20:32:15.0415 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 20:32:25.5889 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-25 20:32:25.6263 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 8
+2017-12-25 20:32:25.9200 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 8
+2017-12-25 20:32:36.4636 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 20:33:39.5999 | INFO | Users.Controllers.UsersController | Request PUT with ID = 3 FIO = Ivanov Ivan Adress = St Peterburg   Phone = 89603409898 IdFines = 0
+2017-12-25 20:33:39.6127 | INFO | Users.Controllers.UsersController | Success request PUT with ID = 3 FIO = Ivanov Ivan Adress = St Peterburg   Phone = 89603409898 IdFines = 0.
+2017-12-25 20:33:45.2519 | INFO | Users.Controllers.UsersController | Request GET

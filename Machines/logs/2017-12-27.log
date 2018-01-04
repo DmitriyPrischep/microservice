@@ -1,0 +1,36 @@
+2017-12-27 00:06:17.1424 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 00:26:07.8551 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 00:28:19.3717 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-27 00:29:22.4865 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 00:35:04.2101 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-27 00:37:03.5944 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 00:37:19.4211 | INFO | Machines.Controllers.MachinesController | Request POST with ID =  Type = Audi Mark = A6 Model = 0 Year =  VIN = A6 StateNumber = A6 IdUser = A6
+2017-12-27 00:37:19.4432 | INFO | Machines.Controllers.MachinesController | Success request POST with ID =  Type = Audi Mark = A6 Model = 0 Year =  VIN = A6 StateNumber = A6 IdUser = A6
+2017-12-27 00:38:07.1173 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 00:38:39.2411 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 00:40:29.5061 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-27 00:40:48.6871 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 00:47:08.4516 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-27 00:47:55.3417 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 00:59:18.2390 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-27 00:59:56.1903 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 01:13:00.7749 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-27 01:13:38.8805 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 01:16:31.5532 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-27 01:17:03.7434 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 02:23:13.5537 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 02:40:20.8520 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 02:47:41.7230 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 02:51:35.1616 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 20:31:11.5715 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 20:32:55.8184 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 20:32:55.9377 | INFO | Machines.Controllers.MachinesController | Request POST with ID =  Type = Audi Mark = A8 Model = 0 Year =  VIN = A8 StateNumber = A8 IdUser = A8
+2017-12-27 20:32:55.9718 | INFO | Machines.Controllers.MachinesController | Success request POST with ID =  Type = Audi Mark = A8 Model = 0 Year =  VIN = A8 StateNumber = A8 IdUser = A8
+2017-12-27 20:45:41.7111 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 21:01:29.8559 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 21:06:51.2272 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 21:16:17.5867 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 21:18:42.2460 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 21:21:43.6718 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 21:23:43.2693 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-27 21:25:39.6577 | INFO | Machines.Controllers.MachineInfController | Request GET with OData

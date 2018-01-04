@@ -1,0 +1,44 @@
+﻿@using PagedList.Mvc;
+@model PagedList.IPagedList<Frontend.Models.UserModel>
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "getUserPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>getUserPage</h2>
+<table class="table">
+    <tr>
+        <th>
+            FIO
+        </th>
+        <th>
+            Adress
+        </th>
+        <th>
+            Phone
+        </th>
+        <th>
+            IdFines
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FIO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.IdFines)
+            </th>
+        </tr>
+    }
+</table>
+Страница @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) из @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("getUserPage", new { page }))

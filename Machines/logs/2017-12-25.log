@@ -1,0 +1,19 @@
+2017-12-25 02:30:20.5593 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-25 02:30:28.2662 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2017-12-25 02:30:28.3031 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2017-12-25 02:30:28.4348 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 0
+2017-12-25 02:30:28.4348 | ERROR | Machines.Controllers.MachinesController | ERROR request GET with ID = 0. Not found ID
+2017-12-25 02:30:28.6114 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-25 03:15:35.2160 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-25 03:15:57.9896 | INFO | Machines.Controllers.MachinesController | Request POST with ID =  Type = Volvo Mark = XC90 Model = 0 Year =  VIN = XC90 StateNumber = XC90 IdUser = XC90
+2017-12-25 03:15:58.1431 | INFO | Machines.Controllers.MachinesController | Success request POST with ID =  Type = Volvo Mark = XC90 Model = 0 Year =  VIN = XC90 StateNumber = XC90 IdUser = XC90
+2017-12-25 19:57:32.2549 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-25 19:57:39.8065 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2017-12-25 19:57:39.8938 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2017-12-25 19:57:39.9519 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 0
+2017-12-25 19:57:39.9519 | ERROR | Machines.Controllers.MachinesController | ERROR request GET with ID = 0. Not found ID
+2017-12-25 19:57:40.2973 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-25 19:57:41.4856 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-25 19:57:41.6309 | INFO | Machines.Controllers.MachinesController | Request POST with ID =  Type = Acura Mark = MDX Model = 0 Year =  VIN = MDX StateNumber = MDX IdUser = MDX
+2017-12-25 19:57:41.9649 | INFO | Machines.Controllers.MachinesController | Success request POST with ID =  Type = Acura Mark = MDX Model = 0 Year =  VIN = MDX StateNumber = MDX IdUser = MDX
+2017-12-25 20:31:49.9396 | INFO | Machines.Controllers.MachineInfController | Request GET with OData

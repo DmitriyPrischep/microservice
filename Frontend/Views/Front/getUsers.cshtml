@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Frontend.Models.UserModel>
+@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Users</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FIO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdFines)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FIO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.IdFines)
+            </th>
+        </tr>
+    }
+</table>

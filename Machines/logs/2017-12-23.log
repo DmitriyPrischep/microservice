@@ -1,0 +1,38 @@
+2017-12-23 04:29:30.1868 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-23 04:29:37.7656 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2017-12-23 04:29:37.7742 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2017-12-23 04:29:37.8102 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 0
+2017-12-23 04:29:37.8102 | ERROR | Machines.Controllers.MachinesController | ERROR request GET with ID = 0. Not found ID
+2017-12-23 04:29:38.0131 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 04:59:28.1531 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-23 04:59:32.9261 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2017-12-23 04:59:32.9778 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2017-12-23 04:59:33.0560 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 0
+2017-12-23 04:59:33.0560 | ERROR | Machines.Controllers.MachinesController | ERROR request GET with ID = 0. Not found ID
+2017-12-23 04:59:33.2220 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 06:21:06.5425 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2017-12-23 06:21:06.7869 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2017-12-23 06:21:06.8230 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-23 06:21:06.9203 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 0
+2017-12-23 06:21:06.9203 | ERROR | Machines.Controllers.MachinesController | ERROR request GET with ID = 0. Not found ID
+2017-12-23 06:21:06.9784 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 06:28:01.8947 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-23 06:28:06.6236 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2017-12-23 06:28:06.6783 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2017-12-23 06:28:06.7560 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 0
+2017-12-23 06:28:06.7560 | ERROR | Machines.Controllers.MachinesController | ERROR request GET with ID = 0. Not found ID
+2017-12-23 06:28:06.9169 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 06:34:51.1638 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-23 06:40:41.2025 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 2
+2017-12-23 06:40:41.2832 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 2
+2017-12-23 06:42:51.6038 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 06:42:55.9968 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 06:44:09.8506 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 06:46:10.7594 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 06:47:54.7398 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 06:51:58.2503 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 06:55:52.7668 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 06:56:03.5450 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 06:56:51.3890 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 06:57:38.1156 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2017-12-23 07:00:54.5971 | INFO | Machines.Controllers.MachineInfController | Request GET with OData

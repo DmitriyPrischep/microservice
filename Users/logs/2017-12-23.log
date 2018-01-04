@@ -1,0 +1,83 @@
+2017-12-23 04:29:22.5815 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-23 04:29:37.1964 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:29:37.7235 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-23 04:29:37.7396 | INFO | Users.Controllers.UsersController | Request GET with ID = 1
+2017-12-23 04:29:37.7396 | INFO | Users.Controllers.UsersController | Success request GET with ID = 1
+2017-12-23 04:29:37.8057 | INFO | Users.Controllers.UsersController | Request GET with ID = 0
+2017-12-23 04:29:37.8057 | ERROR | Users.Controllers.UsersController | ERROR request GET with ID = 0. Not found ID
+2017-12-23 04:29:37.8198 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-23 04:29:37.8844 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:29:38.2762 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:29:38.4115 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:29:38.4115 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:34:22.4306 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:34:36.0436 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:38:49.1032 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:41:30.5816 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:42:30.0096 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:46:24.1819 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:47:26.0083 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:47:34.1006 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:48:45.9014 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:49:09.3355 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:49:58.4630 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:50:38.3503 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:55:34.6982 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:59:26.2072 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-23 04:59:32.4237 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:59:32.8815 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-23 04:59:32.9015 | INFO | Users.Controllers.UsersController | Request GET with ID = 1
+2017-12-23 04:59:32.9081 | INFO | Users.Controllers.UsersController | Success request GET with ID = 1
+2017-12-23 04:59:33.0514 | INFO | Users.Controllers.UsersController | Request GET with ID = 0
+2017-12-23 04:59:33.0514 | ERROR | Users.Controllers.UsersController | ERROR request GET with ID = 0. Not found ID
+2017-12-23 04:59:33.0655 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-23 04:59:33.1272 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:59:33.4205 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:59:33.5519 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 04:59:33.5519 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 05:00:56.3839 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 05:01:02.7312 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 05:01:43.0167 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 05:02:24.2239 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 05:02:26.0487 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 05:02:43.9590 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 05:02:45.9228 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 05:03:34.2693 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 05:03:35.1792 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 05:13:01.4778 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 05:13:43.7415 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 05:13:44.6086 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 05:15:57.9654 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:20:47.2311 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-23 06:20:59.4570 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:21:03.6048 | INFO | Users.Controllers.UsersController | Request GET with ID = 0
+2017-12-23 06:21:03.6689 | ERROR | Users.Controllers.UsersController | ERROR request GET with ID = 0. Not found ID
+2017-12-23 06:21:03.8695 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:21:03.9447 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:21:06.8426 | INFO | Users.Controllers.UsersController | Request GET with ID = 1
+2017-12-23 06:21:06.8426 | INFO | Users.Controllers.UsersController | Success request GET with ID = 1
+2017-12-23 06:21:06.9152 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:21:06.9268 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-23 06:21:07.2923 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:27:58.7779 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-23 06:28:06.1233 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:28:06.5329 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-23 06:28:06.5524 | INFO | Users.Controllers.UsersController | Request GET with ID = 1
+2017-12-23 06:28:06.6061 | INFO | Users.Controllers.UsersController | Success request GET with ID = 1
+2017-12-23 06:28:06.7520 | INFO | Users.Controllers.UsersController | Request GET with ID = 0
+2017-12-23 06:28:06.7520 | ERROR | Users.Controllers.UsersController | ERROR request GET with ID = 0. Not found ID
+2017-12-23 06:28:06.7520 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-23 06:28:06.8237 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:28:07.1089 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:28:07.2167 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:28:07.2223 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:33:24.0364 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:33:31.4853 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:33:39.4487 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:33:42.7732 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:35:06.9495 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-23 06:36:37.4735 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-23 06:39:45.0867 | INFO | Users.Controllers.UsersController | Request GET with ID = 2
+2017-12-23 06:39:45.0867 | INFO | Users.Controllers.UsersController | Success request GET with ID = 2
+2017-12-23 06:41:29.1451 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2017-12-23 06:44:05.6614 | INFO | Users.Controllers.UserInfController | Request GET with OData
