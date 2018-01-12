@@ -1,0 +1,9 @@
+2018-01-05 23:26:03.8415 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-05 23:30:07.1097 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-05 23:31:10.2139 | INFO | Machines.Controllers.MachinesController | Request DELETE with ID = 9
+2018-01-05 23:31:10.2359 | INFO | Machines.Controllers.MachinesController | Success request DELETE with ID = 9
+2018-01-05 23:31:21.7590 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-05 23:31:27.4659 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-05 23:33:08.8567 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-05 23:41:41.9234 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-05 23:41:54.0228 | INFO | Machines.Controllers.MachineInfController | Request GET with OData

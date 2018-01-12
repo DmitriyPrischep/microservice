@@ -1,0 +1,256 @@
+2017-12-25 02:30:07.2938 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-25 02:30:12.4658 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-25 02:30:12.4798 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-25 02:30:12.4999 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2017-12-25 02:30:21.7954 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2017-12-25 02:30:21.7954 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2017-12-25 02:30:21.7984 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2017-12-25 02:30:26.9710 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2017-12-25 02:30:26.9710 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2017-12-25 02:30:26.9710 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'UserFIO'= _
+2017-12-25 02:30:26.9710 | WARN | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'UserFIO'= _ aborted by parameters
+2017-12-25 02:30:26.9710 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'UserFIO'= Rowan Miller
+2017-12-25 02:30:27.8635 | INFO | ServiceFines.Controllers.GatewayController | Success OUR compliete request GET from 0 with parametr 'MachineName'= Rowan Miller
+2017-12-25 02:30:27.8635 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= Ivanov Artem
+2017-12-25 02:30:27.8635 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'fine'= _
+2017-12-25 02:30:27.8805 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametr 'fine'= _
+2017-12-25 02:30:27.8805 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'fine'= Неправильная парковка
+2017-12-25 02:30:28.0213 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametr 'fine'= Неправильная парковка
+2017-12-25 02:30:28.0674 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2017-12-25 02:30:28.0674 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2017-12-25 02:30:28.0805 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 02:30:28.2381 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 02:30:28.2381 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 02:30:28.3095 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 02:30:28.3095 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 02:30:28.4258 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 02:30:28.4258 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 02:30:28.4258 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 02:30:28.4258 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 02:30:28.4379 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 02:30:28.4379 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 02:30:28.4379 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 02:30:28.4379 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 1
+2017-12-25 02:30:28.4379 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 1
+2017-12-25 02:30:28.4379 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'region'= Неправильная парковка
+2017-12-25 02:30:28.4600 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametr 'fine'= Неправильная парковка
+2017-12-25 02:30:28.4600 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'region'= Проезд на красный свет
+2017-12-25 02:30:28.4600 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametr 'fine'= Проезд на красный свет
+2017-12-25 02:30:28.4709 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Loza Ivan 'Phone'= 89151246578 'Adress'= Moscow, Liteynaya d13 kv55
+2017-12-25 02:30:28.5532 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Loza Ivan 'Phone'= 89151246578 'Adress'= Moscow, Liteynaya d13 kv55
+2017-12-25 02:30:28.5532 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Ford 'Model'= Mondeo 'Year'= 2011
+2017-12-25 02:30:28.8838 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs 'Type'= automobile 'Mark'= Ford 'Model'= Mondeo 'Year'= 2011
+2017-12-25 02:30:28.9452 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Loza Ivan, 'Adress'= Moscow, Liteynaya d13 kv55, 'Phone'= 89151246578, 'Mark'= Acura, 'Model'= MDX, 'StateNumber'= t543mo99, 'NameFine'= Пересечение стоп линии, 'AmountFine'= 1000
+2017-12-25 02:30:29.6640 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Loza Ivan, 'Adress'= Moscow, Liteynaya d13 kv55, 'Phone'= 89151246578, 'Mark'= Acura, 'Model'= MDX, 'StateNumber'= t543mo99, 'NameFine'= Пересечение стоп линии, 'AmountFine'= 1000
+2017-12-25 02:30:29.6640 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Loza Ivan 'Phone'= 89151246578 'Adress'= Moscow, Liteynaya d13 kv55
+2017-12-25 02:30:29.6640 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Loza Ivan 'Phone'= 89151246578 'Adress'= Moscow, Liteynaya d13 kv55
+2017-12-25 02:30:29.6718 | INFO | ServiceFines.Controllers.GatewayController | Request PUT from 0 with parametrs 'ID'= 0, 'FIO'= Loza Victor, 'Phone'= , 'Adress'= 
+2017-12-25 02:30:29.6718 | WARN | ServiceFines.Controllers.GatewayController | ABORTED PUT from 0 with parametrs 'ID'= 0, 'FIO'= Loza Victor, 'Phone'= , 'Adress'= 
+2017-12-25 02:30:29.6718 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Loza Victor
+2017-12-25 02:30:29.6718 | WARN | ServiceFines.Controllers.GatewayController | Aborted DELETE from 0 with parametr 'FIO'= Loza Victor. No such company.
+2017-12-25 02:30:30.7249 | INFO | Machines.Controllers.MachinesController | Request POST with ID = DemoType Type = DemoMark Mark = DemoModel Model = 2000 Year = DemoVIN VIN = DemoModel StateNumber = DemoModel IdUser = DemoModel
+2017-12-25 02:30:30.7432 | INFO | Machines.Controllers.MachinesController | Success request POST with ID = DemoType Type = DemoMark Mark = DemoModel Model = 2000 Year = DemoVIN VIN = DemoModel StateNumber = DemoModel IdUser = DemoModel
+2017-12-25 02:30:30.7622 | INFO | Machines.Controllers.MachinesController | Request POST with ID = DemoType Type = DemoMark Mark = DemoModel Model = 2000 Year = DemoVIN VIN = DemoModel StateNumber = DemoModel IdUser = DemoModel
+2017-12-25 02:30:30.7622 | INFO | Machines.Controllers.MachinesController | Success request POST with ID = DemoType Type = DemoMark Mark = DemoModel Model = 2000 Year = DemoVIN VIN = DemoModel StateNumber = DemoModel IdUser = DemoModel
+2017-12-25 02:30:30.7713 | INFO | Machines.Controllers.MachinesController | Request PUT with ID = 1 Type = DemoType Mark = DemoMark Model = DemoModel Year = 2000 VIN = DemoMark StateNumber = DemoMark IdUser = DemoMark
+2017-12-25 02:30:30.7713 | WARN | Machines.Controllers.MachinesController | Success request PUT with ID = 1 Type = DemoType Mark = DemoMark Model = DemoModel Year = 2000 VIN = DemoMark StateNumber = DemoMark IdUser = DemoMark.
+2017-12-25 02:30:30.7713 | INFO | Machines.Controllers.MachinesController | Request PUT with ID = 0 Type = DemoType Mark =  Model =  Year = 1990 VIN =  StateNumber =  IdUser = 
+2017-12-25 02:30:30.8479 | WARN | Machines.Controllers.MachinesController | ABORTED request PUT with ID = 0 Type = DemoType Mark =  Model =  Year = 1990 VIN =  StateNumber =  IdUser = . Not found ID.
+2017-12-25 02:30:30.8479 | INFO | Machines.Controllers.MachinesController | Request PUT with ID = 999 Type = DemoType Mark = DemoMark Model = DemoModel Year = 2000 VIN = DemoMark StateNumber = DemoMark IdUser = DemoMark
+2017-12-25 02:30:30.8479 | WARN | Machines.Controllers.MachinesController | ABORTED request PUT with ID = 999 Type = DemoType Mark = DemoMark Model = DemoModel Year = 2000 VIN = DemoMark StateNumber = DemoMark IdUser = DemoMark. Bad ID and data.ID.
+2017-12-25 02:30:30.9964 | INFO | Machines.Controllers.MachinesController | Request PUT with ID = 0 Type = DemoType Mark =  Model =  Year = 1990 VIN =  StateNumber =  IdUser = 
+2017-12-25 02:30:30.9964 | WARN | Machines.Controllers.MachinesController | ABORTED request PUT with ID = 0 Type = DemoType Mark =  Model =  Year = 1990 VIN =  StateNumber =  IdUser = . Bad model.
+2017-12-25 02:30:31.0024 | INFO | Machines.Controllers.MachinesController | Request PUT with ID = 1 Type = DemoType Mark = DemoMark Model = DemoModel Year = 2000 VIN = DemoMark StateNumber = DemoMark IdUser = DemoMark
+2017-12-25 02:30:31.0024 | WARN | Machines.Controllers.MachinesController | ABORTED request PUT with ID = 1 Type = DemoType Mark = DemoMark Model = DemoModel Year = 2000 VIN = DemoMark StateNumber = DemoMark IdUser = DemoMark. BD Error.
+2017-12-25 02:30:31.0347 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2017-12-25 02:30:31.0347 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2017-12-25 02:30:31.0347 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 2
+2017-12-25 02:30:31.0477 | ERROR | Machines.Controllers.MachinesController | ERROR request GET with ID = 2. Not found ID
+2017-12-25 02:30:31.0477 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-25 02:30:31.0477 | INFO | Machines.Controllers.MachinesController | Request DELETE with ID = 1
+2017-12-25 02:30:31.0618 | INFO | Machines.Controllers.MachinesController | Success request DELETE with ID = 1
+2017-12-25 02:30:31.0618 | INFO | Machines.Controllers.MachinesController | Request DELETE with ID = 555
+2017-12-25 02:30:31.0618 | ERROR | Machines.Controllers.MachinesController | ERROR request DELETE with ID = 555. Not found ID
+2017-12-25 02:30:31.0618 | INFO | Machines.Controllers.MachinesController | Request POST with ID = DemoType Type =  Mark = DemoModel Model = 2000 Year = DemoVIN VIN = DemoModel StateNumber = DemoModel IdUser = DemoModel
+2017-12-25 02:30:31.0618 | INFO | Machines.Controllers.MachinesController | ABORTED request POST with ID = DemoType Type =  Mark = DemoModel Model = 2000 Year = DemoVIN VIN = DemoModel StateNumber = DemoModel IdUser = DemoModel
+2017-12-25 02:30:31.0618 | INFO | Fines.Controllers.FinesController | Request POST with ID = {0} NameFine = {1} AmountFine = {2}
+2017-12-25 02:30:31.0778 | WARN | Fines.Controllers.FinesController | Success request POST with ID = {0} NameFine = {1} AmountFine = {2}.  Not found ID
+2017-12-25 02:30:31.0778 | INFO | Fines.Controllers.FinesController | Request POST with ID = {0} NameFine = {1} AmountFine = {2}
+2017-12-25 02:30:31.0778 | WARN | Fines.Controllers.FinesController | Success request POST with ID = {0} NameFine = {1} AmountFine = {2}.  Not found ID
+2017-12-25 02:30:31.0778 | INFO | Fines.Controllers.FinesController | Request PUT with ID = 3 NameFine = Demo AmountFine = 100
+2017-12-25 02:30:31.0778 | WARN | Fines.Controllers.FinesController | Success request PUT with ID = 3 NameFine = Demo AmountFine = 100.
+2017-12-25 02:30:31.0778 | INFO | Fines.Controllers.FinesController | Request PUT with ID = 3 NameFine =  AmountFine = 100
+2017-12-25 02:30:31.0778 | WARN | Fines.Controllers.FinesController | ABORTED request PUT with ID = 3 NameFine =  AmountFine = 100.  Not found ID
+2017-12-25 02:30:31.0778 | INFO | Fines.Controllers.FinesController | Request PUT with ID = 999 NameFine = Demo AmountFine = 100
+2017-12-25 02:30:31.0778 | WARN | Fines.Controllers.FinesController | ABORTED request PUT with ID = 999 NameFine = Demo AmountFine = 100. Bad ID and data.ID.
+2017-12-25 02:30:31.0778 | INFO | Fines.Controllers.FinesController | Request PUT with ID = 3 NameFine =  AmountFine = 100
+2017-12-25 02:30:31.0778 | WARN | Fines.Controllers.FinesController | ABORTED request PUT with ID = 3 NameFine =  AmountFine = 100. Bad model.
+2017-12-25 02:30:31.0778 | INFO | Fines.Controllers.FinesController | Request PUT with ID = 3 NameFine = Demo AmountFine = 100
+2017-12-25 02:30:31.0778 | WARN | Fines.Controllers.FinesController | ABORTED request PUT with ID = 3 NameFine = Demo AmountFine = 100.  BD Error
+2017-12-25 02:30:31.0778 | INFO | Fines.Controllers.FinesController | Request GET with ID = 3
+2017-12-25 02:30:31.0778 | INFO | Fines.Controllers.FinesController | Success request GET with ID = 3
+2017-12-25 02:30:31.0938 | INFO | Fines.Controllers.FinesController | Request GET with ID = 2
+2017-12-25 02:30:31.0938 | ERROR | Fines.Controllers.FinesController | ERROR request GET with ID = 2. Not found ID
+2017-12-25 02:30:31.0938 | INFO | Fines.Controllers.FinesController | Request GET
+2017-12-25 02:30:31.0938 | INFO | Fines.Controllers.FinesController | Request DELETE with ID = 3
+2017-12-25 02:30:31.0938 | INFO | Fines.Controllers.FinesController | Success request DELETE with ID = 3
+2017-12-25 02:30:31.0938 | INFO | Fines.Controllers.FinesController | Request DELETE with ID = 555
+2017-12-25 02:30:31.0938 | ERROR | Fines.Controllers.FinesController | ERROR request DELETE with ID = 555. Not found ID
+2017-12-25 02:30:31.0938 | INFO | Fines.Controllers.FinesController | Request POST with ID = {0} NameFine = {1} AmountFine = {2}
+2017-12-25 02:30:31.0938 | WARN | Fines.Controllers.FinesController | ABORTED request POST with ID = {0} NameFine = {1} AmountFine = {2}.  Not found ID
+2017-12-25 02:30:31.1109 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 02:30:31.1109 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 02:30:31.1109 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 02:30:31.1109 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 02:30:31.1109 | INFO | Users.Controllers.UsersController | Request PUT with ID = 1 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1
+2017-12-25 02:30:31.1109 | INFO | Users.Controllers.UsersController | Success request PUT with ID = 1 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1.
+2017-12-25 02:30:31.1109 | INFO | Users.Controllers.UsersController | Request PUT with ID = 3 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1
+2017-12-25 02:30:31.1109 | INFO | Users.Controllers.UsersController | ERROR request PUT with ID = 3 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1. Not Found ID.
+2017-12-25 02:30:31.1249 | INFO | Users.Controllers.UsersController | Request PUT with ID = 999 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1
+2017-12-25 02:30:31.1249 | INFO | Users.Controllers.UsersController | ABORTED request PUT with ID = 999 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1. Bad ID and data.ID.
+2017-12-25 02:30:31.1249 | INFO | Users.Controllers.UsersController | Request PUT with ID = 1 FIO =  Adress = Demo Adress Phone = Demo phone IdFines = 2
+2017-12-25 02:30:31.1249 | INFO | Users.Controllers.UsersController | ABORTED request PUT with ID = 1 FIO =  Adress = Demo Adress Phone = Demo phone IdFines = 2. Bad model.
+2017-12-25 02:30:31.1249 | INFO | Users.Controllers.UsersController | Request PUT with ID = 1 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1
+2017-12-25 02:30:31.1249 | INFO | Users.Controllers.UsersController | ERROR request PUT with ID = 1 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1. BD error.
+2017-12-25 02:30:31.1249 | INFO | Users.Controllers.UsersController | Request GET with ID = 1
+2017-12-25 02:30:31.1249 | INFO | Users.Controllers.UsersController | Success request GET with ID = 1
+2017-12-25 02:30:31.1249 | INFO | Users.Controllers.UsersController | Request GET with ID = 2
+2017-12-25 02:30:31.1249 | ERROR | Users.Controllers.UsersController | ERROR request GET with ID = 2. Not found ID
+2017-12-25 02:30:31.1249 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 02:30:31.1400 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 1
+2017-12-25 02:30:31.1400 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 1
+2017-12-25 02:30:31.1400 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 555
+2017-12-25 02:30:31.1400 | ERROR | Users.Controllers.UsersController | ERROR request DELETE with ID = 555. Not found ID
+2017-12-25 02:30:31.1400 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 02:30:31.1400 | INFO | Users.Controllers.UsersController | ABORTED POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}. Bad model.
+2017-12-25 19:57:20.0066 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-25 19:57:26.8133 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-25 19:57:26.8273 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-25 19:57:26.8684 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2017-12-25 19:57:35.0678 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2017-12-25 19:57:35.0678 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2017-12-25 19:57:35.0678 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2017-12-25 19:57:38.3024 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2017-12-25 19:57:38.3024 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2017-12-25 19:57:38.3164 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'UserFIO'= _
+2017-12-25 19:57:38.3164 | WARN | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'UserFIO'= _ aborted by parameters
+2017-12-25 19:57:38.3164 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'UserFIO'= Rowan Miller
+2017-12-25 19:57:39.5244 | INFO | ServiceFines.Controllers.GatewayController | Success OUR compliete request GET from 0 with parametr 'MachineName'= Rowan Miller
+2017-12-25 19:57:39.5244 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= Ivanov Artem
+2017-12-25 19:57:39.5285 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'fine'= _
+2017-12-25 19:57:39.7223 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'fine'= Неправильная парковка
+2017-12-25 19:57:39.7383 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametr 'fine'= Неправильная парковка
+2017-12-25 19:57:39.7383 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2017-12-25 19:57:39.7383 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2017-12-25 19:57:39.7494 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 19:57:39.7829 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 19:57:39.7829 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 19:57:39.8968 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 19:57:39.8968 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 19:57:39.9312 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 19:57:39.9312 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 19:57:39.9499 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 19:57:39.9499 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 19:57:39.9499 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 19:57:39.9499 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 19:57:39.9669 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-25 19:57:39.9669 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 1
+2017-12-25 19:57:39.9669 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 1
+2017-12-25 19:57:39.9669 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'FineName'= Неправильная парковка
+2017-12-25 19:57:39.9669 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametr 'fine'= Неправильная парковка
+2017-12-25 19:57:39.9810 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'FineName'= Проезд на красный свет
+2017-12-25 19:57:39.9810 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametr 'fine'= Проезд на красный свет
+2017-12-25 19:57:39.9810 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Loza Ivan 'Phone'= 89151246578 'Adress'= Moscow, Liteynaya d13 kv55
+2017-12-25 19:57:40.1699 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Loza Ivan 'Phone'= 89151246578 'Adress'= Moscow, Liteynaya d13 kv55
+2017-12-25 19:57:40.1699 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Ford 'Model'= Mondeo 'Year'= 2011
+2017-12-25 19:57:41.2920 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs 'Type'= automobile 'Mark'= Ford 'Model'= Mondeo 'Year'= 2011
+2017-12-25 19:57:41.3081 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Loza Ivan, 'Adress'= Moscow, Liteynaya d13 kv55, 'Phone'= 89151246578, 'Mark'= Acura, 'Model'= MDX, 'StateNumber'= t543mo99, 'NameFine'= Пересечение стоп линии, 'AmountFine'= 1000
+2017-12-25 19:57:41.9759 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Loza Ivan, 'Adress'= Moscow, Liteynaya d13 kv55, 'Phone'= 89151246578, 'Mark'= Acura, 'Model'= MDX, 'StateNumber'= t543mo99, 'NameFine'= Пересечение стоп линии, 'AmountFine'= 1000
+2017-12-25 19:57:41.9759 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Loza Ivan 'Phone'= 89151246578 'Adress'= Moscow, Liteynaya d13 kv55
+2017-12-25 19:57:41.9859 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Loza Ivan 'Phone'= 89151246578 'Adress'= Moscow, Liteynaya d13 kv55
+2017-12-25 19:57:41.9859 | INFO | ServiceFines.Controllers.GatewayController | Request PUT from 0 with parametrs 'ID'= 0, 'FIO'= Loza Victor, 'Phone'= , 'Adress'= 
+2017-12-25 19:57:41.9859 | WARN | ServiceFines.Controllers.GatewayController | ABORTED PUT from 0 with parametrs 'ID'= 0, 'FIO'= Loza Victor, 'Phone'= , 'Adress'= 
+2017-12-25 19:57:42.0030 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Loza Victor
+2017-12-25 19:57:42.0030 | WARN | ServiceFines.Controllers.GatewayController | Aborted DELETE from 0 with parametr 'FIO'= Loza Victor. No such company.
+2017-12-25 19:57:42.2697 | INFO | Machines.Controllers.MachinesController | Request POST with ID = DemoType Type = DemoMark Mark = DemoModel Model = 2000 Year = DemoVIN VIN = DemoModel StateNumber = DemoModel IdUser = DemoModel
+2017-12-25 19:57:42.2697 | INFO | Machines.Controllers.MachinesController | Success request POST with ID = DemoType Type = DemoMark Mark = DemoModel Model = 2000 Year = DemoVIN VIN = DemoModel StateNumber = DemoModel IdUser = DemoModel
+2017-12-25 19:57:42.2817 | INFO | Machines.Controllers.MachinesController | Request POST with ID = DemoType Type = DemoMark Mark = DemoModel Model = 2000 Year = DemoVIN VIN = DemoModel StateNumber = DemoModel IdUser = DemoModel
+2017-12-25 19:57:42.2817 | INFO | Machines.Controllers.MachinesController | Success request POST with ID = DemoType Type = DemoMark Mark = DemoModel Model = 2000 Year = DemoVIN VIN = DemoModel StateNumber = DemoModel IdUser = DemoModel
+2017-12-25 19:57:42.2817 | INFO | Machines.Controllers.MachinesController | Request PUT with ID = 1 Type = DemoType Mark = DemoMark Model = DemoModel Year = 2000 VIN = DemoMark StateNumber = DemoMark IdUser = DemoMark
+2017-12-25 19:57:42.2817 | WARN | Machines.Controllers.MachinesController | Success request PUT with ID = 1 Type = DemoType Mark = DemoMark Model = DemoModel Year = 2000 VIN = DemoMark StateNumber = DemoMark IdUser = DemoMark.
+2017-12-25 19:57:42.2817 | INFO | Machines.Controllers.MachinesController | Request PUT with ID = 0 Type = DemoType Mark =  Model =  Year = 1990 VIN =  StateNumber =  IdUser = 
+2017-12-25 19:57:42.3078 | WARN | Machines.Controllers.MachinesController | ABORTED request PUT with ID = 0 Type = DemoType Mark =  Model =  Year = 1990 VIN =  StateNumber =  IdUser = . Not found ID.
+2017-12-25 19:57:42.3098 | INFO | Machines.Controllers.MachinesController | Request PUT with ID = 999 Type = DemoType Mark = DemoMark Model = DemoModel Year = 2000 VIN = DemoMark StateNumber = DemoMark IdUser = DemoMark
+2017-12-25 19:57:42.3098 | WARN | Machines.Controllers.MachinesController | ABORTED request PUT with ID = 999 Type = DemoType Mark = DemoMark Model = DemoModel Year = 2000 VIN = DemoMark StateNumber = DemoMark IdUser = DemoMark. Bad ID and data.ID.
+2017-12-25 19:57:42.3740 | INFO | Machines.Controllers.MachinesController | Request PUT with ID = 0 Type = DemoType Mark =  Model =  Year = 1990 VIN =  StateNumber =  IdUser = 
+2017-12-25 19:57:42.3740 | WARN | Machines.Controllers.MachinesController | ABORTED request PUT with ID = 0 Type = DemoType Mark =  Model =  Year = 1990 VIN =  StateNumber =  IdUser = . Bad model.
+2017-12-25 19:57:42.3740 | INFO | Machines.Controllers.MachinesController | Request PUT with ID = 1 Type = DemoType Mark = DemoMark Model = DemoModel Year = 2000 VIN = DemoMark StateNumber = DemoMark IdUser = DemoMark
+2017-12-25 19:57:42.3740 | WARN | Machines.Controllers.MachinesController | ABORTED request PUT with ID = 1 Type = DemoType Mark = DemoMark Model = DemoModel Year = 2000 VIN = DemoMark StateNumber = DemoMark IdUser = DemoMark. BD Error.
+2017-12-25 19:57:42.3740 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2017-12-25 19:57:42.3740 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2017-12-25 19:57:42.3740 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 2
+2017-12-25 19:57:42.3740 | ERROR | Machines.Controllers.MachinesController | ERROR request GET with ID = 2. Not found ID
+2017-12-25 19:57:42.3900 | INFO | Machines.Controllers.MachinesController | Request GET
+2017-12-25 19:57:42.3900 | INFO | Machines.Controllers.MachinesController | Request DELETE with ID = 1
+2017-12-25 19:57:42.3900 | INFO | Machines.Controllers.MachinesController | Success request DELETE with ID = 1
+2017-12-25 19:57:42.3900 | INFO | Machines.Controllers.MachinesController | Request DELETE with ID = 555
+2017-12-25 19:57:42.3900 | ERROR | Machines.Controllers.MachinesController | ERROR request DELETE with ID = 555. Not found ID
+2017-12-25 19:57:42.3900 | INFO | Machines.Controllers.MachinesController | Request POST with ID = DemoType Type =  Mark = DemoModel Model = 2000 Year = DemoVIN VIN = DemoModel StateNumber = DemoModel IdUser = DemoModel
+2017-12-25 19:57:42.3900 | INFO | Machines.Controllers.MachinesController | ABORTED request POST with ID = DemoType Type =  Mark = DemoModel Model = 2000 Year = DemoVIN VIN = DemoModel StateNumber = DemoModel IdUser = DemoModel
+2017-12-25 19:57:42.4071 | INFO | Fines.Controllers.FinesController | Request POST with ID = {0} NameFine = {1} AmountFine = {2}
+2017-12-25 19:57:42.4071 | WARN | Fines.Controllers.FinesController | Success request POST with ID = {0} NameFine = {1} AmountFine = {2}.  Not found ID
+2017-12-25 19:57:42.4071 | INFO | Fines.Controllers.FinesController | Request POST with ID = {0} NameFine = {1} AmountFine = {2}
+2017-12-25 19:57:42.4071 | WARN | Fines.Controllers.FinesController | Success request POST with ID = {0} NameFine = {1} AmountFine = {2}.  Not found ID
+2017-12-25 19:57:42.4071 | INFO | Fines.Controllers.FinesController | Request PUT with ID = 3 NameFine = Demo AmountFine = 100
+2017-12-25 19:57:42.4071 | WARN | Fines.Controllers.FinesController | Success request PUT with ID = 3 NameFine = Demo AmountFine = 100.
+2017-12-25 19:57:42.4071 | INFO | Fines.Controllers.FinesController | Request PUT with ID = 3 NameFine =  AmountFine = 100
+2017-12-25 19:57:42.4071 | WARN | Fines.Controllers.FinesController | ABORTED request PUT with ID = 3 NameFine =  AmountFine = 100.  Not found ID
+2017-12-25 19:57:42.4071 | INFO | Fines.Controllers.FinesController | Request PUT with ID = 999 NameFine = Demo AmountFine = 100
+2017-12-25 19:57:42.4071 | WARN | Fines.Controllers.FinesController | ABORTED request PUT with ID = 999 NameFine = Demo AmountFine = 100. Bad ID and data.ID.
+2017-12-25 19:57:42.4071 | INFO | Fines.Controllers.FinesController | Request PUT with ID = 3 NameFine =  AmountFine = 100
+2017-12-25 19:57:42.4071 | WARN | Fines.Controllers.FinesController | ABORTED request PUT with ID = 3 NameFine =  AmountFine = 100. Bad model.
+2017-12-25 19:57:42.4191 | INFO | Fines.Controllers.FinesController | Request PUT with ID = 3 NameFine = Demo AmountFine = 100
+2017-12-25 19:57:42.4191 | WARN | Fines.Controllers.FinesController | ABORTED request PUT with ID = 3 NameFine = Demo AmountFine = 100.  BD Error
+2017-12-25 19:57:42.4191 | INFO | Fines.Controllers.FinesController | Request GET with ID = 3
+2017-12-25 19:57:42.4191 | INFO | Fines.Controllers.FinesController | Success request GET with ID = 3
+2017-12-25 19:57:42.4191 | INFO | Fines.Controllers.FinesController | Request GET with ID = 2
+2017-12-25 19:57:42.4191 | ERROR | Fines.Controllers.FinesController | ERROR request GET with ID = 2. Not found ID
+2017-12-25 19:57:42.4191 | INFO | Fines.Controllers.FinesController | Request GET
+2017-12-25 19:57:42.4191 | INFO | Fines.Controllers.FinesController | Request DELETE with ID = 3
+2017-12-25 19:57:42.4191 | INFO | Fines.Controllers.FinesController | Success request DELETE with ID = 3
+2017-12-25 19:57:42.4191 | INFO | Fines.Controllers.FinesController | Request DELETE with ID = 555
+2017-12-25 19:57:42.4342 | ERROR | Fines.Controllers.FinesController | ERROR request DELETE with ID = 555. Not found ID
+2017-12-25 19:57:42.4342 | INFO | Fines.Controllers.FinesController | Request POST with ID = {0} NameFine = {1} AmountFine = {2}
+2017-12-25 19:57:42.4342 | WARN | Fines.Controllers.FinesController | ABORTED request POST with ID = {0} NameFine = {1} AmountFine = {2}.  Not found ID
+2017-12-25 19:57:42.4342 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 19:57:42.4342 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 19:57:42.4342 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 19:57:42.4342 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 19:57:42.4342 | INFO | Users.Controllers.UsersController | Request PUT with ID = 1 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1
+2017-12-25 19:57:42.4342 | INFO | Users.Controllers.UsersController | Success request PUT with ID = 1 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1.
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | Request PUT with ID = 3 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | ERROR request PUT with ID = 3 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1. Not Found ID.
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | Request PUT with ID = 999 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | ABORTED request PUT with ID = 999 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1. Bad ID and data.ID.
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | Request PUT with ID = 1 FIO =  Adress = Demo Adress Phone = Demo phone IdFines = 2
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | ABORTED request PUT with ID = 1 FIO =  Adress = Demo Adress Phone = Demo phone IdFines = 2. Bad model.
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | Request PUT with ID = 1 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | ERROR request PUT with ID = 1 FIO = Demo FIO Adress = Demo Adress Phone = Demo phone IdFines = 1. BD error.
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | Request GET with ID = 1
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | Success request GET with ID = 1
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | Request GET with ID = 2
+2017-12-25 19:57:42.4502 | ERROR | Users.Controllers.UsersController | ERROR request GET with ID = 2. Not found ID
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | Request GET
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 1
+2017-12-25 19:57:42.4502 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 1
+2017-12-25 19:57:42.4672 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 555
+2017-12-25 19:57:42.4672 | ERROR | Users.Controllers.UsersController | ERROR request DELETE with ID = 555. Not found ID
+2017-12-25 19:57:42.4672 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2017-12-25 19:57:42.4672 | INFO | Users.Controllers.UsersController | ABORTED POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}. Bad model.
+2017-12-25 20:07:43.3134 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'fine'= _
+2017-12-25 20:07:56.3814 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'fine'= _
+2017-12-25 20:09:31.7854 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'fine'= _
+2017-12-25 20:13:54.7512 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'fine'= _
+2017-12-25 20:19:29.5715 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'fine'= _
+2017-12-25 20:21:36.6948 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'fine'= _
+2017-12-25 20:25:00.7922 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'fine'= _

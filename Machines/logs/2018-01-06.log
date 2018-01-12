@@ -1,0 +1,9 @@
+2018-01-06 14:57:33.5261 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-06 14:57:49.2205 | INFO | Machines.Controllers.MachinesController | Request POST with ID =  Type = Audi Mark = A8 Model = 0 Year =  VIN = A8 StateNumber = A8 IdUser = A8
+2018-01-06 14:57:49.2771 | INFO | Machines.Controllers.MachinesController | Success request POST with ID =  Type = Audi Mark = A8 Model = 0 Year =  VIN = A8 StateNumber = A8 IdUser = A8
+2018-01-06 14:58:25.2721 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-06 15:01:48.6473 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-06 15:02:03.3604 | INFO | Machines.Controllers.MachinesController | Request DELETE with ID = 10
+2018-01-06 15:02:03.4079 | INFO | Machines.Controllers.MachinesController | Success request DELETE with ID = 10
+2018-01-06 15:02:23.7645 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-06 15:02:41.2334 | INFO | Machines.Controllers.MachineInfController | Request GET with OData

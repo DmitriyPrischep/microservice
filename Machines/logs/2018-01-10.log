@@ -1,0 +1,3 @@
+2018-01-10 19:20:05.4747 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-10 19:21:13.3497 | INFO | Machines.Controllers.MachinesController | Request POST with ID =  Type = Audi Mark = A8 Model = 0 Year =  VIN = A8 StateNumber = A8 IdUser = A8
+2018-01-10 19:21:13.3671 | INFO | Machines.Controllers.MachinesController | Success request POST with ID =  Type = Audi Mark = A8 Model = 0 Year =  VIN = A8 StateNumber = A8 IdUser = A8

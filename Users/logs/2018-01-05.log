@@ -1,0 +1,26 @@
+2018-01-05 21:49:08.0705 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-05 21:50:29.8722 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-05 21:50:30.5284 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 7
+2018-01-05 21:50:30.5740 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 7
+2018-01-05 21:51:24.6090 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-05 23:25:50.0549 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-05 23:25:53.6210 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-05 23:25:53.8887 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-05 23:27:01.0055 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-05 23:27:16.6305 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-05 23:27:16.8240 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 34
+2018-01-05 23:27:16.9687 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 34
+2018-01-05 23:29:53.4730 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-05 23:32:58.2535 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-05 23:33:08.1438 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-05 23:33:08.7084 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-05 23:33:08.7440 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-05 23:34:48.1590 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 35
+2018-01-05 23:34:48.1700 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 35
+2018-01-05 23:41:22.8970 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-05 23:41:53.9875 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-05 23:41:54.0055 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-05 23:41:54.0095 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-05 23:42:34.7793 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 36
+2018-01-05 23:42:34.7793 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 36
+2018-01-05 23:42:50.3815 | INFO | Users.Controllers.UsersController | Request GET

@@ -1,0 +1,779 @@
+2017-12-27 00:05:56.4515 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:06:00.0554 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:06:00.0554 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:06:13.4866 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Volvo, 'Model'= XC90, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 00:06:17.6024 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Volvo, 'Model'= XC90, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 00:06:31.4813 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 00:07:36.3744 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Machine/. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:07:52.8942 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:07:54.9630 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:07:57.0295 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:07:58.7000 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:07:58.7000 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:07:58.7000 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:07:59.0632 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:01.1109 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:03.1439 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:05.2133 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:07.2856 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:09.3330 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:11.4088 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:13.4739 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:15.5412 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:17.5917 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:19.6713 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:21.7453 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:23.7980 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:25.8777 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:27.9658 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:30.0391 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:32.1113 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:34.1968 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:36.2481 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:38.3158 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:40.3804 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:42.4712 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:44.5381 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:46.6020 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:48.6662 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:50.7524 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:52.8329 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:54.9166 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:56.9782 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:08:59.0579 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:01.1168 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:03.1922 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:05.2673 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:07.3443 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:09.4261 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:11.4722 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:13.5226 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:15.5755 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:17.6101 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:19.6731 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:21.7191 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:23.7775 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:25.8590 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:27.9534 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:30.0573 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:32.1313 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:34.2061 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:36.2742 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:38.3569 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:40.4395 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:42.5222 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:44.5849 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:46.6591 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:48.7336 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:50.8258 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:52.9102 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:55.0018 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:57.0702 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:09:59.1425 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:01.2324 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:03.3011 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:05.3801 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:07.4697 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:09.5545 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:11.6295 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:13.7047 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:15.7830 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:17.8737 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:19.9414 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:22.0378 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:24.1284 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:26.1672 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:28.2393 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:30.3093 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:32.3805 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:34.4385 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:36.5042 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:38.5799 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:40.6646 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:42.7394 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:44.8093 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:46.8779 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:48.9506 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:51.0200 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:53.0836 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:55.1789 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:57.2507 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:10:59.3201 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:01.3719 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:03.4474 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:05.5214 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:07.6187 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:09.6632 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:11.7110 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:13.8060 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:15.8864 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:17.9761 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:20.0591 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:22.1500 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:24.2141 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:26.3092 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:28.3864 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:30.4579 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:32.5106 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:34.5735 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:36.6415 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:38.7216 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:40.7905 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:42.8623 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:44.9501 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:47.0254 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:49.1020 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:51.1734 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:53.2466 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:55.3060 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:57.3630 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:11:59.4276 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:01.4684 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:03.5212 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:05.5654 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:07.6033 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:09.6379 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:11.6882 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:13.7594 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:15.7996 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:17.8531 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:19.9139 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:21.9476 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:24.0101 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:26.0692 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:28.1261 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:30.1973 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:32.2846 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:34.3544 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:36.4132 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:38.4471 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:40.4779 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:42.5200 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:44.5692 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:46.6467 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:48.7395 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:50.8145 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:52.8902 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:54.9369 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:57.0023 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:12:59.0747 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:01.1702 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:03.2417 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:05.2942 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:07.3580 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:09.4312 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:11.5050 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:13.5868 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:15.6701 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:17.7391 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:19.8175 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:21.9033 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:23.9811 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:26.0455 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:28.1339 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:30.1962 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:32.2748 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:34.3316 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:36.4196 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:38.4918 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:40.5710 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:42.6532 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:44.7251 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:46.8168 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:48.8852 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:50.9627 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:53.0308 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:55.1001 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:57.1771 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:13:59.2841 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:01.3633 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:03.4399 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:05.4972 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:07.5765 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:09.6667 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:11.7274 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:13.7785 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:15.8641 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:17.9068 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:19.9437 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:21.9906 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:24.0378 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:26.0710 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:28.1069 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:30.1389 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:32.1756 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:34.2375 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:36.2977 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:38.3588 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:40.4066 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:42.4587 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:44.4963 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:46.5563 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:48.6174 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:50.6709 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:52.7236 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:54.7803 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:56.8401 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:14:58.8946 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:00.9354 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:02.9970 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:05.0475 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:07.0976 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:09.1479 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:11.1976 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:13.2509 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:15.2930 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:17.3517 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:19.4086 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:21.4674 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:23.5221 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:25.5660 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:27.5947 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:29.6453 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:31.7378 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:33.8008 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:35.8623 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:37.9577 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:40.0196 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:42.0905 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:44.1553 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:46.2048 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:48.2484 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:50.2942 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:52.3236 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:54.3636 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:56.4304 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:15:58.5008 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:00.5607 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:02.6264 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:04.6781 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:06.7504 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:08.8101 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:10.8943 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:12.9555 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:14.9996 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:17.0555 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:19.1171 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:21.1778 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:23.2295 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:25.2622 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:27.2913 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:29.3361 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:31.3865 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:33.4537 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:35.5311 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:37.5810 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:39.6543 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:41.7153 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:43.7792 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:45.8648 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:47.9297 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:49.9951 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:52.0779 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:54.1445 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:56.2169 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:16:58.2942 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:00.3605 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:02.4405 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:04.5065 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:06.5925 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:08.6543 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:10.7347 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:12.8276 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:14.8982 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:16.9689 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:19.0473 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:21.1231 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:23.1847 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:25.2731 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:27.3182 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:29.4024 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:31.4793 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:33.5497 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:35.6323 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:37.7312 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:39.8108 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:41.8810 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:43.9473 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:46.0142 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:48.0900 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:50.1641 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:52.2274 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:54.2874 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:56.3386 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:17:58.4206 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:00.5075 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:02.5872 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:04.6533 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:06.7343 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:08.7879 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:10.8663 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:12.9361 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:15.0166 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:17.1064 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:19.1679 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:21.2372 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:23.3007 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:25.3645 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:27.4119 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:29.4660 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:31.5515 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:33.6424 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:35.7273 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:37.7900 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:39.8294 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:41.8865 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:43.9700 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:46.0362 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:48.1017 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:50.1670 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:52.2488 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:54.3032 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:56.3877 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:18:58.4572 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:00.5317 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:02.6166 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:04.7154 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:06.7756 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:08.8501 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:10.9303 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:13.0022 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:15.0686 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:17.1168 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:19.1844 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:21.2710 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:23.3392 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:25.4239 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:27.4671 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:29.5249 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:31.5825 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:33.6655 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:35.7616 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:37.8247 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:39.9035 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:41.9831 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:44.0411 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:46.1403 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:48.2356 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:50.3117 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:52.4102 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:54.5105 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:56.6018 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:19:58.6749 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:00.7619 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:02.8306 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:04.8944 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:06.9483 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:09.0285 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:11.0830 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:13.1694 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:15.2413 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:17.3168 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:19.4153 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:21.4874 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:23.5691 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:25.6240 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:27.6666 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:29.7227 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:31.7911 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:33.8531 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:35.9338 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:37.9815 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:40.0504 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:42.1280 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:44.2149 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:46.2813 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:48.3434 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:50.4190 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:52.4730 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:54.5553 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:56.6657 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:20:58.7310 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:00.8077 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:02.8896 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:04.9809 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:07.0510 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:09.0908 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:11.1942 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:13.2928 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:15.3462 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:17.4079 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:19.4933 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:21.5496 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:23.6090 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:25.6581 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:27.7269 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:29.7876 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:31.8490 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:33.9067 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:35.9521 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:38.0307 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:40.0814 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:42.1417 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:44.2210 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:46.2970 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:48.3756 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:50.4569 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:52.5343 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:54.6221 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:56.6688 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:21:58.7391 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:22:00.8235 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:22:02.8952 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:22:04.9622 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:25:43.0102 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:25:46.9149 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:25:46.9149 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:26:04.4040 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Volvo, 'Model'= XC90, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 00:27:31.0374 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Volvo, 'Model'= XC90, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 00:27:49.1535 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:27:49.1535 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:27:49.1535 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:28:11.1687 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= ьфсрштуы
+2017-12-27 00:28:17.7442 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machine
+2017-12-27 00:28:19.3592 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2017-12-27 00:28:19.4412 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2017-12-27 00:28:19.4412 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2017-12-27 00:28:53.9804 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 00:28:54.0886 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 00:29:02.7052 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:29:02.7052 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:29:02.7052 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:29:22.4440 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A6, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 00:30:17.8642 | ERROR | ServiceFines.Controllers.GatewayController | Error with request POST http://localhost:50078/api/Machines . Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:31:15.1656 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:31:15.1749 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:31:15.1749 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:32:18.9569 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 00:32:18.9798 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 00:32:23.6835 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:32:23.6910 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:32:23.6910 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:32:29.7058 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2017-12-27 00:35:04.0291 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2017-12-27 00:35:05.2241 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2017-12-27 00:35:05.2241 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2017-12-27 00:35:25.8358 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:35:25.8464 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:35:25.8464 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:37:02.6219 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A6, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 00:37:52.5296 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A6, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 00:38:00.5936 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 00:38:01.6172 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 00:38:06.0651 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A6, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 00:38:27.4941 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A6, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 00:38:39.2188 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 00:40:03.9769 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:40:04.1003 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:40:04.1003 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:40:23.0859 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 00:40:23.2067 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 00:40:27.5363 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2017-12-27 00:40:30.7190 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2017-12-27 00:40:30.7190 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2017-12-27 00:40:48.5114 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 00:41:27.8369 | ERROR | ServiceFines.Controllers.GatewayController | Error with request POST http://localhost:50078/api/Machines . Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:46:59.1909 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:47:00.1929 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:47:00.1929 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:47:06.6043 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2017-12-27 00:47:09.6369 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2017-12-27 00:47:09.6374 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2017-12-27 00:47:39.7676 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 00:47:40.5046 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 00:47:48.9119 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:47:49.4412 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:47:49.4412 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:47:55.2482 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 00:48:22.0311 | ERROR | ServiceFines.Controllers.GatewayController | Error with request POST http://localhost:50078/api/Machines . Error message: Произошла ошибка при отправке запроса.
+2017-12-27 00:49:45.7681 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2017-12-27 00:49:46.6809 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2017-12-27 00:49:46.6809 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2017-12-27 00:50:47.9613 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2017-12-27 00:50:47.9722 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2017-12-27 00:50:47.9722 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2017-12-27 00:50:57.1625 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:50:57.1734 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:50:57.1734 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:59:17.1216 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2017-12-27 00:59:19.3353 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2017-12-27 00:59:19.3353 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2017-12-27 00:59:22.8784 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2017-12-27 00:59:23.6246 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2017-12-27 00:59:23.6246 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2017-12-27 00:59:29.9292 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:59:30.6364 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:59:30.6364 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:59:36.2280 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 00:59:36.8850 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 00:59:48.0105 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 00:59:48.0179 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 00:59:48.0179 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 00:59:56.1276 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 01:00:58.2297 | ERROR | ServiceFines.Controllers.GatewayController | Error with request POST http://localhost:50078/api/Machines . Error message: Произошла ошибка при отправке запроса.
+2017-12-27 01:02:19.3681 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2017-12-27 01:02:19.3727 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2017-12-27 01:02:19.3727 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2017-12-27 01:02:23.5917 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 01:02:23.5917 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 01:02:23.5917 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 01:02:26.3871 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 01:02:26.3955 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 01:02:26.3955 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 01:12:39.5257 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 01:12:43.6578 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 01:12:43.6578 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 01:12:52.2187 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 01:12:53.0994 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 01:12:56.4405 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 01:12:56.4405 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 01:12:56.4405 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 01:12:59.1569 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2017-12-27 01:13:02.2007 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2017-12-27 01:13:02.2007 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2017-12-27 01:13:09.6357 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2017-12-27 01:13:09.6463 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2017-12-27 01:13:09.6463 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2017-12-27 01:13:38.7292 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 01:14:15.3861 | ERROR | ServiceFines.Controllers.GatewayController | Error with request POST http://localhost:50078/api/Machines . Error message: Произошла ошибка при отправке запроса.
+2017-12-27 01:16:23.0899 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2017-12-27 01:16:32.8553 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2017-12-27 01:16:32.8553 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2017-12-27 01:16:34.5724 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 01:16:44.8336 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 01:16:44.8336 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 01:16:52.7448 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 01:28:37.6223 | ERROR | ServiceFines.Controllers.GatewayController | Error with request POST http://localhost:50078/api/Machines . Error message: Произошла ошибка при отправке запроса.
+2017-12-27 01:41:02.4161 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2017-12-27 01:41:02.4352 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2017-12-27 01:41:02.4352 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2017-12-27 01:47:06.2218 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 01:47:07.0047 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 01:47:07.0047 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 02:22:53.9026 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 02:23:01.6083 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 02:23:01.6083 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 02:23:08.2483 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 02:24:28.8781 | ERROR | ServiceFines.Controllers.GatewayController | Error with request POST http://localhost:50078/api/Machines . Error message: Произошла ошибка при отправке запроса.
+2017-12-27 02:25:32.6595 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2017-12-27 02:25:34.4764 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 02:25:35.3529 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 02:25:35.3529 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 02:25:47.0118 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2017-12-27 02:25:47.0218 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2017-12-27 02:25:47.0218 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2017-12-27 02:39:55.0458 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 02:40:46.8596 | ERROR | ServiceFines.Controllers.GatewayController | Error with request POST http://localhost:50078/api/Machines . Error message: Выдано исключение типа "System.Net.Http.HttpRequestException".
+2017-12-27 02:47:36.7575 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 02:47:49.9226 | ERROR | ServiceFines.Controllers.GatewayController | Error with request POST http://localhost:50078/api/Machines . Error message: Выдано исключение типа "System.Net.Http.HttpRequestException".
+2017-12-27 02:50:36.2095 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 02:50:58.7981 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 02:50:58.8131 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 02:50:58.8131 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 02:51:12.4879 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 02:51:33.5553 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 02:51:39.5135 | ERROR | ServiceFines.Controllers.GatewayController | Error with request POST http://localhost:50078/api/Machines . Error message: Выдано исключение типа "System.Net.Http.HttpRequestException".
+2017-12-27 20:30:49.0204 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 20:32:52.8374 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 20:32:56.0030 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 20:33:08.8418 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 20:33:08.8739 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 20:33:08.8739 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 20:33:42.6107 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 20:36:53.1928 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2017-12-27 20:36:56.4479 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2017-12-27 20:36:56.4479 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2017-12-27 20:37:25.4760 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 20:37:47.8875 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 20:43:06.8597 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 20:43:06.9338 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 20:43:06.9338 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 20:43:15.7233 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 20:44:05.8643 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Machine/. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:13.8143 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:15.8422 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:17.8720 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:18.2696 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 20:44:18.2786 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 20:44:18.2786 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 20:44:19.9031 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:21.9432 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:23.9812 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:26.0131 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:28.0413 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:30.0662 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:32.1095 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:34.1430 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:36.1785 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:38.2101 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:40.2562 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:42.2819 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:44.3104 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:44:46.3392 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 20:45:34.9246 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 20:45:34.9246 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 20:45:34.9246 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 20:45:40.9160 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 20:45:42.4095 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 20:46:07.0502 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 20:46:07.0502 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 20:46:07.0502 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 20:46:11.8922 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2017-12-27 20:46:11.9480 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2017-12-27 20:46:11.9480 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2017-12-27 20:59:14.9864 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 21:01:06.0708 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 21:01:09.2372 | WARN | ServiceFines.Controllers.GatewayController | Aborted DELETE from 0 with parametr 'FIO'= Lomonosov. No such company.
+2017-12-27 21:01:18.5245 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 21:01:18.5485 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 21:01:18.5485 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 21:01:24.5771 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:01:31.1504 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:01:37.0638 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 21:01:37.8339 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 21:01:37.8339 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 21:01:45.5749 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 21:02:15.5244 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Machine/. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:27.9403 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:29.9723 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:32.0001 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:34.0297 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:36.0596 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:38.1072 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:40.1526 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:42.1927 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:44.2393 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:46.2702 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:48.3106 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:50.3533 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:52.3944 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:54.4408 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:56.4804 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:02:58.5238 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:00.5730 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:02.6032 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:04.6389 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:06.6748 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:08.7201 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:10.7571 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:12.7969 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:14.8336 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:16.8633 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:18.8951 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:20.9286 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:22.9720 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:25.0218 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:27.0540 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:29.0939 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:31.1389 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:33.1705 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:35.2141 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:37.2572 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:39.2985 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:41.3487 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:43.3891 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:45.4407 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:47.4752 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:49.5193 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:51.5698 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:53.6091 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:55.6579 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:57.6973 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:03:59.7462 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:01.7929 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:03.8354 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:05.8835 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:07.9114 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:07.9334 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 21:04:07.9435 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 21:04:07.9435 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 21:04:09.9397 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:11.9811 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:14.0219 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:16.0650 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:18.1152 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:20.1512 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:22.1912 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:24.2345 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:26.2810 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:28.3143 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:30.3430 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:32.3831 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:34.4153 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:36.4421 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:38.4684 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:40.4983 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:42.5244 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:44.5616 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:46.5921 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:48.6663 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:50.6895 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:52.7226 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:54.7475 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:56.7760 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:04:58.8045 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:05:00.8343 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:05:02.8579 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:05:04.8855 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:06:42.0201 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 21:06:42.0832 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 21:06:42.0832 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 21:06:47.8294 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:06:51.2433 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:06:58.3864 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 21:16:13.7695 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:16:20.8356 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:16:28.5734 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 21:16:28.6169 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 21:16:28.6169 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 21:16:44.2400 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 21:18:21.5547 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 21:18:24.3382 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 21:18:24.3382 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 21:18:36.9441 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:18:43.4728 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:18:49.1605 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 21:18:49.1605 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 21:18:49.1605 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 21:18:53.4318 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 21:20:19.9169 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Machine/. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:20:19.9772 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 21:20:20.8934 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 21:20:20.8934 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 21:20:22.0309 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:20:24.0714 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:20:26.1167 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:20:28.1625 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:20:30.2206 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:20:32.3091 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:20:34.3836 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:20:36.4168 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:20:38.4645 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:20:40.5134 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:20:42.5655 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:20:44.6124 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:20:46.6399 | ERROR | ServiceFines.Controllers.GatewayController | Error with request DELETE http://localhost:50178/api/Fines/ with filters. Error message: Произошла ошибка при отправке запроса.
+2017-12-27 21:21:40.7170 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 21:21:40.7324 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 21:21:40.7324 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 21:21:43.4743 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:21:43.6856 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:21:48.1913 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 21:21:48.1913 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 21:21:48.1913 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 21:23:34.9908 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 21:23:35.0343 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 21:23:35.0343 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 21:23:38.4762 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:23:44.5371 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:23:53.9015 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 21:25:32.4916 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 21:25:32.5866 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 21:25:32.5866 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 21:25:36.3893 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:25:39.6753 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2017-12-27 21:25:45.1109 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-27 21:25:45.1109 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-27 21:25:45.1109 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-27 21:25:56.7477 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2017-12-27 21:26:24.9796 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Lomonosov

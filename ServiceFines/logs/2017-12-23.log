@@ -1,0 +1,69 @@
+2017-12-23 04:47:25.9738 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 04:47:26.0199 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 04:47:34.0991 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 04:47:34.0991 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 04:50:38.3127 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 04:50:38.3608 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:00:56.3706 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:00:56.3964 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:01:43.0142 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:01:43.0242 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:02:24.2229 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:02:24.2229 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:02:26.0473 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:02:26.0512 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:02:43.9580 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:02:43.9580 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:02:45.9218 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:02:45.9253 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:03:34.2673 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:03:34.2673 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:03:35.1782 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:03:35.1782 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:13:01.4445 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:13:01.4973 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:13:43.7395 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:13:43.7395 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:13:44.6076 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:13:44.6121 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:15:57.9520 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 05:15:57.9790 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 06:34:51.1307 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2017-12-23 06:34:51.2219 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2017-12-23 06:34:51.2219 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2017-12-23 06:35:06.9474 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2017-12-23 06:35:06.9474 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2017-12-23 06:35:06.9474 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2017-12-23 06:35:19.4639 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2017-12-23 06:35:19.5409 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2017-12-23 06:35:19.5409 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2017-12-23 06:36:37.4720 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 2 'pageSize'= 2
+2017-12-23 06:36:37.4720 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 2 'pageSize'= 2
+2017-12-23 06:39:45.0827 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-23 06:39:45.0827 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-23 06:40:41.2005 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-23 06:40:41.2862 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-23 06:40:48.9054 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-23 06:40:48.9104 | INFO | ServiceFines.Controllers.GatewayController | Compliete request from {3} with parametr 'service'= {0} 'id'={1}
+2017-12-23 06:41:29.1431 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 06:41:29.1431 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs  'FIO'= Ivanov Artem 'Phone'= _ 'Adress'= _
+2017-12-23 06:42:51.6018 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= a6 'Year'= 2010
+2017-12-23 06:42:51.6018 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= a6 'Year'= 2010
+2017-12-23 06:42:55.9953 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 06:42:55.9953 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 06:44:09.8186 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 06:44:09.8546 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 06:44:29.4623 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 06:46:10.7464 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 06:46:10.8791 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 06:47:54.7052 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 06:47:54.7523 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 06:51:58.2138 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 06:55:52.7537 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 06:56:03.5435 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 06:56:17.9674 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 06:57:34.7489 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 07:00:54.5628 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 07:00:54.7321 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= _ 'Year'= 0
+2017-12-23 21:11:39.0776 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'UserFIO'= _
+2017-12-23 21:11:39.0776 | WARN | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'UserFIO'= _ aborted by parameters

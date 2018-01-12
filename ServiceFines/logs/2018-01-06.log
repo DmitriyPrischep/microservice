@@ -1,0 +1,37 @@
+2018-01-06 14:56:02.0074 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-06 14:56:14.7657 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-06 14:56:14.7657 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-06 14:57:20.4108 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-06 14:57:49.2861 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-06 14:57:57.2376 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-06 14:57:57.3018 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-06 14:57:57.3018 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-06 14:58:13.5213 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2018-01-06 14:58:14.4018 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Lomonosov
+2018-01-06 14:58:24.2557 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-06 14:59:41.8252 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-06 14:59:50.9415 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-06 14:59:50.9505 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-06 14:59:50.9505 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-06 14:59:53.6825 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Lomonosov
+2018-01-06 14:59:53.7146 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Lomonosov
+2018-01-06 15:01:40.9968 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-06 15:01:41.0373 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-06 15:01:41.0373 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-06 15:01:47.5765 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-06 15:01:50.1750 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-06 15:01:50.1750 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-06 15:02:20.5009 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-06 15:02:20.5009 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-06 15:02:20.5009 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-06 15:02:23.7625 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-06 15:02:23.7625 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-06 15:02:23.7625 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-06 15:02:41.1432 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-06 15:03:34.5711 | ERROR | ServiceFines.Controllers.GatewayController | Error with request POST http://localhost:50078/api/Machines . Error message: Произошла ошибка при отправке запроса.
+2018-01-06 15:04:03.3025 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-06 15:04:03.3597 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-06 15:04:03.3597 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-06 15:04:09.3363 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2018-01-06 15:04:09.3513 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2018-01-06 15:04:09.3513 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
