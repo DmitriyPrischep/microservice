@@ -21,7 +21,12 @@ namespace Frontend.Controllers
 
         public ActionResult Description()
         {
-            return View();
+            return View("Description");
+        }
+
+        public ActionResult Machines()
+        {
+            return View("Machines");
         }
 
         public async Task<ActionResult> getMachines()
@@ -37,8 +42,7 @@ namespace Frontend.Controllers
                     if (res.IsSuccessStatusCode)
                     {
                         var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        var str = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(EmpResponse);
-                        EmpInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Models.MachineModel>>(str);
+                        EmpInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Models.MachineModel>>(EmpResponse);
                     }
                     else
                     {
@@ -57,19 +61,18 @@ namespace Frontend.Controllers
         }
 
         public async Task<ActionResult> getMachineByID(int machine_number) {
-            List<Frontend.Models.MachineModel> EmpInfo = new List<Models.MachineModel>();
+            Frontend.Models.MachineModel MachineInfo = new Models.MachineModel();
             try
             {
                 using (HttpClient client = new HttpClient())
                 {
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:49939/api/gateway/inf/machines" + machine_number.ToString()));
+                    HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:49939/api/gateway/inf/machines/" + machine_number.ToString()));
 
                     if (res.IsSuccessStatusCode)
                     {
                         var Response = res.Content.ReadAsStringAsync().Result;
-                        var str = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(Response);
-                        EmpInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Models.MachineModel>>(str);
+                        MachineInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.MachineModel>(Response);
                     }
                     else
                     {
@@ -84,7 +87,7 @@ namespace Frontend.Controllers
                 string str = "Now system is unavailable";
                 return View("SorryPage", (object)str);
             }
-            return View(EmpInfo);
+            return View(MachineInfo);
         }
 
 
@@ -106,8 +109,8 @@ namespace Frontend.Controllers
                     else
                     {
                         var Response = res.Content.ReadAsStringAsync().Result;
-                        var sss = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(Response);
-                        return View("SorryPage", (object)sss);
+                        var str = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(Response);
+                        return View("SorryPage", (object)str);
                     }
                 }
             }
@@ -130,8 +133,7 @@ namespace Frontend.Controllers
                 using (HttpClient test = new HttpClient())
                 {
                     test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await test.GetAsync(new Uri("http://localhost:49939/api/gateway/~users/all/page/" + page.ToString() + "/" + pageSize.ToString()));
-
+                    HttpResponseMessage res = await test.GetAsync(new Uri("http://localhost:49939/api/gateway/users/all/page/" + page.ToString() + "/" + pageSize.ToString()));
                     if (res.IsSuccessStatusCode)
                     {
                         var Response = res.Content.ReadAsStringAsync().Result;
@@ -155,22 +157,22 @@ namespace Frontend.Controllers
             return View(EmpInfo.ToPagedList(pageNumber, pageSize));
         }
 
-        public async Task<ActionResult> getFinesPage(int? page, int pageSize = 4)
+        public async Task<ActionResult> getMachinesPage(int? page, int pageSize = 4)
         {
             if (pageSize <= 0)
                 pageSize = 4;
-            List<UserModel> EmpInfo = new List<UserModel>();
+            List<MachineModel> EmpInfo = new List<MachineModel>();
             try
             {
                 using (HttpClient test = new HttpClient())
                 {
                     test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await test.GetAsync(new Uri("http://localhost:49939/api/gateway/~fines/all/page/" + page.ToString() + "/" + pageSize.ToString()));
+                    HttpResponseMessage res = await test.GetAsync(new Uri("http://localhost:49939/api/gateway/machines/all/page/" + page.ToString() + "/" + pageSize.ToString()));
 
                     if (res.IsSuccessStatusCode)
                     {
                         var Response = res.Content.ReadAsStringAsync().Result;
-                        EmpInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<UserModel>>(Response);
+                        EmpInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<MachineModel>>(Response);
                     }
                     else
                     {
@@ -190,20 +192,20 @@ namespace Frontend.Controllers
             return View(EmpInfo.ToPagedList(pageNumber, pageSize));
         }
 
-        public async Task<ActionResult> getUserFilter(string company_name)
+        public async Task<ActionResult> getUserFilter(string user_fio)
         {
-            List<DetailFineModel> UserFine = new List<DetailFineModel>();
+            UserModel UserFine = new UserModel();
             try
             {
                 using (HttpClient test = new HttpClient())
                 {
                     test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await test.GetAsync("http://localhost:49939/api/gateway/~users/" + company_name);
+                    HttpResponseMessage res = await test.GetAsync("http://localhost:49939/api/gateway/~users/" + user_fio);
 
                     if (res.IsSuccessStatusCode)
                     {
                         var Response = res.Content.ReadAsStringAsync().Result;
-                        UserFine = Newtonsoft.Json.JsonConvert.DeserializeObject<List<DetailFineModel>>(Response);
+                        UserFine = Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(Response);
                     }
                     else
                     {
@@ -222,7 +224,7 @@ namespace Frontend.Controllers
             return View(UserFine);
         }
 
-        public async Task<ActionResult> getUser(string FIO, string Phone, string Adress)
+        public async Task<ActionResult> getUser(string user_fio, string Phone, string Adress)
         {
             string request = "";
             if (Phone != "")
@@ -247,7 +249,7 @@ namespace Frontend.Controllers
                 using (HttpClient test = new HttpClient())
                 {
                     test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await test.GetAsync("http://localhost:49939/api/gateway/~users/" + FIO + request);
+                    HttpResponseMessage res = await test.GetAsync("http://localhost:49939/api/gateway/~users/" + user_fio + request);
 
                     if (res.IsSuccessStatusCode)
                     {
@@ -269,6 +271,55 @@ namespace Frontend.Controllers
             }
 
             return View(User);
+        }
+
+        public async Task<ActionResult> getMachine(string Mark, string Model, int Year, string StateNumber)
+        {
+            string request = "";
+            if (Model != "")
+            {
+                request += "/" + Model;
+            }
+            else
+            {
+                request += "/_";
+            }
+            if (Year != 0)
+            {
+                request += "/" + Year.ToString();
+            }
+            else
+            {
+                request += "/_";
+            }
+            MachineModel Machine = new MachineModel();
+            try
+            {
+                using (HttpClient test = new HttpClient())
+                {
+                    test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage res = await test.GetAsync("http://localhost:49939/api/gateway/~machines/" + Mark + request);
+
+                    if (res.IsSuccessStatusCode)
+                    {
+                        var Response = res.Content.ReadAsStringAsync().Result;
+                        Machine = Newtonsoft.Json.JsonConvert.DeserializeObject<MachineModel>(Response);
+                    }
+                    else
+                    {
+                        var Response = res.Content.ReadAsStringAsync().Result;
+                        var str = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(Response);
+                        return View("SorryPage", (object)str);
+                    }
+                }
+            }
+            catch
+            {
+                string str = "Now system is unavailable";
+                return View("SorryPage", (object)str);
+            }
+
+            return View(Machine);
         }
 
         public async Task<ActionResult> addUser(DetailUserModel userModel)
@@ -301,14 +352,14 @@ namespace Frontend.Controllers
             return View();
         }
 
-        public async Task<ActionResult> deleteUser(string FIO)
+        public async Task<ActionResult> deleteUser(string user_fio)
         {
             try
             {
                 using (HttpClient test = new HttpClient())
                 {
                     test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await test.DeleteAsync("http://localhost:49939/api/gateway/~users/delete/" + FIO);
+                    HttpResponseMessage res = await test.DeleteAsync("http://localhost:49939/api/gateway/~users/delete/" + user_fio);
 
                     if (res.IsSuccessStatusCode)
                     {
@@ -335,6 +386,7 @@ namespace Frontend.Controllers
         public async Task<ActionResult> editUser(int userID, string FIO, string Phone, string Adress, int fineID)
         {
             UserModel user = new UserModel();
+            user.Id = userID;
             user.FIO = FIO;
             user.Phone = Phone;
             user.Adress = Adress;

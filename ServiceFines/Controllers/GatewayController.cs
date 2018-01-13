@@ -285,7 +285,7 @@ namespace ServiceFines.Controllers
 
         // GET: api/gateway/machines
         [Route("machines/all/page/{page}/{pageSize:int=3}")]
-        public async Task<IPagedList<UserModel>> GetAllUsers(int? page, int pageSize)
+        public async Task<IPagedList<MachineModel>> GetAllUsers(int? page, int pageSize)
         {
 #if (DEBUG == true)
             int ip = 0;
@@ -294,24 +294,24 @@ namespace ServiceFines.Controllers
 #endif
             logger.Info("Request from {2} with parametr 'page'= {0} 'pageSize'= {1}", page, pageSize, ip);
             int pageNumber = (page ?? 1);
-            List<UserModel> UserInfo = new List<UserModel>();
+            List<MachineModel> UserInfo = new List<MachineModel>();
             try
             {
                 using (HttpClient client = new HttpClient())
                 {
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50133//api/Users"));
+                    HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50078/api/Machines"));
 
                     if (res.IsSuccessStatusCode)
                     {
                         var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        UserInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<UserModel>>(EmpResponse);
+                        UserInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<MachineModel>>(EmpResponse);
                     }
                 }
             }
             catch (HttpException ex)
             {
-                logger.Error("Error with request http://localhost:50133//api/Users. Answer status = {0} and Reason = {1}", ex.WebEventCode, ex.Message);
+                logger.Error("Error with request http://localhost:50078/api/Machines. Answer status = {0} and Reason = {1}", ex.WebEventCode, ex.Message);
                 //throw new HttpException(400, "Bad Request");
                 return UserInfo.ToPagedList(pageNumber, pageSize);
             }
@@ -430,12 +430,12 @@ namespace ServiceFines.Controllers
 
             if(user.Phone != "_")
             {
-                requeststr += " and Phone eq " + user.Phone;
+                requeststr += " and Phone eq '" + user.Phone + "'";
             }
 
             if (user.Adress != "_")
             {
-                requeststr += " and Adress eq " + user.Adress;
+                requeststr += " and Adress eq '" + user.Adress + "'";
             }
             UserModel UserInfo = new UserModel();
             try
@@ -469,7 +469,7 @@ namespace ServiceFines.Controllers
         }
 
 
-        [Route("~machines/{Type}/{Mark:maxlength(14)=_}/{Model:maxlength(12)=_}/{Year:int=0}")]
+        [Route("~machines/{Mark:maxlength(14)=_}/{Model:maxlength(12)=_}/{Year:int=0}")]
         public async Task<IHttpActionResult> Get([FromUri] MachineModel machine)
         {
 #if (DEBUG == true)
@@ -479,14 +479,9 @@ namespace ServiceFines.Controllers
 #endif
             logger.Info("Request GET from {4} with parametrs 'Type'= {0} 'Mark'= {1} 'Model'= {2} 'Year'= {3}", machine.Type, machine.Mark, machine.Model, machine.Year, ip);
             string requeststr = "";
-            if (machine.Type != null)
+            if (machine.Mark != null)
             {
-                requeststr += "?$filter=Type eq '" + machine.Type + "'";
-            }
-
-            if (machine.Mark != "_")
-            {
-                requeststr += " and Mark eq '" + machine.Mark + "'";
+                requeststr += "?$filter=Mark eq '" + machine.Mark + "'";
             }
 
             if (machine.Model != "_")

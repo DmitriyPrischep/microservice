@@ -1,0 +1,106 @@
+2018-01-13 02:09:51.0836 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 02:10:14.9359 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 02:10:15.4873 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-13 02:10:15.5244 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-13 02:11:33.9071 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 02:34:16.7244 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 02:34:22.5692 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 02:39:30.1421 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 02:40:01.9700 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 02:42:04.2470 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 02:42:24.6269 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 02:42:38.0336 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 02:42:46.1823 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 02:43:31.4542 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 02:53:12.7922 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 02:54:02.3780 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 02:56:09.4017 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 02:56:18.5599 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 03:00:54.1442 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 03:01:14.2078 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:02:54.7141 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:04:22.6107 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:05:41.1663 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:06:15.0625 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:07:34.6620 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:07:34.9385 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-13 03:07:34.9576 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-13 03:07:50.0966 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:07:59.7904 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:08:16.7931 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:10:18.4737 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:10:20.6309 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:10:21.3473 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:12:05.3477 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:12:26.4536 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:12:47.1367 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 03:13:23.9188 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 41
+2018-01-13 03:13:24.1170 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 41
+2018-01-13 03:14:52.3639 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:15:21.7503 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:16:29.4264 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:20:37.4730 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:21:22.9959 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:52:27.8857 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:53:02.7514 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 03:53:15.3199 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 04:03:40.1979 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 04:07:17.6955 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 04:08:37.0285 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 04:09:50.0009 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 04:11:18.1575 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 04:13:21.6620 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 04:13:23.0567 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 04:13:40.9658 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 04:13:45.6413 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 04:13:50.0150 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 04:17:09.8617 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 04:18:18.5958 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 11:41:16.5665 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 12:04:00.1866 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 12:06:09.4634 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 12:06:15.5645 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 12:14:51.3641 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 12:14:52.2325 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-13 12:14:52.4453 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-13 12:15:40.7928 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 12:21:19.7164 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 12:25:55.2658 | INFO | Users.Controllers.UsersController | Request PUT with ID = 42 FIO = Krotov Adress = Misnk Phone = 89674652575 IdFines = 3
+2018-01-13 12:25:55.2658 | INFO | Users.Controllers.UsersController | ABORTED request PUT with ID = 42 FIO = Krotov Adress = Misnk Phone = 89674652575 IdFines = 3. Bad ID and data.ID.
+2018-01-13 12:26:16.1809 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 12:26:25.8433 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 12:30:04.0570 | INFO | Users.Controllers.UsersController | Request PUT with ID = 42 FIO = Krotov Adress = Minsk Phone = 89674652575 IdFines = 3
+2018-01-13 12:30:04.4981 | INFO | Users.Controllers.UsersController | Success request PUT with ID = 42 FIO = Krotov Adress = Minsk Phone = 89674652575 IdFines = 3.
+2018-01-13 12:30:11.3802 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 12:30:23.9743 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 12:32:39.6469 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 12:33:00.3925 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 12:33:10.6428 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 12:33:42.4467 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 12:42:27.7237 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 12:42:31.8589 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 42
+2018-01-13 12:42:32.0063 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 42
+2018-01-13 12:42:51.1761 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 12:43:58.4935 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 15:05:02.3318 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 15:07:23.8625 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 15:08:21.0005 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 15:08:33.9612 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 15:08:34.0193 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-13 15:08:34.1567 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-13 15:09:18.2940 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 15:09:18.3291 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 43
+2018-01-13 15:09:18.4444 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 43
+2018-01-13 15:10:20.8073 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 15:13:35.0743 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 15:14:44.9336 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 15:15:29.5523 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 15:15:52.6600 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 15:15:52.7463 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-13 15:15:52.8033 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-13 15:17:54.2040 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-13 15:22:15.6940 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 15:23:26.8798 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-13 15:23:26.9449 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 44
+2018-01-13 15:23:27.0201 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 44
+2018-01-13 15:24:59.3425 | INFO | Users.Controllers.UserInfController | Request GET with OData

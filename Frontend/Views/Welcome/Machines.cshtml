@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "Machines";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Транспортные средства</h2>
+
+<h2>Запросы</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <td>
+                Описание запроса
+            </td>
+            <td>
+                Совершить запрос
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            @using (Html.BeginForm("getMachines", "Welcome"))
+            {
+                <td>
+                    Получить список транспортных средств
+                </td>
+
+                <td>
+                    <input type="submit">
+                </td>
+            }
+        </tr>
+        <tr>
+            @using (Html.BeginForm("getMachineByID", "Welcome"))
+            {
+                <td>
+                    Получить информацию ТС № <input required name="machine_number" type="number" min=1 value=1>
+
+                </td>
+                <td>
+                    <input type="submit">
+                </td>
+            }
+        </tr>
+        <tr>
+            @using (Html.BeginForm("getMachine", "Welcome"))
+            {
+                <td>
+                    Информация об автомобиле<br />
+                    марки <input required name="mark" type="text" pattern="^[a-zA-Z0-9\.\s]+$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                    модели <input name="model" type="text" pattern="^[a-zA-Z0-9\s]+$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                    года выпуска <input name="year" type="number" min=1900 value=0><br />
+                    госномер <input name="statenum" type="text" pattern="^\w?(\d{3})(\w{2}(\d{2,3})?)?" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')">
+                </td>
+                <td>
+                    <input type="submit">
+                </td>
+            }
+        </tr>
+
+        <tr>
+            @using (Html.BeginForm("getMachinesPage", "Welcome"))
+            {
+                <td>
+                    Страница № <input required name="page" type="number" min=1 value=1> списка машин. По <input name="pageSize" type="number" min=1 value=3> элементов на странице.
+
+                </td>
+                <td>
+                    <input type="submit">
+                </td>
+            }
+        </tr>
+    </tbody>
+</table>
+
+

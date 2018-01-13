@@ -1,0 +1,63 @@
+﻿@using PagedList.Mvc;
+@model PagedList.IPagedList<Frontend.Models.MachineModel>
+
+@{
+    ViewBag.Title = "getMachinesPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+<h2>Список транспортных средств</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            Марка
+        </th>
+        <th>
+            Модель
+        </th>
+        <th>
+            Год выпуска
+        </th>
+        <th>
+            Госномер
+        </th>
+        <th>
+            VIN
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(fine => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(user => item.Mark)
+            </td>
+            <td>
+                @Html.DisplayFor(user => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(user => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(user => item.StateNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(user => item.VIN)
+            </td>
+        </tr>
+    }
+</table>
+
+<div>
+    Страница @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) из @Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("getMachinesPage", new { page }))
+</div>

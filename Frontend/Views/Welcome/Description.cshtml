@@ -1,0 +1,107 @@
+﻿@model Frontend.Models.DetailFineModel
+@{
+    ViewBag.Title = "Description";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <h2>Запросы</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>
+                    Описание запроса
+                </td>
+                <td>
+                    Совершить запрос
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                @using (Html.BeginForm("getUserByFIO", "Welcome"))
+                {
+                    <td>
+                        Получить информацию нарушителя с ФИО <input name="user_name" type="text" value="Brice Lambson">
+                    </td>
+                    <td>
+                        <input type="submit">
+                    </td>
+                }
+            </tr>
+
+            
+            <tr>
+                @using (Html.BeginForm("getUserFilter", "Welcome"))
+                {
+                    <td>
+                        Нарушитель <input name="user_fio" type="text" pattern="^[a-zA-Z0-9\.\s]+$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')">
+                    </td>
+                    <td>
+                        <input type="submit">
+                    </td>
+                }
+            </tr>
+            
+            <tr>
+                @using (Html.BeginForm("getUser", "Welcome"))
+                {
+                    <td>
+                        Информация о нарушителе <br />
+                        c ФИО <input required name="user_fio" type="text" value="Brice Lambson" pattern="^[a-zA-Z0-9\s]+$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                        Телефоном <input required name="Phone" type="text" value="89851232514" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                        Адресом <input required name="Adress" type="text" value="Kazan Svetlaya d57 kv10" pattern="^[a-zA-Z0-9\s]+$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')">
+                    </td>
+                    <td>
+                        <input type="submit">
+                    </td>
+                }
+            </tr>
+            <tr>
+                @using (Html.BeginForm("addUser", "Welcome"))
+                {
+                    <td>
+                        Добавление нарушителя <br />
+                        c ФИО <input required name="FIO" type="text" value="Mamontov" pattern="^[a-zA-Z0-9\s]+$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                        телефоном <input required name="Phone" type="text" value="89137651414" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                        адресом <input required name="Adress" type="text" value="Krasnodar" pattern="^[a-zA-Z0-9\s]+$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                        марки <input required name="Mark" type="text" value="Volkswagen" pattern="^[a-zA-Z0-9\.\s]+$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                        модели <input name="Model" type="text" value="Golf" pattern="^[a-zA-Z0-9\s]+$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                        госномер <input name="StateNumber" type="text" value="e432rv77" pattern="^\w?(\d{3})(\w{2}(\d{2,3})?)?" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                        Вид нарушения <input name="NameFine" type="text" value="Проезд на красный свет" pattern="/[^\.\,\-\_\'\"\@\?\!\:\$А-Яа-я()]/u" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                        Размер штрафа <input name="AmountFine" type="number" min=0 value=1500>
+                    </td>
+                    <td>
+                        <input type="submit" value="Добавить">
+                    </td>
+                }
+            </tr>
+            <tr>
+                @using (Html.BeginForm("deleteUser", "Welcome"))
+                {
+                    <td>
+                        ФИО нарушителя для удаления <input name="user_fio" type="text" value="Krotov" pattern="^[a-zA-Z0-9\.\s]+$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')">
+                    </td>
+                    <td>
+                        <input type="submit" value="Удалить">
+                    </td>
+                }
+            </tr>
+            <tr>
+                @using (Html.BeginForm("editUser", "Welcome"))
+                {
+
+                    <td>
+                        Изменение информация о нарушителе  Id <input name="userID" type="number" min=1 value=1>  на<br />
+                        ФИО <input required name="FIO" type="text" value="Krotov" pattern="^[a-zA-Z0-9\s]+$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                        Телефоном <input required name="Phone" type="text" value="89137651414" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                        Адресом <input required name="Adress" type="text" value="Omsk" pattern="^[a-zA-Z0-9\s]+$" oninvalid="this.setCustomValidity('Некорректный ввод данных')" oninput="this.setCustomValidity('')"><br />
+                        № Штрафа <input name="fineID" type="number" min=1 value=2>
+                    </td>
+                    <td>
+                        <input type="submit" value="Изменить">
+                    </td>
+                }
+            </tr>
+        </tbody>
+    </table>
+

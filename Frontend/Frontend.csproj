@@ -244,11 +244,22 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Front\getUsers.cshtml" />
-    <Content Include="Views\Front\getUsersPage.cshtml" />
-    <Content Include="Views\Front\front.cshtml" />
-    <Content Include="Views\Front\index.cshtml" />
+    <Content Include="Views\Welcome\addUser.cshtml" />
+    <Content Include="Views\Welcome\deleteUser.cshtml" />
     <Content Include="Views\Welcome\Description.cshtml" />
+    <Content Include="Views\Welcome\editUser.cshtml" />
+    <Content Include="Views\Welcome\getMachinesPage.cshtml" />
+    <Content Include="Views\Welcome\getUsersPage.cshtml" />
+    <Content Include="Views\Welcome\Index.cshtml" />
+    <Content Include="Views\Welcome\SorryPage.cshtml" />
+    <Content Include="Views\Welcome\Welcome.cshtml" />
+    <Content Include="Views\Welcome\getUserByFIO.cshtml" />
+    <Content Include="Views\Welcome\getUserFilter.cshtml" />
+    <Content Include="Views\Welcome\getUser.cshtml" />
+    <Content Include="Views\Welcome\getMachines.cshtml" />
+    <Content Include="Views\Welcome\getMachineByID.cshtml" />
+    <Content Include="Views\Welcome\getMachine.cshtml" />
+    <Content Include="Views\Welcome\Machines.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,64 @@
+2018-01-13 01:05:20.4954 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 01:25:07.4166 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 01:25:46.4259 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 01:27:15.2682 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 01:27:27.6839 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 01:30:09.9596 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 01:37:24.1843 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 01:44:16.6636 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2018-01-13 01:44:17.3053 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2018-01-13 01:44:22.3918 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 2
+2018-01-13 01:44:22.3918 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 2
+2018-01-13 01:45:12.7481 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2018-01-13 01:45:12.7481 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2018-01-13 01:45:27.7448 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2018-01-13 01:45:27.7448 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2018-01-13 01:47:54.8035 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2018-01-13 01:47:54.8035 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2018-01-13 01:50:06.0326 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2018-01-13 01:50:06.0326 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2018-01-13 01:51:20.8067 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2018-01-13 01:51:20.8067 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2018-01-13 01:54:03.4229 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2018-01-13 01:54:03.4229 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2018-01-13 02:00:03.7618 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2018-01-13 02:00:04.3656 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2018-01-13 02:03:03.0669 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2018-01-13 02:03:03.0699 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2018-01-13 02:06:08.9564 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2018-01-13 02:06:09.1891 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2018-01-13 02:06:20.6786 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 2
+2018-01-13 02:06:20.6786 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 2
+2018-01-13 02:08:49.0503 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 1
+2018-01-13 02:08:49.0553 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 1
+2018-01-13 02:08:53.5022 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 02:10:15.6668 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-13 02:10:16.2413 | INFO | Machines.Controllers.MachinesController | Request POST with ID =  Type = Audi Mark = A8 Model = 0 Year =  VIN = A8 StateNumber = A8 IdUser = A8
+2018-01-13 02:10:16.2744 | INFO | Machines.Controllers.MachinesController | Success request POST with ID =  Type = Audi Mark = A8 Model = 0 Year =  VIN = A8 StateNumber = A8 IdUser = A8
+2018-01-13 02:57:36.9695 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 02:57:48.2273 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 03:07:35.0162 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-13 03:07:35.8154 | INFO | Machines.Controllers.MachinesController | Request POST with ID =  Type = Audi Mark = A4 Model = 0 Year =  VIN = A4 StateNumber = A4 IdUser = A4
+2018-01-13 03:07:35.8344 | INFO | Machines.Controllers.MachinesController | Success request POST with ID =  Type = Audi Mark = A4 Model = 0 Year =  VIN = A4 StateNumber = A4 IdUser = A4
+2018-01-13 03:13:32.2040 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 03:14:31.8045 | INFO | Machines.Controllers.MachinesController | Request DELETE with ID = 12
+2018-01-13 03:14:31.9624 | INFO | Machines.Controllers.MachinesController | Success request DELETE with ID = 12
+2018-01-13 03:14:37.4981 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 11:41:38.2795 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 11:54:11.7320 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-13 11:56:31.7091 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-13 12:00:33.8456 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-13 12:01:08.3052 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 12:01:45.1226 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-13 12:02:53.8720 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-13 12:14:52.4543 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-13 12:14:53.0919 | INFO | Machines.Controllers.MachinesController | Request POST with ID =  Type = BMW Mark = X4 Model = 0 Year =  VIN = X4 StateNumber = X4 IdUser = X4
+2018-01-13 12:14:53.2970 | INFO | Machines.Controllers.MachinesController | Success request POST with ID =  Type = BMW Mark = X4 Model = 0 Year =  VIN = X4 StateNumber = X4 IdUser = X4
+2018-01-13 14:53:12.3027 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 14:53:32.0252 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 2
+2018-01-13 14:53:32.2137 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 2
+2018-01-13 14:54:23.9921 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-13 15:08:34.2790 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-13 15:08:35.7244 | INFO | Machines.Controllers.MachinesController | Request POST with ID =  Type = Volkswagen Mark = Golf Model = 0 Year =  VIN = Golf StateNumber = Golf IdUser = Golf
+2018-01-13 15:08:36.0503 | INFO | Machines.Controllers.MachinesController | Success request POST with ID =  Type = Volkswagen Mark = Golf Model = 0 Year =  VIN = Golf StateNumber = Golf IdUser = Golf
+2018-01-13 15:15:53.3829 | INFO | Machines.Controllers.MachineInfController | Request GET with OData

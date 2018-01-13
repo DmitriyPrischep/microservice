@@ -1,0 +1,40 @@
+﻿@model Frontend.Models.UserModel
+
+@{
+    ViewBag.Title = "GetUserByFIO";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>GetUserByFIO</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FIO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adress)
+        </th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => modelItem.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => modelItem.FIO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => modelItem.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => modelItem.Adress)
+        </td>
+    </tr>
+</table>

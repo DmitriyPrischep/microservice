@@ -1,0 +1,45 @@
+﻿@model Frontend.Models.MachineModel
+@{
+    ViewBag.Title = "getMachine";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Данные транспортного средства</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Mark)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Model)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StateNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VIN)
+        </th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => modelItem.Mark)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => modelItem.Model)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => modelItem.Year)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => modelItem.StateNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => modelItem.VIN)
+        </td>
+    </tr>
+</table>

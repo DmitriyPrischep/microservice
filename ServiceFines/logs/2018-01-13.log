@@ -1,0 +1,279 @@
+2018-01-13 01:05:11.0363 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-13 01:05:29.4840 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-13 01:05:29.4840 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-13 01:25:07.3996 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-13 01:25:11.0072 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-13 01:25:11.0072 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-13 01:25:46.4250 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-13 01:25:46.4250 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-13 01:25:46.4250 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-13 01:27:15.2648 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-13 01:27:16.1861 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-13 01:27:16.1861 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-13 01:27:27.6819 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-13 01:27:27.6819 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-13 01:27:27.6819 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-13 01:30:09.9566 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-13 01:30:09.9617 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-13 01:30:09.9617 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-13 01:37:24.1802 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-13 01:37:24.6245 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-13 01:37:24.6245 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-13 01:43:07.5937 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines1
+2018-01-13 01:43:35.1496 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines1
+2018-01-13 01:44:16.6326 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:44:17.3144 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:44:22.3888 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:44:22.3888 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:45:12.7461 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:45:12.7461 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:45:27.7398 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:45:27.7488 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:47:54.7995 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:47:54.8065 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:50:06.0296 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:50:06.6863 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:51:20.8032 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:51:20.8032 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:54:03.4190 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 01:54:03.4190 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 02:00:03.7588 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 02:00:04.3665 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 02:03:03.0629 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 02:03:03.0709 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 02:06:08.9514 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 02:06:09.6872 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 02:06:20.6755 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 02:06:21.1859 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 02:08:49.0453 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 02:08:49.0573 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 02:08:53.4992 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-13 02:08:53.4992 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-13 02:08:53.4992 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-13 02:09:42.1556 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-13 02:09:53.3426 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-13 02:09:53.3426 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-13 02:10:03.2890 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-13 02:10:16.2847 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Kursk, 'Phone'= 89197678732, 'Mark'= Audi, 'Model'= A8, 'StateNumber'= m987bt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-13 02:11:33.9021 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 02:11:34.0014 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 02:34:14.2642 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 02:34:20.6063 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 02:34:22.5677 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 02:34:22.5772 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 02:39:30.1370 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:39:30.4225 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:40:01.9685 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 5
+2018-01-13 02:40:02.0270 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 5
+2018-01-13 02:42:04.2439 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 2 'pageSize'= 2
+2018-01-13 02:42:05.0352 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 2 'pageSize'= 2
+2018-01-13 02:42:24.6259 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 6
+2018-01-13 02:42:24.9729 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 6
+2018-01-13 02:42:38.0326 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 2 'pageSize'= 2
+2018-01-13 02:42:38.0326 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 2 'pageSize'= 2
+2018-01-13 02:42:46.1813 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:42:46.1813 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:43:31.4527 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 4 'pageSize'= 3
+2018-01-13 02:43:31.7509 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 4 'pageSize'= 3
+2018-01-13 02:43:47.4982 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'FineName'= all
+2018-01-13 02:43:51.0729 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request GET from 0 with parametr 'fine'= all
+2018-01-13 02:53:12.7891 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:53:13.8490 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:54:02.3766 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:54:03.0363 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:56:09.3992 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:56:10.0354 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:56:18.5589 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:56:18.5589 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:57:31.3012 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:57:38.8892 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:57:48.2253 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 02:57:48.2253 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 03:00:48.7161 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 3 'pageSize'= 1
+2018-01-13 03:00:55.8974 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 3 'pageSize'= 1
+2018-01-13 03:01:14.1517 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:01:15.0014 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:02:54.7116 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:02:55.2952 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:04:22.6082 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:04:22.9511 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:05:41.1638 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:05:41.9967 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:06:15.0605 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:06:15.9969 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:07:26.8576 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Pskov, 'Phone'= 89144562587, 'Mark'= Audi, 'Model'= A4, 'StateNumber'= m258tt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-13 03:07:35.8404 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Lomonosov, 'Adress'= Pskov, 'Phone'= 89144562587, 'Mark'= Audi, 'Model'= A4, 'StateNumber'= m258tt190, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-13 03:07:50.0941 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:07:59.7879 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:08:16.7911 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:10:18.4707 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'UserFIO'= Lomonosov
+2018-01-13 03:10:20.6274 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'UserFIO'= Lomonosov
+2018-01-13 03:10:21.3463 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametr 'UserFIO'= Lomonosov
+2018-01-13 03:12:05.3451 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:12:26.4521 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:12:47.1347 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-13 03:12:47.1347 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-13 03:12:47.1347 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-13 03:13:32.2010 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-13 03:13:32.4165 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-13 03:13:32.4165 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-13 03:14:37.4971 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-13 03:14:37.4971 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-13 03:14:37.4971 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-13 03:14:42.1290 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2018-01-13 03:14:42.7176 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2018-01-13 03:14:42.7176 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2018-01-13 03:14:52.3609 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:14:53.0553 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:15:21.7468 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:15:22.5556 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:16:29.4244 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:16:29.4300 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:20:37.4700 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:20:38.4352 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:21:22.9944 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:21:22.9944 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= _ 'Adress'= _
+2018-01-13 03:52:27.8826 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Mamont
+2018-01-13 03:52:32.2026 | WARN | ServiceFines.Controllers.GatewayController | Aborted DELETE from 0 with parametr 'FIO'= Mamont. No such company.
+2018-01-13 03:53:02.7494 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= 234234
+2018-01-13 03:53:02.7494 | WARN | ServiceFines.Controllers.GatewayController | Aborted DELETE from 0 with parametr 'FIO'= 234234. No such company.
+2018-01-13 03:53:15.3179 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= s12s423
+2018-01-13 03:53:15.3224 | WARN | ServiceFines.Controllers.GatewayController | Aborted DELETE from 0 with parametr 'FIO'= s12s423. No such company.
+2018-01-13 03:53:27.9676 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= _
+2018-01-13 03:53:27.9676 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= _ CANCELED by fitler. Bad parametr value.
+2018-01-13 03:53:43.8021 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= _
+2018-01-13 03:53:43.8021 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= _ CANCELED by fitler. Bad parametr value.
+2018-01-13 03:53:47.4182 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= _
+2018-01-13 03:53:47.4182 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= _ CANCELED by fitler. Bad parametr value.
+2018-01-13 04:03:40.1939 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-13 04:03:44.9490 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-13 04:03:44.9490 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-13 04:07:17.6915 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Ivan 'Phone'= 89603409898 'Adress'= St Peterburg
+2018-01-13 04:07:17.7622 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Ivanov Ivan 'Phone'= 89603409898 'Adress'= St Peterburg
+2018-01-13 04:08:37.0260 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Ivanov Ivan 'Phone'= 89603409898 'Adress'= St Peterburg
+2018-01-13 04:08:37.5554 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Ivanov Ivan 'Phone'= 89603409898 'Adress'= St Peterburg
+2018-01-13 04:09:49.9984 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:09:49.9984 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:11:18.1555 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:11:19.0565 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:13:21.6585 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:13:21.6665 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:13:23.0552 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:13:23.0552 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:13:40.9537 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:13:40.9693 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:13:45.6388 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:13:45.6388 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:13:50.0140 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:13:50.5575 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:16:29.3933 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:17:10.2096 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:18:17.0036 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 04:18:18.8390 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Lomonosov 'Phone'= 89197678732 'Adress'= Kursk
+2018-01-13 11:41:16.5415 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 11:41:21.9070 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 11:41:36.8367 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 11:41:38.9664 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 11:54:11.6674 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= A6 'Year'= 2000
+2018-01-13 11:54:15.5624 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= A6 'Year'= 2000
+2018-01-13 11:56:31.7041 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= A6 'Year'= 1900
+2018-01-13 11:56:31.7141 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs 'Type'= automobile 'Mark'= Audi 'Model'= A6 'Year'= 1900
+2018-01-13 12:00:32.2013 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'=  'Mark'= Audi 'Model'= A6 'Year'= 1900
+2018-01-13 12:00:37.3929 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs 'Type'=  'Mark'= Audi 'Model'= A6 'Year'= 1900
+2018-01-13 12:01:08.3007 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-13 12:01:08.5844 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-13 12:01:08.5844 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-13 12:01:45.1206 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'=  'Mark'= Lada 'Model'= Vesta 'Year'= 2016
+2018-01-13 12:01:45.2224 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs 'Type'=  'Mark'= Lada 'Model'= Vesta 'Year'= 2016
+2018-01-13 12:02:53.8690 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'Type'=  'Mark'= Lada 'Model'= Vesta 'Year'= 2016
+2018-01-13 12:02:53.8690 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs 'Type'=  'Mark'= Lada 'Model'= Vesta 'Year'= 2016
+2018-01-13 12:03:58.3562 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-13 12:04:02.5349 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-13 12:04:02.5349 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-13 12:06:09.4012 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Brice Lambson 'Phone'= 89851232514 'Adress'= Kazan Svetlaya d57 kv10
+2018-01-13 12:06:10.0304 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Brice Lambson 'Phone'= 89851232514 'Adress'= Kazan Svetlaya d57 kv10
+2018-01-13 12:06:15.5620 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Brice Lambson 'Phone'= 89851232514 'Adress'= Kazan Svetlaya d57 kv10
+2018-01-13 12:06:16.4334 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Brice Lambson 'Phone'= 89851232514 'Adress'= Kazan Svetlaya d57 kv10
+2018-01-13 12:14:48.3546 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Zotov, 'Adress'= Sochi, 'Phone'= 89674652575, 'Mark'= BMW, 'Model'= X4, 'StateNumber'= b777mt799, 'NameFine'= Тонировка стекол сверх нормы, 'AmountFine'= 2500
+2018-01-13 12:14:53.3035 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Zotov, 'Adress'= Sochi, 'Phone'= 89674652575, 'Mark'= BMW, 'Model'= X4, 'StateNumber'= b777mt799, 'NameFine'= Тонировка стекол сверх нормы, 'AmountFine'= 2500
+2018-01-13 12:15:40.7913 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Zotov 'Phone'= _ 'Adress'= _
+2018-01-13 12:15:40.7913 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Zotov 'Phone'= _ 'Adress'= _
+2018-01-13 12:21:19.7129 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-13 12:21:19.9541 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-13 12:21:19.9541 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-13 12:25:55.2438 | INFO | ServiceFines.Controllers.GatewayController | Request PUT from 0 with parametrs 'ID'= 42, 'FIO'= Krotov, 'Phone'= 89674652575, 'Adress'= Misnk
+2018-01-13 12:25:55.2683 | INFO | ServiceFines.Controllers.GatewayController | Success compliete PUT from 0. Parametrs 'ID'= 42, 'FIO'= Krotov, 'Phone'= 89674652575, 'Adress'= Misnk
+2018-01-13 12:26:16.1794 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Krotov 'Phone'= _ 'Adress'= _
+2018-01-13 12:26:16.1794 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Krotov 'Phone'= _ 'Adress'= _
+2018-01-13 12:26:25.8413 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-13 12:26:25.8413 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-13 12:26:25.8413 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-13 12:30:04.0515 | INFO | ServiceFines.Controllers.GatewayController | Request PUT from 0 with parametrs 'ID'= 42, 'FIO'= Krotov, 'Phone'= 89674652575, 'Adress'= Minsk
+2018-01-13 12:30:04.9328 | INFO | ServiceFines.Controllers.GatewayController | Success compliete PUT from 0. Parametrs 'ID'= 42, 'FIO'= Krotov, 'Phone'= 89674652575, 'Adress'= Minsk
+2018-01-13 12:30:11.3777 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-13 12:30:11.3857 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-13 12:30:11.3857 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-13 12:30:23.9723 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Krotov 'Phone'= _ 'Adress'= _
+2018-01-13 12:30:24.9324 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Krotov 'Phone'= _ 'Adress'= _
+2018-01-13 12:32:39.6439 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 12:32:39.6500 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 12:33:00.3910 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 6
+2018-01-13 12:33:00.3910 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 6
+2018-01-13 12:33:10.6413 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 2
+2018-01-13 12:33:10.6413 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 2
+2018-01-13 12:33:42.4452 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 12:33:42.4452 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 12:42:27.7202 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Krotov
+2018-01-13 12:42:32.4367 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Krotov
+2018-01-13 12:42:51.1746 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Krotov 'Phone'= _ 'Adress'= _
+2018-01-13 12:42:51.1791 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Krotov 'Phone'= _ 'Adress'= _
+2018-01-13 12:43:58.4920 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 12:43:58.4920 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 14:53:09.9414 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 14:53:21.0020 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'page'= 1 'pageSize'= 3
+2018-01-13 14:53:31.9992 | INFO | ServiceFines.Controllers.GatewayController | Request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 14:53:32.2238 | INFO | ServiceFines.Controllers.GatewayController | Complete request from {3} with parametr 'service'= {0} 'id'={1}
+2018-01-13 14:54:23.9901 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= machines
+2018-01-13 14:54:23.9951 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50078/api/Machines. Answer status = OK and Reason = OK
+2018-01-13 14:54:23.9951 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= machines
+2018-01-13 14:59:29.1727 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2018-01-13 14:59:34.5154 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2018-01-13 14:59:34.5154 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2018-01-13 14:59:45.0405 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2018-01-13 14:59:45.0405 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2018-01-13 14:59:45.0405 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2018-01-13 15:05:00.2139 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-13 15:05:03.6974 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-13 15:05:03.6974 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-13 15:07:23.7571 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Brice Lambson 'Phone'= 89851232514 'Adress'= Kazan Svetlaya d57 kv10
+2018-01-13 15:07:24.4669 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Brice Lambson 'Phone'= 89851232514 'Adress'= Kazan Svetlaya d57 kv10
+2018-01-13 15:08:20.9984 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Brice Lambson 'Phone'= 89851232514 'Adress'= Kazan Svetlaya d57 kv10
+2018-01-13 15:08:21.0159 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Brice Lambson 'Phone'= 89851232514 'Adress'= Kazan Svetlaya d57 kv10
+2018-01-13 15:08:32.7590 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Mamontov, 'Adress'= Krasnodar, 'Phone'= 89137651414, 'Mark'= Volkswagen, 'Model'= Golf, 'StateNumber'= e432rv77, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-13 15:08:36.0613 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Mamontov, 'Adress'= Krasnodar, 'Phone'= 89137651414, 'Mark'= Volkswagen, 'Model'= Golf, 'StateNumber'= e432rv77, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-13 15:09:18.2910 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Mamontov
+2018-01-13 15:09:19.0380 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Mamontov
+2018-01-13 15:10:20.8049 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Mamontov 'Phone'= _ 'Adress'= _
+2018-01-13 15:10:20.8049 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Mamontov 'Phone'= _ 'Adress'= _
+2018-01-13 15:13:33.9261 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Mamontov
+2018-01-13 15:13:37.6151 | WARN | ServiceFines.Controllers.GatewayController | Aborted DELETE from 0 with parametr 'FIO'= Mamontov. No such company.
+2018-01-13 15:14:44.9246 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Mamontov
+2018-01-13 15:14:44.9586 | WARN | ServiceFines.Controllers.GatewayController | Aborted DELETE from 0 with parametr 'FIO'= Mamontov. No such company.
+2018-01-13 15:15:29.5423 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-13 15:15:29.7087 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-13 15:15:29.7087 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-13 15:15:48.4572 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Mamontov, 'Adress'= Krasnodar, 'Phone'= 89137651414, 'Mark'= Volkswagen, 'Model'= Golf, 'StateNumber'= e432rv77, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-13 15:15:55.5096 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Mamontov, 'Adress'= Krasnodar, 'Phone'= 89137651414, 'Mark'= Volkswagen, 'Model'= Golf, 'StateNumber'= e432rv77, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-13 15:17:53.7809 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-13 15:17:55.8584 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-13 15:17:55.8584 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-13 15:19:05.1185 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Mamontov
+2018-01-13 15:20:27.6164 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= fines
+2018-01-13 15:20:31.3313 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50178/api/Fines. Answer status = OK and Reason = OK
+2018-01-13 15:20:31.3413 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= fines
+2018-01-13 15:22:15.1704 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Mamontov 'Phone'= _ 'Adress'= _
+2018-01-13 15:22:17.8425 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Mamontov 'Phone'= _ 'Adress'= _
+2018-01-13 15:23:26.8658 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Mamontov
+2018-01-13 15:23:27.5072 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Mamontov
+2018-01-13 15:24:59.3345 | INFO | ServiceFines.Controllers.GatewayController | Request GET from 0 with parametrs 'FIO'= Mamontov 'Phone'= _ 'Adress'= _
+2018-01-13 15:24:59.3627 | INFO | ServiceFines.Controllers.GatewayController | Success complete request GET from 0 with parametrs  'FIO'= Mamontov 'Phone'= _ 'Adress'= _
