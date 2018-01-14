@@ -230,6 +230,33 @@ namespace ServiceFines.Controllers
             return 0;
         }
 
+        // POST api/Gateway/login
+        [Route("login")]
+        public async Task<IHttpActionResult> Postlogin([FromBody]LoginModel view)
+        {
+            view.Type = "password";
+            using (HttpClient client = new HttpClient())
+            {
+                var form = new Dictionary<string, string>
+                {
+                   {"grant_type", "password"},
+                   {"username", view.Username},
+                   {"password", view.Password},
+                };
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                var loginContent = new FormUrlEncodedContent(form);
+                HttpResponseMessage res = await client.PostAsync("http://localhost:1804/Token", loginContent);
+                if (res.IsSuccessStatusCode)
+                {
+                    var Response = res.Content.ReadAsStringAsync().Result;
+                    Response = Response.Remove(0, 17);
+                    Response = Response.Remove(Response.IndexOf(",") - 1, Response.Length - Response.IndexOf(",") + 1);
+                    return Ok(Response);
+                }
+            }
+            return Unauthorized();
+        }
+
         // GET: api/gateway/users
         [Route("inf/{service:maxlength(32)}")]
         public async Task<IHttpActionResult> Get([FromUri] string service)

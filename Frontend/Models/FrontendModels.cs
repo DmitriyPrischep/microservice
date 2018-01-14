@@ -53,4 +53,30 @@ namespace Frontend.Models
         public string NameFine { get; set; }
         public int AmountFine { get; set; }
     }
+
+    public class Authentication
+    {
+        public string Login { get; set; }
+        public string Pass { get; set; }
+    }
+
+    public class AuthCodeModel
+    {
+        public string GrantType { get; set; }
+        public string Code { get; set; }
+        public string RedirectURI { get; set; }
+        public int ClientId { get; set; }
+    }
+
+    public class TokenMessage
+    {
+        public string TokenType { get; set; }
+        public string AccessToken { get; set; }
+        public string RefreshToken { get; set; }
+    }
+
+    public class RefreshToken
+    {
+        public string Token { get; set; }
+    }
 }

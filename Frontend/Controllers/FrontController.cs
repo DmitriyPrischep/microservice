@@ -14,6 +14,7 @@ namespace Frontend.Controllers
 {
     public class FrontController : Controller
     {
+        string token;
         //
         // GET: /Front/
         public ActionResult Index()
@@ -21,10 +22,56 @@ namespace Frontend.Controllers
             return View("Index");
         }
 
-        public ActionResult lab2()
+        public ActionResult Description()
         {
 
-            return View();
+            return View("Description");
+        }
+
+        // POST: /Account/Login
+        public ActionResult Login()
+        {
+            return Redirect(String.Format("http://localhost:49939/Users/Authenticate?redirect_uri={0}&client_id={1}", "http://localhost:53722/Hello/lootcodes", 1));
+        }
+
+        public async Task<ActionResult> lootcodes(string code, string state)
+        {
+            TokenMessage msg = new TokenMessage();
+            AuthCodeModel codeModel = new AuthCodeModel();
+
+            codeModel.Code = code;
+            codeModel.RedirectURI = "http://localhost:55490";
+            codeModel.GrantType = "code";
+            codeModel.ClientId = 1;
+
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage res = await client.PostAsJsonAsync(new Uri("http://localhost:56454/api/gate/code"), codeModel);
+
+                    if (res.IsSuccessStatusCode)
+                    {
+                        var Response = res.Content.ReadAsStringAsync().Result;
+                        msg = Newtonsoft.Json.JsonConvert.DeserializeObject<TokenMessage>(Response);
+                        HttpContext.Response.Cookies["access_token"].Value = msg.AccessToken;
+                        HttpContext.Response.Cookies["refresh_token"].Value = msg.RefreshToken;
+                    }
+                    else
+                    {
+                        var Response = res.Content.ReadAsStringAsync().Result;
+                        var str = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(Response);
+                        return View("sorry", (object)str);
+                    }
+                }
+            }
+            catch
+            {
+                string myString = "System is unavalieable. lol.";
+                return View("sorry", (object)myString);
+            }
+            return View("lab4");
         }
 
         public async Task<ActionResult> getUsers()
