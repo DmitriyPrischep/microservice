@@ -19,6 +19,7 @@ namespace ServiceFines.Controllers
     public class GatewayController : ApiController
     {
         private static Logger logger = LogManager.GetCurrentClassLogger();
+        private static string[] tokens = new string[3];
 
         public GatewayController()
         {
@@ -58,7 +59,28 @@ namespace ServiceFines.Controllers
                 using (HttpClient client = new HttpClient())
                 {
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    await client.DeleteAsync(source);
+                    string msg = source.Substring(0, 23);
+                    switch(msg)
+                    {
+                        case "http://localhost:50078/":
+                            client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[0]);
+                            break;
+                        case "http://localhost:50133/":
+                            client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[1]);
+                            break;
+                        case "http://localhost:50178/":
+                            client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[2]);
+                            break;
+                        default:
+                            break;
+                    }
+
+                    HttpResponseMessage res = await client.DeleteAsync(source);
+                    if (res.StatusCode == HttpStatusCode.Unauthorized)
+                    {
+                        GetToken();
+                        return -1;
+                    }
                 }
             }
             catch (HttpRequestException ex)
@@ -75,9 +97,16 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    var rrr = await client.DeleteAsync("http://localhost:50178/api/Fines/" + fine.Id);
+                    bool flag = false;
+                    while (flag)
+                    {
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[2]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.DeleteAsync("http://localhost:50178/api/Fines/" + fine.Id);
+                        if (res.StatusCode == HttpStatusCode.Unauthorized) GetToken();
+                        else flag = true;
+                    }
                 }
             }
             catch (HttpRequestException ex)
@@ -94,15 +123,21 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    await client.DeleteAsync("http://localhost:50133/api/Users/" + user.Id);
+                    bool flag = false;
+                    while (flag)
+                    {
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[1]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.DeleteAsync("http://localhost:50133/api/Users/" + user.Id);
+                        if (res.StatusCode == HttpStatusCode.Unauthorized) GetToken();
+                        else flag = true;
+                    }
                 }
             }
             catch (HttpRequestException ex)
             {
                 logger.Error("Error with request DELETE http://localhost:50133/api/Users/ with filters. Error message: {0}", ex.Message);
-
                 return -1;
             }
             return 0;
@@ -149,8 +184,51 @@ namespace ServiceFines.Controllers
         }
 
 
+        private int GetToken()
+        {
+            string[] adress = new string[3];
+            adress[0] = "http://localhost:50078/";
+            adress[1] = "http://localhost:50133/";
+            adress[2] = "http://localhost:50178/";
+            int i = 0, j = 0;
+            try
+            {
+                for(i = j; i < 3; i++)
+                {
+                    using (HttpClient client = new HttpClient())
+                    {
+                        var form = new Dictionary<string, string>
+                        {
+                           {"grant_type", "password"},
+                           {"username", "Offender3" + (1+i).ToString()},
+                           {"password", "1234"},
+                        };
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        var loginContent = new FormUrlEncodedContent(form);
+                        HttpResponseMessage res = client.PostAsync(adress[i], loginContent).Result;
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var Response = res.Content.ReadAsStringAsync().Result;
+                            Response = Response.Remove(0, 17);
+                            Response = Response.Remove(Response.IndexOf(",") - 1, Response.Length - Response.IndexOf(",") + 1);
+                            tokens[i] = Response;
+                            j = i;
+                        }
+                        else
+                        {
+                            j = i;
+                            return -1;
+                        }
 
-
+                    }
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                GetToken();
+            }
+            return 0;
+        }
 
         // GET: api/gateway/users
         [Route("inf/{service:maxlength(32)}")]
@@ -978,16 +1056,6 @@ namespace ServiceFines.Controllers
                 {
                     return Content((HttpStatusCode)418, "Global system error. Sorry.");
                 }
-
-                //if (flag)
-                //    if (DeleteFine(bufFine) < 0)
-                //    {
-                //        return Content((HttpStatusCode)418, "Global system error. Sorry.");
-                //    }
-                //if (DeleteUser(bufUser) < 0)
-                //{
-                //    return Content((HttpStatusCode)418, "Global system error. Sorry.");
-                //}
                 return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
             }
 
@@ -1149,7 +1217,58 @@ namespace ServiceFines.Controllers
             return Ok(User);
         }
 
+        // POST api/Gateway/Code
+        [Route("Code")]
+        public async Task<IHttpActionResult> Postcode([FromBody] AuthCodeModel CodeModel)
+        {
+            TokenMessage msg = new TokenMessage();
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage res = await client.PostAsJsonAsync(new Uri("http://localhost:1524/oauth/gettokens"), CodeModel);
 
+                    if (res.IsSuccessStatusCode)
+                    {
+                        var Response = res.Content.ReadAsStringAsync().Result;
+                        msg = Newtonsoft.Json.JsonConvert.DeserializeObject<TokenMessage>(Response);
+                    }
+                    else return Unauthorized();
+                }
+            }
+            catch
+            {
+                return InternalServerError();
+            }
+            return Ok<TokenMessage>(msg);
+        }
 
+        // POST api/Gateway/Refresh
+        [Route("refresh")]
+        public async Task<IHttpActionResult> Postrefresh([FromBody] RefreshToken refresh)
+        {
+            TokenMessage msg = new TokenMessage();
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage res = await client.PostAsJsonAsync(new Uri("http://localhost:1524/oauth/refresh"), refresh);
+
+                    if (res.IsSuccessStatusCode)
+                    {
+                        var Response = res.Content.ReadAsStringAsync().Result;
+                        msg = Newtonsoft.Json.JsonConvert.DeserializeObject<TokenMessage>(Response);
+                    }
+                    else return Unauthorized();
+                }
+            }
+            catch
+            {
+                return InternalServerError();
+            }
+            return Ok<TokenMessage>(msg);
+        }
     }
 }
