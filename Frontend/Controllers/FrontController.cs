@@ -40,7 +40,7 @@ namespace Frontend.Controllers
             AuthCodeModel codeModel = new AuthCodeModel();
 
             codeModel.Code = code;
-            codeModel.RedirectURI = "http://localhost:55490";
+            codeModel.RedirectURI = "http://localhost:53722";
             codeModel.GrantType = "code";
             codeModel.ClientId = 1;
 

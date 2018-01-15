@@ -98,7 +98,7 @@ namespace ServiceFines.Controllers
                 using (HttpClient client = new HttpClient())
                 {
                     bool flag = false;
-                    while (flag)
+                    while (!flag)
                     {
                         client.DefaultRequestHeaders.Clear();
                         client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[2]);
@@ -124,7 +124,7 @@ namespace ServiceFines.Controllers
                 using (HttpClient client = new HttpClient())
                 {
                     bool flag = false;
-                    while (flag)
+                    while (!flag)
                     {
                         client.DefaultRequestHeaders.Clear();
                         client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[1]);
@@ -275,15 +275,31 @@ namespace ServiceFines.Controllers
                     {
                         using (HttpClient client = new HttpClient())
                         {
-                            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                            HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50133/api/Users"));
+                            bool flag = false;
+                            while (!flag)
+                            {
+                                client.DefaultRequestHeaders.Clear();
+                                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[1]);
+                                HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50133/api/Users"));
 
-                            if (res.IsSuccessStatusCode)
-                            { 
-                                var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                                Users = Newtonsoft.Json.JsonConvert.DeserializeObject<List<UserModel>>(EmpResponse);
+                                if (res.IsSuccessStatusCode)
+                                {
+                                    var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                                    Users = Newtonsoft.Json.JsonConvert.DeserializeObject<List<UserModel>>(EmpResponse);
+                                }
+                                if (res.StatusCode == HttpStatusCode.Unauthorized)
+                                {
+                                    GetToken();
+                                }
+                                else
+                                {
+                                    flag = true;
+                                }
+
+
+                                logger.Info("Request http://localhost:50133/api/Users. Answer status = {0} and Reason = {1}", res.StatusCode, res.ReasonPhrase);
                             }
-                            logger.Info("Request http://localhost:50133/api/Users. Answer status = {0} and Reason = {1}", res.StatusCode, res.ReasonPhrase);
                         }
                     }
                     catch (HttpException ex)
@@ -301,15 +317,29 @@ namespace ServiceFines.Controllers
                     {
                         using (HttpClient client = new HttpClient())
                         {
-                            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                            HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50078/api/Machines"));
-
-                            if (res.IsSuccessStatusCode)
+                            bool flag = false;
+                            while (!flag)
                             {
-                                var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                                Machines = Newtonsoft.Json.JsonConvert.DeserializeObject<List<MachineModel>>(EmpResponse);
+                                client.DefaultRequestHeaders.Clear();
+                                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[0]);
+                                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                                HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50078/api/Machines"));
+
+                                if (res.IsSuccessStatusCode)
+                                {
+                                    var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                                    Machines = Newtonsoft.Json.JsonConvert.DeserializeObject<List<MachineModel>>(EmpResponse);
+                                }
+                                if (res.StatusCode == HttpStatusCode.Unauthorized)
+                                {
+                                    GetToken();
+                                }
+                                else
+                                {
+                                    flag = true;
+                                }
+                                logger.Info("Request http://localhost:50078/api/Machines. Answer status = {0} and Reason = {1}", res.StatusCode, res.ReasonPhrase);
                             }
-                            logger.Info("Request http://localhost:50078/api/Machines. Answer status = {0} and Reason = {1}", res.StatusCode, res.ReasonPhrase);
                         }
                     }
                     catch (HttpException ex)
@@ -327,21 +357,34 @@ namespace ServiceFines.Controllers
                     {
                         using (HttpClient client = new HttpClient())
                         {
-                            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                            HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50178/api/Fines"));
-
-                            if (res.IsSuccessStatusCode)
+                            bool flag = false;
+                            while (!flag)
                             {
-                                var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                                Fines = Newtonsoft.Json.JsonConvert.DeserializeObject<List<FineModel>>(EmpResponse);
+                                client.DefaultRequestHeaders.Clear();
+                                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[2]);
+                                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                                HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50178/api/Fines"));
+
+                                if (res.IsSuccessStatusCode)
+                                {
+                                    var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                                    Fines = Newtonsoft.Json.JsonConvert.DeserializeObject<List<FineModel>>(EmpResponse);
+                                }
+                                if (res.StatusCode == HttpStatusCode.Unauthorized)
+                                {
+                                    GetToken();
+                                }
+                                else
+                                {
+                                    flag = true;
+                                }
+                                logger.Info("Request http://localhost:50178/api/Fines. Answer status = {0} and Reason = {1}", res.StatusCode, res.ReasonPhrase);
                             }
-                            logger.Info("Request http://localhost:50178/api/Fines. Answer status = {0} and Reason = {1}", res.StatusCode, res.ReasonPhrase);
                         }
                     }
                     catch (HttpException ex)
                     {
                         logger.Error("Error with request http://localhost:50178/api/Fines. Answer status = {0} and Reason = {1}", ex.WebEventCode, ex.Message);
-                        //return StatusCode(HttpStatusCode.BadGateway);
                         Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
                     }
                     logger.Info("Succsess request from {1} with parametr 'service'= {0}", service, ip);
@@ -368,20 +411,33 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50133/api/Users"));
-
-                    if (res.IsSuccessStatusCode)
+                    bool flag = false;
+                    while (!flag)
                     {
-                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        UserInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<UserModel>>(EmpResponse);
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[1]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50133/api/Users"));
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            UserInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<UserModel>>(EmpResponse);
+                        }
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flag = true;
+                        }
                     }
                 }
             }
             catch(HttpException ex)
             {
                 logger.Error("Error with request http://localhost:50133/api/Users. Answer status = {0} and Reason = {1}", ex.WebEventCode, ex.Message);
-                //throw new HttpException(400, "Bad Request");
                 return UserInfo.ToPagedList(pageNumber, pageSize);
             }
             logger.Info("Succsess request from {2} with parametr 'page'= {0} 'pageSize'= {1}", page, pageSize, ip);
@@ -404,20 +460,33 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50078/api/Machines"));
-
-                    if (res.IsSuccessStatusCode)
+                    bool flag = false;
+                    while (!flag)
                     {
-                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        UserInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<MachineModel>>(EmpResponse);
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[0]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50078/api/Machines"));
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            UserInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<MachineModel>>(EmpResponse);
+                        }
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flag = true;
+                        }
                     }
                 }
             }
             catch (HttpException ex)
             {
                 logger.Error("Error with request http://localhost:50078/api/Machines. Answer status = {0} and Reason = {1}", ex.WebEventCode, ex.Message);
-                //throw new HttpException(400, "Bad Request");
                 return UserInfo.ToPagedList(pageNumber, pageSize);
             }
             logger.Info("Succsess request from {2} with parametr 'page'= {0} 'pageSize'= {1}", page, pageSize, ip);
@@ -445,20 +514,33 @@ namespace ServiceFines.Controllers
                     {
                         using (HttpClient client = new HttpClient())
                         {
-                            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                            HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50133/api/Users/" + id.ToString()));
-
-                            if (res.IsSuccessStatusCode)
+                            bool flag = false;
+                            while (!flag)
                             {
-                                var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                                UserInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(EmpResponse);
+                                client.DefaultRequestHeaders.Clear();
+                                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[1]);
+                                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                                HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50133/api/Users/" + id.ToString()));
+
+                                if (res.IsSuccessStatusCode)
+                                {
+                                    var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                                    UserInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(EmpResponse);
+                                }
+                                if (res.StatusCode == HttpStatusCode.Unauthorized)
+                                {
+                                    GetToken();
+                                }
+                                else
+                                {
+                                    flag = true;
+                                }
                             }
                         }
                     }
                     catch (HttpException ex)
                     {
                         logger.Error("Error with request http://localhost:50133/api/Users/. Answer status = {0} and Reason = {1}", ex.WebEventCode, ex.Message);
-                        //return StatusCode(HttpStatusCode.BadGateway);
                         return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
                     }
                     logger.Info("Complete request from {3} with parametr 'service'= {0} 'id'={1}", service, id, ip);
@@ -470,20 +552,33 @@ namespace ServiceFines.Controllers
                     {
                         using (HttpClient client = new HttpClient())
                         {
-                            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                            HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50078/api/Machines/" + id.ToString()));
-
-                            if (res.IsSuccessStatusCode)
+                            bool flag = false;
+                            while (!flag)
                             {
-                                var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                                MachineInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<MachineModel>(EmpResponse);
+                                client.DefaultRequestHeaders.Clear();
+                                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[0]);
+                                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                                HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50078/api/Machines/" + id.ToString()));
+
+                                if (res.IsSuccessStatusCode)
+                                {
+                                    var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                                    MachineInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<MachineModel>(EmpResponse);
+                                }
+                                if (res.StatusCode == HttpStatusCode.Unauthorized)
+                                {
+                                    GetToken();
+                                }
+                                else
+                                {
+                                    flag = true;
+                                }
                             }
                         }
                     }
                     catch (HttpException ex)
                     {
                         logger.Error("Error with request http://localhost:50078/api/Machines. Answer status = {0} and Reason = {1}", ex.WebEventCode, ex.Message);
-                        //return StatusCode(HttpStatusCode.BadGateway);
                         return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
                     }
                     logger.Info("Complete request from {3} with parametr 'service'= {0} 'id'={1}", service, id, ip);
@@ -496,20 +591,33 @@ namespace ServiceFines.Controllers
                     {
                         using (HttpClient client = new HttpClient())
                         {
-                            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                            HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50178/api/Fines/" + id.ToString()));
-
-                            if (res.IsSuccessStatusCode)
+                            bool flag = false;
+                            while (!flag)
                             {
-                                var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                                FineInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<FineModel>(EmpResponse);
+                                client.DefaultRequestHeaders.Clear();
+                                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[2]);
+                                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                                HttpResponseMessage res = await client.GetAsync(new Uri("http://localhost:50178/api/Fines/" + id.ToString()));
+
+                                if (res.IsSuccessStatusCode)
+                                {
+                                    var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                                    FineInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<FineModel>(EmpResponse);
+                                }
+                                if (res.StatusCode == HttpStatusCode.Unauthorized)
+                                {
+                                    GetToken();
+                                }
+                                else
+                                {
+                                    flag = true;
+                                }
                             }
                         }
                     }
                     catch (HttpException ex)
                     {
                         logger.Error("Error with request http://localhost:50178/api/Fines. Answer status = {0} and Reason = {1}", ex.WebEventCode, ex.Message);
-                        //return StatusCode(HttpStatusCode.BadGateway);
                         return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
                     }
                     logger.Info("Complete request from {3} with parametr 'service'= {0} 'id'={1}", service, id, ip);
@@ -547,22 +655,35 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync("http://localhost:50133/odata/UserInf" + requeststr);
-
-                    if (res.IsSuccessStatusCode)
+                    bool flag = false;
+                    while (!flag)
                     {
-                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
-                        EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
-                        UserInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(EmpResponse);
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[1]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.GetAsync("http://localhost:50133/odata/UserInf" + requeststr);
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
+                            EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
+                            UserInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(EmpResponse);
+                        }
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flag = true;
+                        }
                     }
                 }
             }
             catch (HttpException ex)
             {
                 logger.Warn("Error GET http://localhost:50133/odata/UserInf + {0} Error message: {1}", requeststr, ex.Message);
-                //return StatusCode(HttpStatusCode.BadGateway);
                 return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
             }
             logger.Info("Success complete request GET from {3} with parametrs  'FIO'= {0} 'Phone'= {1} 'Adress'= {2}", user.FIO, user.Phone, user.Adress, ip);
@@ -603,22 +724,35 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync("http://localhost:50078/odata/MachineInf/" + requeststr);
-
-                    if (res.IsSuccessStatusCode)
+                    bool flag = false;
+                    while (!flag)
                     {
-                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
-                        EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
-                        MachineInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<MachineModel>(EmpResponse);
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[0]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.GetAsync("http://localhost:50078/odata/MachineInf/" + requeststr);
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
+                            EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
+                            MachineInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<MachineModel>(EmpResponse);
+                        }
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flag = true;
+                        }
                     }
                 }
             }
             catch (HttpException ex)
             {
                 logger.Warn("Error GET http://localhost:50078/odata/MachineInf + {0} Error message: {1}", requeststr, ex.Message);
-                //return StatusCode(HttpStatusCode.BadGateway);
                 return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
             }
             logger.Info("Success complete request GET from {4} with parametrs 'Type'= {0} 'Mark'= {1} 'Model'= {2} 'Year'= {3}", machine.Type, machine.Mark, machine.Model, machine.Year, ip);
@@ -649,7 +783,6 @@ namespace ServiceFines.Controllers
             else
             {
                 logger.Warn("Request GET from {1} with parametr 'UserFIO'= {0} aborted by parameters", UserFIO, ip);
-                //return StatusCode(HttpStatusCode.BadRequest);
                 return Content(HttpStatusCode.BadRequest, "Bad DATA. Many users. But need one user.");
             }
 
@@ -659,22 +792,35 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync("http://localhost:50133/odata/UserInf/" + requeststr);
-
-                    if(res.IsSuccessStatusCode)
+                    bool flag = false;
+                    while (!flag)
                     {
-                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
-                        EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
-                        UserInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(EmpResponse);
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[1]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.GetAsync("http://localhost:50133/odata/UserInf/" + requeststr);
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
+                            EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
+                            UserInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(EmpResponse);
+                        }
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flag = true;
+                        }
                     }
                 }
             }
             catch (HttpException ex)
             {
                 logger.Warn("Error GET http://localhost:50133/odata/UserInf + {0} Error message: {1}", requeststr, ex.Message);
-                //return StatusCode(HttpStatusCode.BadGateway);
                 return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
             }
 
@@ -688,15 +834,29 @@ namespace ServiceFines.Controllers
                 using (HttpClient client = new HttpClient())
                 {
                     client.BaseAddress = new Uri("http://localhost:50178/");
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync("odata/FineInf?$filter=Id eq " + UserInfo.IdFines.ToString());
-
-                    if (res.IsSuccessStatusCode)
+                    bool flag = false;
+                    while (!flag)
                     {
-                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('['));
-                        EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']') + 1, 1);
-                        FineInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<FineModel>>(EmpResponse);
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[0]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.GetAsync("odata/FineInf?$filter=Id eq " + UserInfo.IdFines.ToString());
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('['));
+                            EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']') + 1, 1);
+                            FineInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<FineModel>>(EmpResponse);
+                        }
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flag = true;
+                        }
                     }
                 }
             }
@@ -757,24 +917,37 @@ namespace ServiceFines.Controllers
             FineModel FineInfo = new FineModel();
             try
             {
-                using (HttpClient test = new HttpClient())
+                using (HttpClient client = new HttpClient())
                 {
-                    test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await test.GetAsync("http://localhost:50178/odata/FineInf" + requeststr);
-
-                    if (res.IsSuccessStatusCode)
+                    bool flag = false;
+                    while (!flag)
                     {
-                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
-                        EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
-                        FineInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<FineModel>(EmpResponse);
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[2]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.GetAsync("http://localhost:50178/odata/FineInf" + requeststr);
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
+                            EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
+                            FineInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<FineModel>(EmpResponse);
+                        }
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flag = true;
+                        }
                     }
                 }
             }
             catch (HttpException ex)
             {
                 logger.Warn("Error GET http://localhost:50178/odata/FineInfwith + {0} Error message: {1}", requeststr, ex.Message);
-                //return StatusCode(HttpStatusCode.BadGateway);
                 return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
             }
             logger.Info("Success compliete request GET from {1} with parametr 'fine'= {0}", fine, ip);
@@ -803,15 +976,29 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync("http://localhost:50178/odata/FineInf" + requeststr);
-
-                    if (res.IsSuccessStatusCode)
+                    bool flag = false;
+                    while (!flag)
                     {
-                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('['));
-                        EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']') + 1, 1);
-                        FineInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<FineModel>>(EmpResponse);
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[2]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.GetAsync("http://localhost:50178/odata/FineInf" + requeststr);
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('['));
+                            EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']') + 1, 1);
+                            FineInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<List<FineModel>>(EmpResponse);
+                        }
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flag = true;
+                        }
                     }
                 }
             }
@@ -872,15 +1059,29 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync("http://localhost:50178/odata/FineInf?$filter=NameFine eq '" + bufFine.NameFine + "'");
-
-                    if (res.IsSuccessStatusCode)
+                    bool flagToken = false;
+                    while (!flagToken)
                     {
-                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
-                        EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
-                        fine = Newtonsoft.Json.JsonConvert.DeserializeObject<FineModel>(EmpResponse);
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[2]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.GetAsync("http://localhost:50178/odata/FineInf?$filter=NameFine eq '" + bufFine.NameFine + "'");
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
+                            EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
+                            fine = Newtonsoft.Json.JsonConvert.DeserializeObject<FineModel>(EmpResponse);
+                        }
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flagToken = true;
+                        }
                     }
                 }
             }
@@ -896,17 +1097,31 @@ namespace ServiceFines.Controllers
                 {
                     using (HttpClient client = new HttpClient())
                     {
-                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                        HttpResponseMessage res = await client.PostAsJsonAsync("http://localhost:50178/api/Fines", bufFine);
+                        bool flagToken = false;
+                        while (!flagToken)
+                        {
+                            client.DefaultRequestHeaders.Clear();
+                            client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[2]);
+                            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                            HttpResponseMessage res = await client.PostAsJsonAsync("http://localhost:50178/api/Fines", bufFine);
 
-                        if (res.IsSuccessStatusCode)
-                        {
-                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                            bufFine = Newtonsoft.Json.JsonConvert.DeserializeObject<FineModel>(EmpResponse);
-                        }
-                        else
-                        {
-                            return Content(res.StatusCode, "Service Fines returned not succes status code.");
+                            if (res.IsSuccessStatusCode)
+                            {
+                                var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                                bufFine = Newtonsoft.Json.JsonConvert.DeserializeObject<FineModel>(EmpResponse);
+                            }
+                            else
+                            {
+                                return Content(res.StatusCode, "Service Fines returned not succes status code.");
+                            }
+                            if (res.StatusCode == HttpStatusCode.Unauthorized)
+                            {
+                                GetToken();
+                            }
+                            else
+                            {
+                                flagToken = true;
+                            }
                         }
                     }
                 }
@@ -919,7 +1134,6 @@ namespace ServiceFines.Controllers
             catch (HttpRequestException ex)
             {
                 logger.Error("Error with request POST http://localhost:50178/api/Fines. Error message: {0}", ex.Message);
-                //return StatusCode(HttpStatusCode.BadGateway);
                 return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
             }
 
@@ -929,17 +1143,30 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync("http://localhost:50133/odata/UserInf?$filter=IdFines eq " + bufUser.IdFines
-                        + " and " + "FIO eq '" + bufUser.FIO + "' and Phone eq '" + bufUser.Phone + "'");
-
-                    if (res.IsSuccessStatusCode)
+                    bool flagToken = false;
+                    while (!flagToken)
                     {
-                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
-                        EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
-                        user = Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(EmpResponse);
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[1]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.GetAsync("http://localhost:50133/odata/UserInf?$filter=IdFines eq " + bufUser.IdFines
+                            + " and " + "FIO eq '" + bufUser.FIO + "' and Phone eq '" + bufUser.Phone + "'");
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
+                            EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
+                            user = Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(EmpResponse);
+                        }
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flagToken = true;
+                        }
                     }
                 }
             }
@@ -961,22 +1188,36 @@ namespace ServiceFines.Controllers
                 {
                     using (HttpClient client = new HttpClient())
                     {
-                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                        HttpResponseMessage res = await client.PostAsJsonAsync("http://localhost:50133/api/Users", bufUser);
+                        bool flagToken = false;
+                        while (!flagToken)
+                        {
+                            client.DefaultRequestHeaders.Clear();
+                            client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[1]);
+                            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                            HttpResponseMessage res = await client.PostAsJsonAsync("http://localhost:50133/api/Users", bufUser);
 
-                        if (res.IsSuccessStatusCode)
-                        {
-                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                            bufUser = Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(EmpResponse);
-                        }
-                        else
-                        {
-                            if (flag)
-                                if (DeleteFine(bufFine) < 0)
-                                {
-                                    return Content((HttpStatusCode)418, "Global system error. Sorry.");
-                                }
-                            return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
+                            if (res.StatusCode == HttpStatusCode.Unauthorized)
+                            {
+                                GetToken();
+                            }
+                            else
+                            {
+                                flagToken = true;
+                            }
+                            if (res.IsSuccessStatusCode)
+                            {
+                                var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                                bufUser = Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(EmpResponse);
+                            }
+                            else
+                            {
+                                if (flag)
+                                    if (DeleteFine(bufFine) < 0)
+                                    {
+                                        return Content((HttpStatusCode)418, "Global system error. Sorry.");
+                                    }
+                                return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
+                            }
                         }
                     }
                 }
@@ -1002,17 +1243,30 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync("http://localhost:50078/odata/MachineInf?$filter=Mark eq '" + bufMachine.Mark + "' and " +
-                        "Model eq '" + bufMachine.Model + "' and StateNumber eq '" + bufMachine.StateNumber + "'");
-
-                    if (res.IsSuccessStatusCode)
+                    bool flagToken = false;
+                    while (!flagToken)
                     {
-                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
-                        EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
-                        machine = Newtonsoft.Json.JsonConvert.DeserializeObject<MachineModel>(EmpResponse);
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[0]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.GetAsync("http://localhost:50078/odata/MachineInf?$filter=Mark eq '" + bufMachine.Mark + "' and " +
+                            "Model eq '" + bufMachine.Model + "' and StateNumber eq '" + bufMachine.StateNumber + "'");
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
+                            EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
+                            machine = Newtonsoft.Json.JsonConvert.DeserializeObject<MachineModel>(EmpResponse);
+                        }
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flagToken = true;
+                        }
                     }
                 }
             }
@@ -1038,26 +1292,39 @@ namespace ServiceFines.Controllers
                 {
                     using (HttpClient client = new HttpClient())
                     {
-                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                        HttpResponseMessage res = await client.PostAsJsonAsync("http://localhost:50078/api/Machines", bufMachine);
-
-                        if (res.IsSuccessStatusCode)
+                        bool flagToken = false;
+                        while (!flagToken)
                         {
-                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                            bufMachine = Newtonsoft.Json.JsonConvert.DeserializeObject<MachineModel>(EmpResponse);
-                        }
-                        else
-                        {
-                            if (flag)
-                                if (DeleteFine(bufFine) < 0)
+                            client.DefaultRequestHeaders.Clear();
+                            client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[0]);
+                            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                            HttpResponseMessage res = await client.PostAsJsonAsync("http://localhost:50078/api/Machines", bufMachine);
+                            if (res.StatusCode == HttpStatusCode.Unauthorized)
+                            {
+                                GetToken();
+                            }
+                            else
+                            {
+                                flagToken = true;
+                            }
+                            if (res.IsSuccessStatusCode)
+                            {
+                                var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                                bufMachine = Newtonsoft.Json.JsonConvert.DeserializeObject<MachineModel>(EmpResponse);
+                            }
+                            else
+                            {
+                                if (flag)
+                                    if (DeleteFine(bufFine) < 0)
+                                    {
+                                        return Content((HttpStatusCode)418, "Global system error. Sorry.");
+                                    }
+                                if (DeleteUser(bufUser) < 0)
                                 {
                                     return Content((HttpStatusCode)418, "Global system error. Sorry.");
                                 }
-                            if (DeleteUser(bufUser) < 0)
-                            {
-                                return Content((HttpStatusCode)418, "Global system error. Sorry.");
+                                return Content(res.StatusCode, "Error. Sorry.");
                             }
-                            return Content(res.StatusCode, "Error. Sorry.");
                         }
                     }
                 }
@@ -1112,8 +1379,22 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    await client.PutAsJsonAsync("http://localhost:50133/api/Users/" + id.ToString(), user);
+                    bool flag = false;
+                    while (!flag)
+                    {
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[1]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.PutAsJsonAsync("http://localhost:50133/api/Users/" + id.ToString(), user);
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flag = true;
+                        }
+                    }
                 }
             }
             catch (HttpException ex)
@@ -1136,6 +1417,26 @@ namespace ServiceFines.Controllers
 #else
             var ip = Request.GetOwinContext().Request.RemoteIpAddress;
 #endif
+            using (HttpClient client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                if (Request.Headers.Authorization.Scheme != "Bearer")
+                {
+                    return Content(HttpStatusCode.Unauthorized, "Bad Authorization.Scheme. Go away, Niger.");
+                }
+                var auth = Request.Headers.Authorization.Parameter;
+                AuthRoleModel roleModel = new AuthRoleModel();
+                roleModel.Token = auth;
+                roleModel.RequiredRole = "admin";
+
+                HttpResponseMessage res = await client.PostAsJsonAsync("http://localhost:1524/oauth/check", roleModel);
+                if (res.StatusCode == HttpStatusCode.Unauthorized)
+                {
+                    var Response = res.Content.ReadAsStringAsync().Result;
+                    string str = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(Response);
+                    return Content(HttpStatusCode.Unauthorized, str);
+                }
+            }
             logger.Info("Request DELETE from {1} with parametr 'FIO'= {0}", fio, ip);
 
             var queue = new MessageQueue(@".\private$\PrivateQueue");
@@ -1158,29 +1459,41 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync("http://localhost:50133/odata/UserInf" + requeststr);
-
-                    if (res.IsSuccessStatusCode)
+                    bool flag = false;
+                    while (!flag)
                     {
-                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
-                        EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
-                        User = Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(EmpResponse);
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[1]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.GetAsync("http://localhost:50133/odata/UserInf" + requeststr);
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('[') + 1);
+                            EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']'), 2);
+                            User = Newtonsoft.Json.JsonConvert.DeserializeObject<UserModel>(EmpResponse);
+                        }
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flag = true;
+                        }
                     }
                 }
             }
             catch (HttpException ex)
             {
                 logger.Error("Error with request GET http://localhost:50133/odata/UserInf + {0}. Error message: {1}", requeststr, ex.Message);
-                //return StatusCode(HttpStatusCode.BadGateway);
                 return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
             }
 
             if (User == null)
             {
                 logger.Warn("Aborted DELETE from {1} with parametr 'FIO'= {0}. No such company.", fio, ip);
-                //return StatusCode(HttpStatusCode.Conflict);
                 return Content(HttpStatusCode.Conflict, "User is invalid");
             }
 
@@ -1189,8 +1502,22 @@ namespace ServiceFines.Controllers
                 using (HttpClient client = new HttpClient())
                 {
                     client.BaseAddress = new Uri("http://localhost:50133/");
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    await client.DeleteAsync("api/Users/" + User.Id);
+                    bool flag = false;
+                    while (!flag)
+                    {
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[1]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.DeleteAsync("api/Users/" + User.Id);
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flag = true;
+                        }
+                    }
                 }
             }
             catch (HttpException ex)
@@ -1204,22 +1531,35 @@ namespace ServiceFines.Controllers
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.GetAsync("http://localhost:50178/odata/FineInf?$filter=Id eq " + User.IdFines.ToString());
-
-                    if (res.IsSuccessStatusCode)
+                    bool flag = false;
+                    while (!flag)
                     {
-                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
-                        EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('['));
-                        EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']') + 1, 1);
-                        Fines = Newtonsoft.Json.JsonConvert.DeserializeObject<List<FineModel>>(EmpResponse);
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[2]);
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        HttpResponseMessage res = await client.GetAsync("http://localhost:50178/odata/FineInf?$filter=Id eq " + User.IdFines.ToString());
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            EmpResponse = EmpResponse.Remove(0, EmpResponse.IndexOf('['));
+                            EmpResponse = EmpResponse.Remove(EmpResponse.IndexOf(']') + 1, 1);
+                            Fines = Newtonsoft.Json.JsonConvert.DeserializeObject<List<FineModel>>(EmpResponse);
+                        }
+                        if (res.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            GetToken();
+                        }
+                        else
+                        {
+                            flag = true;
+                        }
                     }
                 }
             }
             catch (HttpRequestException ex)
             {
                 logger.Error("Error with request GET http://localhost:50178/odata/UserInf?$filter=Id eq  + {0}. Error message: {1}", User.IdFines, ex.Message);
-                //return StatusCode(HttpStatusCode.BadGateway);
                 return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
             }
 
@@ -1228,8 +1568,22 @@ namespace ServiceFines.Controllers
                 foreach (var t in Fines)
                     using (HttpClient client = new HttpClient())
                     {
-                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                        await client.DeleteAsync("http://localhost:50178/api/Fines/" + t.Id);
+                        bool flag = false;
+                        while (!flag)
+                        {
+                            client.DefaultRequestHeaders.Clear();
+                            client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokens[2]);
+                            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                            HttpResponseMessage res = await client.DeleteAsync("http://localhost:50178/api/Fines/" + t.Id);
+                            if (res.StatusCode == HttpStatusCode.Unauthorized)
+                            {
+                                GetToken();
+                            }
+                            else
+                            {
+                                flag = true;
+                            }
+                        }
                     }
             }
             catch (HttpRequestException ex)
