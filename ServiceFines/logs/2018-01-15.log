@@ -1,0 +1,7 @@
+2018-01-15 17:39:40.9208 | INFO | ServiceFines.Controllers.GatewayController | Request POST from 0 with parametrs 'FIO'= Mamontov, 'Adress'= Krasnodar, 'Phone'= 89137651414, 'Mark'= Volkswagen, 'Model'= Golf, 'StateNumber'= e432rv77, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-15 17:40:07.6302 | INFO | ServiceFines.Controllers.GatewayController | Success compliete request POST from 0 with parametrs 'FIO'= Mamontov, 'Adress'= Krasnodar, 'Phone'= 89137651414, 'Mark'= Volkswagen, 'Model'= Golf, 'StateNumber'= e432rv77, 'NameFine'= Проезд на красный свет, 'AmountFine'= 1500
+2018-01-15 17:40:40.1767 | INFO | ServiceFines.Controllers.GatewayController | Request from 0 with parametr 'service'= users
+2018-01-15 17:40:40.2088 | INFO | ServiceFines.Controllers.GatewayController | Request http://localhost:50133/api/Users. Answer status = OK and Reason = OK
+2018-01-15 17:40:40.2088 | INFO | ServiceFines.Controllers.GatewayController | Succsess request from 0 with parametr 'service'= users
+2018-01-15 17:53:00.2303 | INFO | ServiceFines.Controllers.GatewayController | Request DELETE from 0 with parametr 'FIO'= Mamontov
+2018-01-15 17:53:01.9468 | INFO | ServiceFines.Controllers.GatewayController | Success compliete DELETE from 0 with parametr 'FIO'= Mamontov

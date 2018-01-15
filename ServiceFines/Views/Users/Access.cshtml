@@ -1,0 +1,27 @@
+﻿@model ServiceFines.Models.AuthenticationModRedirect
+@{
+    ViewBag.Title = "Access";
+}
+<h2>Access</h2>
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <section id="loginForm">
+            @using (Html.BeginForm("Acept", "Users", new { Redirect = @ViewBag.ReturnUrl, ClientId = @ViewBag.Code }, FormMethod.Post))
+            {
+
+                @Html.AntiForgeryToken()
+                <h4>Здгавствуйте @ViewBag.Username. Разрешить для приложения @ViewBag.Clientname доступ ко всем вашим данным ?</h4>
+                <hr />
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="hidden" name="Username" value="@ViewBag.Username" />
+                        <input type="hidden" name="Password" value="@ViewBag.Password" />
+                        <input type="submit" value="Разрешить" class="btn btn-default" />
+                    </div>
+                </div>
+            }
+        </section>
+    </div>
+</div>

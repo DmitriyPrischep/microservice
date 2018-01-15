@@ -1,0 +1,29 @@
+﻿@model ServiceFines.Models.AuthenticationModRedirect
+@{
+    ViewBag.Title = "Authenticate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <section id="loginForm">
+            @using (Html.BeginForm("Login", "Users", new { Redirect = @ViewBag.ReturnUrl, ClientId = @ViewBag.Code }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <h4>Используйте локальную учетную запись для входа.</h4>
+                <hr />
+                <div class="form-group">
+                    <label class="control-label">Username:</label>
+                    <input name="Username" class="form-control" type="text" required pattern="[a-zA-Z0-9]+" title="Input username (only letters and numbers allowed)" />
+                    <label class="control-label">Password:</label>
+                    <input name="Password" class="form-control" type="password" required title="Input password" />
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Войти" class="btn btn-default" />
+                    </div>
+                </div>
+            }
+        </section>
+    </div>
+</div>

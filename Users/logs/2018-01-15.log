@@ -1,0 +1,7 @@
+2018-01-15 17:39:58.8508 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-15 17:40:00.4028 | INFO | Users.Controllers.UsersController | Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-15 17:40:00.4369 | INFO | Users.Controllers.UsersController | Success POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}
+2018-01-15 17:40:40.1787 | INFO | Users.Controllers.UsersController | Request GET
+2018-01-15 17:53:00.2343 | INFO | Users.Controllers.UserInfController | Request GET with OData
+2018-01-15 17:53:01.0963 | INFO | Users.Controllers.UsersController | Request DELETE with ID = 45
+2018-01-15 17:53:01.1063 | INFO | Users.Controllers.UsersController | Success request DELETE with ID = 45

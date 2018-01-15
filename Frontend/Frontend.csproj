@@ -189,6 +189,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FrontendModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -260,6 +261,7 @@
     <Content Include="Views\Welcome\getMachineByID.cshtml" />
     <Content Include="Views\Welcome\getMachine.cshtml" />
     <Content Include="Views\Welcome\Machines.cshtml" />
+    <Content Include="Views\Welcome\Login2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

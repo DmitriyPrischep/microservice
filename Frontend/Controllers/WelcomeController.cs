@@ -30,13 +30,50 @@ namespace Frontend.Controllers
             return View("Machines");
         }
 
-        // POST: /Account/Login
-        public ActionResult Login()
+        public ActionResult Login2()
         {
-            return Redirect(String.Format("http://localhost:49939/Users/Authenticate?redirect_uri={0}&client_id={1}", "http://localhost:53722/Hello/lootcodes", 1));
+            return View("Login2");
         }
 
-        public async Task<ActionResult> lootcodes(string code, string state)
+        public async Task<ActionResult> LoginUser([FromBody]Authentication auth)
+        {
+            TokenMessage msg = new TokenMessage();
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage res = await client.PostAsJsonAsync(new Uri("http://localhost:49939/api/Gateway/data"), auth);
+
+                    if (res.IsSuccessStatusCode)
+                    {
+                        var Response = res.Content.ReadAsStringAsync().Result;
+                        msg = Newtonsoft.Json.JsonConvert.DeserializeObject<TokenMessage>(Response);
+                        HttpContext.Response.Cookies["access_token"].Value = msg.AccessToken;
+                        HttpContext.Response.Cookies["refresh_token"].Value = msg.RefreshToken;
+                    }
+                    else
+                    {
+                        var Response = res.Content.ReadAsStringAsync().Result;
+                        var str = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(Response);
+                        return View("SorryPage", (object)str);
+                    }
+                }
+            }
+            catch
+            {
+                string str = "Now system is unavailable";
+                return View("SorryPage", (object)str);
+            }
+            return View("Description");
+        }
+
+        public ActionResult Login()
+        {
+            return Redirect(String.Format("http://localhost:49939/Users/Authenticate?redirect_uri={0}&client_id={1}", "http://localhost:53722/Welcome/GenCodes", 1));
+        }
+
+        public async Task<ActionResult> GenCodes(string code, string state)
         {
             TokenMessage msg = new TokenMessage();
             AuthCodeModel codeModel = new AuthCodeModel();
@@ -51,7 +88,7 @@ namespace Frontend.Controllers
                 using (HttpClient client = new HttpClient())
                 {
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await client.PostAsJsonAsync(new Uri("http://localhost:56454/api/gate/code"), codeModel);
+                    HttpResponseMessage res = await client.PostAsJsonAsync(new Uri("http://localhost:49939/api/Gateway/code"), codeModel);
 
                     if (res.IsSuccessStatusCode)
                     {
@@ -402,22 +439,58 @@ namespace Frontend.Controllers
 
         public async Task<ActionResult> deleteUser(string user_fio)
         {
+            int i = 0;
             try
             {
-                using (HttpClient test = new HttpClient())
+                using (HttpClient client = new HttpClient())
                 {
-                    test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await test.DeleteAsync("http://localhost:49939/api/gateway/~users/delete/" + user_fio);
+                    bool flag = false;
+                    while (!flag)
+                    {
+                        client.DefaultRequestHeaders.Clear();
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + HttpContext.Request.Cookies["access_token"].Value);
+                        HttpResponseMessage res = await client.DeleteAsync("http://localhost:49939/api/gateway/~users/delete/" + user_fio);
 
-                    if (res.IsSuccessStatusCode)
-                    {
-                        var Response = res.Content.ReadAsStringAsync().Result;
-                    }
-                    else
-                    {
-                        var Response = res.Content.ReadAsStringAsync().Result;
-                        var str = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(Response);
-                        return View("SorryPage", (object)str);
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var Response = res.Content.ReadAsStringAsync().Result;
+                            flag = true;
+                        }
+                        else
+                        {
+                            var Response = res.Content.ReadAsStringAsync().Result;
+                            var str = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(Response);
+                            if (str != null)
+                            {
+                                return View("SorryPage", (object)str);
+                            }
+                            if ((res.StatusCode == System.Net.HttpStatusCode.Unauthorized) && (i == 0))
+                            {
+                                client.DefaultRequestHeaders.Clear();
+                                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                                TokenMessage msg = new TokenMessage();
+                                RefreshToken refresh = new RefreshToken();
+
+                                refresh.Token = HttpContext.Request.Cookies["refresh_token"].Value;
+                                res = await client.PostAsJsonAsync("http://localhost:49939/api/gateway/refresh", refresh);
+                                if (res.IsSuccessStatusCode)
+                                {
+                                    var Response2 = res.Content.ReadAsStringAsync().Result;
+                                    msg = Newtonsoft.Json.JsonConvert.DeserializeObject<TokenMessage>(Response2);
+                                    HttpContext.Request.Cookies["access_token"].Value = msg.AccessToken;
+                                    HttpContext.Request.Cookies["refresh_token"].Value = msg.RefreshToken;
+                                    HttpContext.Response.Cookies["access_token"].Value = msg.AccessToken;
+                                    HttpContext.Response.Cookies["refresh_token"].Value = msg.RefreshToken;
+                                    i++;
+                                }
+                                else
+                                {
+                                    return View("SorryPage", (object)"Ошибка обновления токена. Пожалуйста повторите позже");
+                                }
+                            }
+                            return View("SorryPage", (object)str);
+                        }
                     }
                 }
             }
@@ -426,9 +499,8 @@ namespace Frontend.Controllers
                 string str = "Now system is unavailable";
                 return View("SorryPage", (object)str);
             }
-
-
             return View();
+            
         }
 
         public async Task<ActionResult> editUser(int userID, string FIO, string Phone, string Adress, int fineID)

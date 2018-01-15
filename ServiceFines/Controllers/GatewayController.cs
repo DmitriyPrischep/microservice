@@ -200,8 +200,8 @@ namespace ServiceFines.Controllers
                         var form = new Dictionary<string, string>
                         {
                            {"grant_type", "password"},
-                           {"username", "Offender3" + (1+i).ToString()},
-                           {"password", "1234"},
+                           {"username", "gateway" + (1+i).ToString()},
+                           {"password", "123456"},
                         };
                         client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                         var loginContent = new FormUrlEncodedContent(form);
@@ -1648,6 +1648,126 @@ namespace ServiceFines.Controllers
             catch
             {
                 return InternalServerError();
+            }
+            return Ok<TokenMessage>(msg);
+        }
+
+        [Route("data")]
+        public async Task<IHttpActionResult> PostData([FromBody] Authentication model)
+        {
+            AuthModel auth = new AuthModel();
+
+            auth.Username = model.Login;
+            auth.Password = model.Pass;
+
+            string name = "";
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage res = await client.PostAsJsonAsync(new Uri("http://localhost:1524/oauth/checkuser"), auth);
+
+                    if (res.IsSuccessStatusCode)
+                    {
+                        var Response = res.Content.ReadAsStringAsync().Result;
+                        name = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(Response);
+                    }
+                    else
+                    {
+                        return Unauthorized();
+                    }
+                }
+            }
+            catch
+            {
+                return Unauthorized();
+            }
+
+            string clientname = "";
+            try
+            {
+                using (HttpClient test = new HttpClient())
+                {
+                    test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage res = await test.GetAsync(new Uri("http://localhost:1524/oauth/getuser?ClientId=1&redirect=http://localhost:53722/Welcome/GenCodes"));
+
+                    if (res.IsSuccessStatusCode)
+                    {
+                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                        clientname = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(EmpResponse);
+                    }
+                    else
+                    {
+                        return Unauthorized();
+                    }
+                }
+            }
+            catch
+            {
+                return Unauthorized();
+            }
+
+            AuthModelID modelID = new AuthModelID();
+
+            modelID.Username = model.Login;
+            modelID.Password = model.Pass;
+            modelID.ClientId = 1;
+
+            string code = "";
+
+            try
+            {
+                using (HttpClient test = new HttpClient())
+                {
+                    test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage res = await test.PostAsJsonAsync(new Uri("http://localhost:1524/oauth/login"), modelID);
+
+                    if (res.IsSuccessStatusCode)
+                    {
+                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                        code = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(EmpResponse);
+                    }
+                    else
+                    {
+                        return Unauthorized();
+                    }
+                }
+            }
+            catch
+            {
+                return Unauthorized();
+            }
+
+            TokenMessage msg = new TokenMessage();
+            AuthCodeModel codeModel = new AuthCodeModel();
+
+            codeModel.Code = code;
+            codeModel.RedirectURI = "http://localhost:53722";
+            codeModel.GrantType = "code";
+            codeModel.ClientId = 1;
+
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage res = await client.PostAsJsonAsync(new Uri("http://localhost:49939/api/gateway/code"), codeModel);
+
+                    if (res.IsSuccessStatusCode)
+                    {
+                        var Response = res.Content.ReadAsStringAsync().Result;
+                        msg = Newtonsoft.Json.JsonConvert.DeserializeObject<TokenMessage>(Response);
+                    }
+                    else
+                    {
+                        return InternalServerError();
+                    }
+                }
+            }
+            catch
+            {
+                return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
             }
             return Ok<TokenMessage>(msg);
         }

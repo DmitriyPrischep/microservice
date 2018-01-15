@@ -167,8 +167,8 @@ namespace Authentication.Controllers
                 return Unauthorized();
 
             TokenMessage msg = new TokenMessage();
-            msg.AccessToken = msg.AccessToken;
-            msg.RefreshToken = msg.RefreshToken;
+            msg.AccessToken = token.AccessToken;
+            msg.RefreshToken = token.RefreshToken;
             msg.TokenType = "Bearer";
             return Ok<TokenMessage>(msg);
         }
