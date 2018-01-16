@@ -697,3 +697,4 @@ E:\learning\microservice-master\Machines\bin\Microsoft.Owin.Security.xml
 E:\learning\microservice-master\Machines\bin\Microsoft.Owin.Security.Cookies.xml
 E:\learning\microservice-master\Machines\bin\Microsoft.Owin.Security.OAuth.xml
 E:\learning\microservice-master\Machines\bin\System.Web.Http.Owin.xml
+E:\learning\microservice-master\Machines\obj\Debug\Machines.Migrations.Initial2.resources

@@ -128,4 +128,70 @@ namespace ServiceFines.Models
         public string RequiredRole { get; set; }
     }
 
+    public enum RequestType
+    {
+        GET,
+        PUT,
+        POST,
+        DELETE,
+        LOGIN
+    }
+
+    public enum ServerName
+    {
+        GATEWAY,
+        AUTHENTICATION,
+        USERS,
+        MACHINES,
+        FINES
+    }
+
+    public class InputStatisticMessage
+    {
+        public int Id { get; set; }
+
+        public ServerName ServerName { get; set; }
+
+        public RequestType RequestType { get; set; }
+
+        public Guid State { get; set; }
+
+        public string Detail { get; set; }
+
+        public DateTime Time { get; set; }
+        public int CountSendMessage { get; set; }
+    }
+
+    public class OutputStatisticMessage
+    {
+        public int Status { get; set; }
+        public string Error { get; set; }
+        public InputStatisticMessage Message { get; set; }
+    }
+
+    public class GatewayInformation
+    {
+        public int Unauth { get; set; }//неуспешн авториз
+        public int Auth { get; set; }//успешн авториз
+
+        public List<int> rasp { get; set; }//рапределение
+        public List<int> resp2 { get; set; }//расп
+
+    }
+
+    public class LittleInformation
+    {
+        public List<int> rasp { get; set; }//нагрузка от часов
+        public List<int> resp2 { get; set; }////колво get post delete
+
+    }
+
+    public class StatisticInformation
+    {
+        public LittleInformation Information1 { get; set; }
+        public LittleInformation Information2 { get; set; }
+        public LittleInformation Information3 { get; set; }
+        public GatewayInformation GateInfo { get; set; }
+    }
+
 }

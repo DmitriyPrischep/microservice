@@ -12,12 +12,15 @@ using ServiceFines.Models;
 using System.Messaging;
 using PagedList;
 using NLog;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 
 namespace ServiceFines.Controllers
 {
     [RoutePrefix("api/Gateway")]
     public class GatewayController : ApiController
     {
+        AnotherContext db = new AnotherContext();
         private static Logger logger = LogManager.GetCurrentClassLogger();
         private static string[] tokens = new string[3];
 
@@ -25,6 +28,164 @@ namespace ServiceFines.Controllers
         {
             Task.Run(() => backwork());
         }
+
+
+        private async void recconf(AnotherContext db)
+        {
+            Logger logger = LogManager.GetCurrentClassLogger();
+            MessageQueue queue;
+            if (MessageQueue.Exists(@".\private$\OutputStatistic"))
+            {
+                queue = new MessageQueue(@".\private$\OutputStatistic");
+            }
+            else
+            {
+                queue = MessageQueue.Create(".\\private$\\OutputStatistic");
+            }
+
+            using (queue)
+            {
+                queue.Formatter = new XmlMessageFormatter(new Type[] { typeof(outstatmes) });
+
+                Message[] message = queue.GetAllMessages();
+
+                List<string> msgsuid = new List<string>();
+                List<OutputStatisticMessage> StatisticMessage = new List<OutputStatisticMessage>();
+
+                foreach (var msg in message)
+                {
+                    if (msg.Label == "ANGATE")
+                    {
+                        queue.ReceiveById(msg.Id);
+                        StatisticMessage.Add((OutputStatisticMessage)msg.Body);
+                    }
+                }
+
+                foreach (var msg in StatisticMessage)
+                {
+                    switch (msg.Status)
+                    {
+                        case 0:
+                            var FindMessage = db.InputStatisticMessage.Find(msg.Message.Id);
+                            if (FindMessage != null)
+                            {
+                                db.instatmes.Remove(FindMessage);
+                                try
+                                {
+                                    await db.SaveChangesAsync();
+                                }
+                                catch (DbUpdateConcurrencyException ex)
+                                {
+                                    ex.Entries.Single().Reload();
+                                }
+                            }
+                            break;
+                        case -1:
+                            var FindMsg = db.InputStatisticMessage.Find(msg.Message.Id);
+                            if (FindMsg != null)
+                            {
+                                logger.Error("Error in Statistic service. Deleted data from DataBase. Message:" + msg.Error);
+                                db.InputStatisticMessage.Remove(FindMsg);
+                                try
+                                {
+                                    await db.SaveChangesAsync();
+                                }
+                                catch (DbUpdateConcurrencyException ex)
+                                {
+                                    ex.Entries.Single().Reload();
+                                }
+
+                            }
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+                await db.SaveChangesAsync();
+                return;
+            }
+        }
+
+
+        private async void SendStatistic()
+        {
+            using (HttpClient test = new HttpClient())
+            {
+                await test.GetAsync("http://localhost:6376/stat/start");
+            }
+
+            AnotherContext db = new AnotherContext();
+            MessageQueue queue;
+            if (MessageQueue.Exists(@".\private$\InputStatistic"))
+            {
+                queue = new MessageQueue(@".\private$\InputStatistic");
+            }
+            else
+            {
+                queue = MessageQueue.Create(".\\private$\\InputStatistic");
+            }
+
+            using (queue)
+            {
+                queue.Formatter = new XmlMessageFormatter(new Type[] { typeof(InputStatisticMessage) });
+                while (true)
+                {
+                    await db.SaveChangesAsync();
+                    List<InputStatisticMessage> InputMessage = new List<InputStatisticMessage>();
+                    try
+                    {
+                        await Task.Run(() => recconf(db));
+
+                        TimeSpan interval = new TimeSpan(0, 2, 30);
+                        System.Threading.Thread.Sleep(interval);
+
+                        InputMessage = db.instatmes.ToList();
+                        foreach (var temp in InputMessage)
+                        {
+                            if (temp.Np < 3)
+                            {
+                                temp.Np++;
+                                queue.Send(temp);
+                                try
+                                {
+                                    db.Entry(temp).State = EntityState.Modified;
+                                    db.SaveChanges();
+                                }
+                                catch (Exception)
+                                {
+                                    continue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+            private async void PutData(string Information, RequestType reqType)
+        {
+            AnotherContext db = new AnotherContext();
+            InputStatisticMessage message = new InputStatisticMessage();
+            message.Detail = Information;
+            message.RequestType = reqType;
+            message.ServerName = ServerName.GATEWAY;
+            message.Time = DateTime.Now;
+            message.State = Guid.NewGuid();
+            message.Np = 0;
+
+            try
+            {
+                db.InputStatisticMessage.Add(message);
+                await db.SaveChangesAsync();
+            }
+            catch
+            {
+                return;
+            }
+
+        }
+
 
         public async void backwork()
         {
@@ -261,6 +422,7 @@ namespace ServiceFines.Controllers
         [Route("inf/{service:maxlength(32)}")]
         public async Task<IHttpActionResult> Get([FromUri] string service)
         {
+            await Task.Run(() => PutData("Get Users", RequestType.GET));
 #if (DEBUG == true)
             int ip = 0;
 #else
@@ -305,7 +467,6 @@ namespace ServiceFines.Controllers
                     catch (HttpException ex)
                     {
                         logger.Error("Error with request http://localhost:50133/api/Users. Answer status = {0} and Reason = {1}", ex.WebEventCode, ex.Message);
-                        //return StatusCode(HttpStatusCode.BadGateway);
                         Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
                     }
                     logger.Info("Succsess request from {1} with parametr 'service'= {0}", service, ip);
@@ -345,7 +506,6 @@ namespace ServiceFines.Controllers
                     catch (HttpException ex)
                     {
                         logger.Error("Error with request http://localhost:50078/api/Machines. Answer status = {0} and Reason = {1}", ex.WebEventCode, ex.Message);
-                        //return StatusCode(HttpStatusCode.BadGateway);
                         Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
                     }
                     logger.Info("Succsess request from {1} with parametr 'service'= {0}", service, ip);
@@ -1012,13 +1172,11 @@ namespace ServiceFines.Controllers
         }
 
 
-
-        
-
         // POST: api/Gateway
         [Route("~users/add")]
         public async Task<IHttpActionResult> Post([FromBody]DetailUserModel value)
         {
+            await Task.Run(() => PutData("Post users", RequestType.CHANGE));
 #if (DEBUG == true)
             int ip = 0;
 #else
@@ -1031,7 +1189,7 @@ namespace ServiceFines.Controllers
                 (value.Mark == null) || (value.Model == null) || (value.StateNumber == null) || 
                 (value.NameFine == null) || (value.AmountFine == 0))
             {
-                logger.Warn("ABORTED POST from {8} with parametrs 'FIO'= {0}, 'Adress'= {1}, 'Phone'= {2}, 'Mark'= {3}, 'Model'= {4}, 'StateNumber'= {5}, 'NameFine'= {6}, 'AmountFine'= {7}",
+                logger.Warn("Aborted POST from {8} with parametrs 'FIO'= {0}, 'Adress'= {1}, 'Phone'= {2}, 'Mark'= {3}, 'Model'= {4}, 'StateNumber'= {5}, 'NameFine'= {6}, 'AmountFine'= {7}",
                 value.FIO, value.Adress, value.Phone, value.Mark, value.Model, value.StateNumber, value.NameFine, value.AmountFine, ip);
                 return Content(HttpStatusCode.BadRequest, "Bad input data.");
             }
@@ -1368,6 +1526,7 @@ namespace ServiceFines.Controllers
 #else
             var ip = Request.GetOwinContext().Request.RemoteIpAddress;
 #endif
+            await Task.Run(() => PutData("Put User", RequestType.CHANGE));
             logger.Info("Request PUT from {4} with parametrs 'ID'= {0}, 'FIO'= {1}, 'Phone'= {2}, 'Adress'= {3}", id, user.FIO, user.Phone, user.Adress, ip);
             if ((user.FIO == null) || (user.Phone == null) || (user.Adress == null))
             {
@@ -1422,7 +1581,8 @@ namespace ServiceFines.Controllers
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 if (Request.Headers.Authorization.Scheme != "Bearer")
                 {
-                    return Content(HttpStatusCode.Unauthorized, "Bad Authorization.Scheme. Go away, Niger.");
+                    await Task.Run(() => PutData("This type of token is not Bearer", RequestType.LOGIN));
+                    return Content(HttpStatusCode.Unauthorized, "Bad Authorization scheme");
                 }
                 var auth = Request.Headers.Authorization.Parameter;
                 AuthRoleModel roleModel = new AuthRoleModel();
@@ -1432,11 +1592,15 @@ namespace ServiceFines.Controllers
                 HttpResponseMessage res = await client.PostAsJsonAsync("http://localhost:1524/oauth/check", roleModel);
                 if (res.StatusCode == HttpStatusCode.Unauthorized)
                 {
+                    await Task.Run(() => PutData("Unauthorized access", RequestType.LOGIN));
                     var Response = res.Content.ReadAsStringAsync().Result;
                     string str = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(Response);
                     return Content(HttpStatusCode.Unauthorized, str);
                 }
             }
+            await Task.Run(() => PutData("Access is allowed", RequestType.LOGIN));
+            await Task.Run(() => PutData("Delete offender", RequestType.CHANGE));
+
             logger.Info("Request DELETE from {1} with parametr 'FIO'= {0}", fio, ip);
 
             var queue = new MessageQueue(@".\private$\PrivateQueue");
@@ -1448,7 +1612,7 @@ namespace ServiceFines.Controllers
             }
             else
             {
-                logger.Info("Request DELETE from {1} with parametr 'FIO'= {0} CANCELED by fitler. Bad parametr value.", fio, ip);
+                logger.Info("Request DELETE from {1} with parametr 'FIO'= {0} canceled by fitler. Bad parametr value.", fio, ip);
                 return Content(HttpStatusCode.BadRequest, "Bad input data.");
             }
 
@@ -1602,6 +1766,7 @@ namespace ServiceFines.Controllers
         [Route("Code")]
         public async Task<IHttpActionResult> Postcode([FromBody] AuthCodeModel CodeModel)
         {
+            await Task.Run(() => PutData("Request token", RequestType.LOGIN));
             TokenMessage msg = new TokenMessage();
             try
             {
@@ -1629,6 +1794,7 @@ namespace ServiceFines.Controllers
         [Route("refresh")]
         public async Task<IHttpActionResult> Postrefresh([FromBody] RefreshToken refresh)
         {
+            await Task.Run(() => PutData("Refresh request token", RequestType.LOGIN));
             TokenMessage msg = new TokenMessage();
             try
             {
@@ -1770,6 +1936,59 @@ namespace ServiceFines.Controllers
                 return Content(HttpStatusCode.BadGateway, "Error in system. Sorry.");
             }
             return Ok<TokenMessage>(msg);
+        }
+
+        [Route("GetStatistic")]
+        public async Task<IHttpActionResult> GetStatistic()
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                if (Request.Headers.Authorization.Scheme != "Bearer")
+                {
+                    await Task.Run(() => PutData("This type of token is not Bearer", RequestType.LOGIN));
+                    return Content(HttpStatusCode.Unauthorized, "Bad Authorization scheme");
+                }
+                var token = Request.Headers.Authorization.Parameter;
+                AuthRoleModel roleModel = new AuthRoleModel();
+                roleModel.Token = token;
+                roleModel.RequiredRole = "ADMIN";
+
+                HttpResponseMessage res = await client.PostAsJsonAsync("http://localhost:53722/oauth/check", roleModel);
+                if (res.StatusCode == HttpStatusCode.Unauthorized)
+                {
+                    await Task.Run(() => PutData("Unauthorized access", RequestType.LOGIN));
+                    var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                    string asd = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(EmpResponse);
+                    return Content(HttpStatusCode.Unauthorized, asd);
+                }
+            }
+            await Task.Run(() => PutData("Access is allowed", RequestType.LOGIN));
+
+            StatisticInformation Information = new StatisticInformation();
+            try
+            {
+                using (HttpClient test = new HttpClient())
+                {
+                    test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage res = await test.GetAsync(new Uri("http://localhost:6376/stat/all"_____));
+
+                    if (res.IsSuccessStatusCode)
+                    {
+                        var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                        Information = Newtonsoft.Json.JsonConvert.DeserializeObject<StatisticInformation>(EmpResponse);
+                    }
+                    else
+                    {
+                        return Unauthorized();
+                    }
+                }
+            }
+            catch
+            {
+                return InternalServerError();
+            }
+            return Ok<StatisticInformation>(Information);
         }
     }
 }
