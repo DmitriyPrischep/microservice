@@ -1,0 +1,854 @@
+﻿@model Frontend.Models.StatisticInformation
+@using System;
+@using System.Collections;
+@{
+    ViewBag.Title = "DrawStatistic";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Статистика сервисов</h2>
+@{
+    var filePathName = "~/Content/ChartFiles/chart01.jpg";
+
+    var myChart = new Chart(width: 600, height: 400)
+    .AddTitle("Загрузка системы по часам")
+    .AddSeries(
+        name: "Load",
+        xValue: new[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23" },
+        yValues: Model.GateInfo.StatTime.ToArray());
+    myChart.Save(path: filePathName);
+
+}
+@{
+    var filePathName2 = "~/Content/ChartFiles/chart02.jpg";
+
+    var myChart2 = new Chart(width: 600, height: 400)
+    .AddTitle("Типы запросов")
+    .AddSeries(
+        name: "Req",
+        xValue: new[] { "GET", "PUT", "POST", "DELETE", "LOGIN" },
+        yValues: Model.GateInfo.StatType.ToArray());
+    myChart2.Save(path: filePathName2);
+
+}
+@{
+    var filePathName3 = "~/Content/ChartFiles/chart03.jpg";
+
+    var myChart3 = new Chart(width: 600, height: 400)
+    .AddTitle("Типы запросов")
+    .AddSeries(
+        chartType: "Pie",
+        name: "Auth request",
+        xValue: new[] { "Success", "Lose" },
+        yValues: new[] { Model.GateInfo.Auth, Model.GateInfo.NonAuth });
+    myChart3.Save(path: filePathName3);
+
+}
+@{
+    var filePathName4 = "~/Content/ChartFiles/chart04.jpg";
+
+    var myChart4 = new Chart(width: 600, height: 400)
+    .AddTitle("Запросы на сервис пользователей")
+    .AddSeries(
+        name: "ReqUsers",
+        xValue: new[] { "PUT", "POST", "DELETE" },
+        yValues: Model.UsersInfo.StatType.ToArray());
+    myChart4.Save(path: filePathName4);
+
+}
+@{
+    var filePathName5 = "~/Content/ChartFiles/chart05.jpg";
+
+    var myChart5 = new Chart(width: 600, height: 400)
+    .AddTitle("Запросы на сервис работников")
+    .AddSeries(
+        name: "ReqMachines",
+        xValue: new[] { "PUT", "POST", "DELETE" },
+        yValues: Model.MachineInfo.StatType.ToArray());
+    myChart5.Save(path: filePathName5);
+
+}
+@{
+    var filePathName6 = "~/Content/ChartFiles/chart06.jpg";
+
+
+    var myChart6 = new Chart(width: 600, height: 400)
+    .AddTitle("Запросы на сервис штрафы")
+    .AddSeries(
+        name: "ReqFines",
+        xValue: new[] { "PUT", "POST", "DELETE" },
+        yValues: Model.FinesInfo.StatType.ToArray());
+    myChart6.Save(path: filePathName6);
+
+}
+@{
+    var filePathName7 = "~/Content/ChartFiles/chart07.jpg";
+
+    var myChart7 = new Chart(width: 600, height: 400)
+    .AddTitle("Скорость запросов на сервис пользователей")
+    .AddSeries(
+        name: "ReqUsers",
+        xValue: new[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23" },
+        yValues: Model.UsersInfo.StatTime.ToArray());
+    myChart7.Save(path: filePathName7);
+
+}
+@{
+    var filePathName8 = "~/Content/ChartFiles/chart08.jpg";
+
+    var myChart8 = new Chart(width: 600, height: 400)
+    .AddTitle("Скорость запросов на сервис транспортные средства")
+    .AddSeries(
+        name: "ReqMachines",
+        xValue: new[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23" },
+        yValues: Model.MachineInfo.StatTime.ToArray());
+    myChart8.Save(path: filePathName8);
+
+}
+@{
+    var filePathName9 = "~/Content/ChartFiles/chart09.jpg";
+
+    var myChart9 = new Chart(width: 600, height: 400)
+    .AddTitle("Скорость запросов на сервис штрафов")
+    .AddSeries(
+        name: "ReqFines",
+        xValue: new[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23" },
+        yValues: Model.FinesInfo.StatTime.ToArray());
+    myChart9.Save(path: filePathName9);
+
+}
+<p align="center"><img src="~/Content/ChartFiles/chart02.jpg" /></p>
+<p align="center"><img src="~/Content/ChartFiles/chart03.jpg" /></p>
+<p align="center"><img src="~/Content/ChartFiles/chart04.jpg" /></p>
+<p align="center"><img src="~/Content/ChartFiles/chart05.jpg" /></p>
+<p align="center"><img src="~/Content/ChartFiles/chart01.jpg" /></p>
+<p align="center"><img src="~/Content/ChartFiles/chart06.jpg" /></p>
+<p align="center"><img src="~/Content/ChartFiles/chart07.jpg" /></p>
+<p align="center"><img src="~/Content/ChartFiles/chart08.jpg" /></p>
+<p align="center"><img src="~/Content/ChartFiles/chart09.jpg" /></p>
+
+<table class="table" title="Соотношение авторизаций">
+    <tr>
+        <th>
+            Успешно
+        </th>
+        <th>
+            Провально
+        </th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.Auth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.NonAuth)
+        </td>
+    </tr>
+</table>
+<table class="table" title="Типы запросов в системе">
+    <tr>
+        <th>
+            GET
+        </th>
+        <th>
+            PUT
+        </th>
+        <th>
+            POST
+        </th>
+        <th>
+            DELETE
+        </th>
+        <th>
+            LOGIN
+        </th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatType[0])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatType[1])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatType[2])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatType[3])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatType[4])
+        </td>
+    </tr>
+</table>
+<table class="table" title="Распределение запросов по времени">
+    <tr>
+        <th>
+            0
+        </th>
+        <th>
+            1
+        </th>
+        <th>
+            2
+        </th>
+        <th>
+            3
+        </th>
+        <th>
+            4
+        </th>
+        <th>
+            5
+        </th>
+        <th>
+            6
+        </th>
+        <th>
+            7
+        </th>
+        <th>
+            8
+        </th>
+        <th>
+            9
+        </th>
+        <th>
+            10
+        </th>
+        <th>
+            11
+        </th>
+        <th>
+            12
+        </th>
+        <th>
+            13
+        </th>
+        <th>
+            14
+        </th>
+        <th>
+            15
+        </th>
+        <th>
+            16
+        </th>
+        <th>
+            17
+        </th>
+        <th>
+            18
+        </th>
+        <th>
+            19
+        </th>
+        <th>
+            20
+        </th>
+        <th>
+            21
+        </th>
+        <th>
+            22
+        </th>
+        <th>
+            23
+        </th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[0])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[1])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[2])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[3])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[4])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[5])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[6])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[7])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[8])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[9])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[10])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[11])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[12])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[13])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[14])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[15])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[16])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[17])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[18])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[19])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[20])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[21])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[22])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.GateInfo.StatTime[23])
+        </td>
+    </tr>
+</table>
+<<table class="table" title="Запросы на сервис компаний">
+    <tr>
+        <th>
+            PUT
+        </th>
+        <th>
+            POST
+        </th>
+        <th>
+            DELETE
+        </th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatType[0])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatType[1])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatType[2])
+        </td>
+    </tr>
+</table>
+<<table class="table" title="Запросы на сервис работников">
+    <tr>
+        <th>
+            PUT
+        </th>
+        <th>
+            POST
+        </th>
+        <th>
+            DELETE
+        </th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatType[0])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatType[1])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatType[2])
+        </td>
+    </tr>
+</table>
+<<table class="table" title="Запросы на сервис регионов">
+    <tr>
+        <th>
+            PUT
+        </th>
+        <th>
+            POST
+        </th>
+        <th>
+            DELETE
+        </th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatType[0])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatType[1])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatType[2])
+        </td>
+    </tr>
+</table>
+<table class="table" title="Распределение запросов по времени на сервис компаний">
+    <tr>
+        <th>
+            0
+        </th>
+        <th>
+            1
+        </th>
+        <th>
+            2
+        </th>
+        <th>
+            3
+        </th>
+        <th>
+            4
+        </th>
+        <th>
+            5
+        </th>
+        <th>
+            6
+        </th>
+        <th>
+            7
+        </th>
+        <th>
+            8
+        </th>
+        <th>
+            9
+        </th>
+        <th>
+            10
+        </th>
+        <th>
+            11
+        </th>
+        <th>
+            12
+        </th>
+        <th>
+            13
+        </th>
+        <th>
+            14
+        </th>
+        <th>
+            15
+        </th>
+        <th>
+            16
+        </th>
+        <th>
+            17
+        </th>
+        <th>
+            18
+        </th>
+        <th>
+            19
+        </th>
+        <th>
+            20
+        </th>
+        <th>
+            21
+        </th>
+        <th>
+            22
+        </th>
+        <th>
+            23
+        </th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[0])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[1])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[2])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[3])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[4])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[5])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[6])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[7])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[8])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[9])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[10])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[11])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[12])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[13])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[14])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[15])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[16])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[17])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[18])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[19])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[20])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[21])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[22])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UsersInfo.StatTime[23])
+        </td>
+    </tr>
+</table>
+<table class="table" title="Распределение запросов по времени на сервис работников">
+    <tr>
+        <th>
+            0
+        </th>
+        <th>
+            1
+        </th>
+        <th>
+            2
+        </th>
+        <th>
+            3
+        </th>
+        <th>
+            4
+        </th>
+        <th>
+            5
+        </th>
+        <th>
+            6
+        </th>
+        <th>
+            7
+        </th>
+        <th>
+            8
+        </th>
+        <th>
+            9
+        </th>
+        <th>
+            10
+        </th>
+        <th>
+            11
+        </th>
+        <th>
+            12
+        </th>
+        <th>
+            13
+        </th>
+        <th>
+            14
+        </th>
+        <th>
+            15
+        </th>
+        <th>
+            16
+        </th>
+        <th>
+            17
+        </th>
+        <th>
+            18
+        </th>
+        <th>
+            19
+        </th>
+        <th>
+            20
+        </th>
+        <th>
+            21
+        </th>
+        <th>
+            22
+        </th>
+        <th>
+            23
+        </th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[0])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[1])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[2])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[3])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[4])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[5])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[6])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[7])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[8])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[9])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[10])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[11])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[12])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[13])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[14])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[15])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[16])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[17])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[18])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[19])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[20])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[21])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[22])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.MachineInfo.StatTime[23])
+        </td>
+    </tr>
+</table>
+<table class="table" title="Распределение запросов по времени на ресвис регионов">
+    <tr>
+        <th>
+            0
+        </th>
+        <th>
+            1
+        </th>
+        <th>
+            2
+        </th>
+        <th>
+            3
+        </th>
+        <th>
+            4
+        </th>
+        <th>
+            5
+        </th>
+        <th>
+            6
+        </th>
+        <th>
+            7
+        </th>
+        <th>
+            8
+        </th>
+        <th>
+            9
+        </th>
+        <th>
+            10
+        </th>
+        <th>
+            11
+        </th>
+        <th>
+            12
+        </th>
+        <th>
+            13
+        </th>
+        <th>
+            14
+        </th>
+        <th>
+            15
+        </th>
+        <th>
+            16
+        </th>
+        <th>
+            17
+        </th>
+        <th>
+            18
+        </th>
+        <th>
+            19
+        </th>
+        <th>
+            20
+        </th>
+        <th>
+            21
+        </th>
+        <th>
+            22
+        </th>
+        <th>
+            23
+        </th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[0])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[1])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[2])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[3])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[4])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[5])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[6])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[7])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[8])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[9])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[10])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[11])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[12])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[13])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[14])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[15])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[16])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[17])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[18])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[19])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[20])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[21])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[22])
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FinesInfo.StatTime[23])
+        </td>
+    </tr>
+</table>

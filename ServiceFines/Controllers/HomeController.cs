@@ -4,9 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace ServiceFines.Controllers
+namespace Machines.Controllers
 {
-    public class HomeController : Controller
+    public class Home2Controller : Controller
     {
         public ActionResult Index()
         {

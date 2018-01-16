@@ -140,8 +140,8 @@ namespace Statistic.Controllers
             {
                 arrayTime.Add(0);
             }
-            List<int> arrayType = new List<int>(3);
-            for (int i = 0; i < 3; i++)
+            List<int> arrayType = new List<int>(5);
+            for (int i = 0; i < 5; i++)
             {
                 arrayType.Add(0);
             }
@@ -150,11 +150,11 @@ namespace Statistic.Controllers
             {
                 string q = item.Detail.ToString();
                 string[] w = q.Split(' ');
-                if (w[0] == "UNAUTHORIZED")
+                if (w[0] == "Unauthorized")
                 {
                     CountUnauthorized++;
                 }
-                if (w[0] == "ACCESS")
+                if (w[0] == "Access")
                 {
                     CountAccess++;
                 }
@@ -189,17 +189,16 @@ namespace Statistic.Controllers
 
             foreach (var item in UserStatistic)
             {
-                string q = item.Detail.ToString();
-                string[] w = q.Split(' ');
-                if (w[0] == "PUT")
+                int num = (int)item.RequestType;
+                if (num == 1)
                 {
-                    arrayType[0]++;
+                    arrayType[0] += 1;
                 }
-                if (w[0] == "POST")
+                if (num == 2)
                 {
                     arrayType[1]++;
                 }
-                if (w[0] == "DELETE")
+                if (num == 3)
                 {
                     arrayType[2]++;
                 }
@@ -228,17 +227,16 @@ namespace Statistic.Controllers
 
             foreach (var item in MachineStatistic)
             {
-                string q = item.Detail.ToString();
-                string[] w = q.Split(' ');
-                if (w[0] == "PUT")
+                int num = (int)item.RequestType;
+                if (num == 1)
                 {
-                    arrayType[0]++;
+                    arrayType[0] += 1;
                 }
-                if (w[0] == "POST")
+                if (num == 2)
                 {
                     arrayType[1]++;
                 }
-                if (w[0] == "DELETE")
+                if (num == 3)
                 {
                     arrayType[2]++;
                 }
@@ -266,20 +264,34 @@ namespace Statistic.Controllers
 
             foreach (var item in FineStatistic)
             {
-                string q = item.Detail.ToString();
-                string[] w = q.Split(' ');
-                if (w[0] == "PUT")
+                int num = (int)item.RequestType;
+                if (num == 1)
                 {
                     arrayType[0] += 1;
                 }
-                if (w[0] == "POST")
+                if (num == 2)
                 {
                     arrayType[1]++;
                 }
-                if (w[0] == "DELETE")
+                if (num == 3)
                 {
                     arrayType[2]++;
                 }
+
+                //string q = item.Detail.ToString();
+                //string[] w = q.Split(' ');
+                //if (w[0] == "PUT")
+                //{
+                //    arrayType[0] += 1;
+                //}
+                //if (w[0] == "POST")
+                //{
+                //    arrayType[1]++;
+                //}
+                //if (w[0] == "DELETE")
+                //{
+                //    arrayType[2]++;
+                //}
                 ArrayTime[item.Time.Value.Hour]++;
             }
             MicroserviceInformation Information = new MicroserviceInformation();

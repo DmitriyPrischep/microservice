@@ -79,4 +79,27 @@ namespace Frontend.Models
     {
         public string Token { get; set; }
     }
+
+    public class GatewayInformation
+    {
+        public int NonAuth { get; set; }
+        public int Auth { get; set; }
+        public List<int> StatTime { get; set; }
+        public List<int> StatType { get; set; }
+
+    }
+
+    public class MicroserviceInformation
+    {
+        public List<int> StatTime { get; set; }
+        public List<int> StatType { get; set; }
+    }
+
+    public class StatisticInformation
+    {
+        public MicroserviceInformation FinesInfo { get; set; }
+        public MicroserviceInformation UsersInfo { get; set; }
+        public MicroserviceInformation MachineInfo { get; set; }
+        public GatewayInformation GateInfo { get; set; }
+    }
 }

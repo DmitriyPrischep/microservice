@@ -126,7 +126,7 @@ namespace Users.Controllers
             }
         }
         
-        private async void putdata(string data, RequestType recType)
+        private async void PutData(string data, RequestType recType)
         {
             ServiceContext Context = new ServiceContext();
             InputStatisticMessage Message = new InputStatisticMessage();
@@ -146,10 +146,15 @@ namespace Users.Controllers
                 return;
             }
         }
-        
+
         private async void SendStatistic()
         {
-            ServiceContext Context = new ServiceContext();
+            using (HttpClient test = new HttpClient())
+            {
+                await test.GetAsync("http://localhost:6376/stat/start");
+            }
+
+            ServiceContext db = new ServiceContext();
             MessageQueue queue;
             if (MessageQueue.Exists(@".\private$\InputStatistic"))
             {
@@ -160,32 +165,102 @@ namespace Users.Controllers
                 queue = MessageQueue.Create(".\\private$\\InputStatistic");
             }
 
+
+            MessageQueue queueStat;
+            if (MessageQueue.Exists(@".\private$\OutputStatistic"))
+            {
+                queueStat = new MessageQueue(@".\private$\OutputStatistic");
+            }
+            else
+            {
+                queueStat = MessageQueue.Create(".\\private$\\OutputStatistic");
+            }
+
             using (queue)
             {
                 queue.Formatter = new XmlMessageFormatter(new Type[] { typeof(InputStatisticMessage) });
                 while (true)
                 {
-
-                    await Context.SaveChangesAsync();
-                    List<InputStatisticMessage> Message = new List<InputStatisticMessage>();
+                    await db.SaveChangesAsync();
+                    List<InputStatisticMessage> InputMessage = new List<InputStatisticMessage>();
                     try
                     {
-                        await Task.Run(() => Configure(Context));
+                        using (queueStat)
+                        {
+                            queueStat.Formatter = new XmlMessageFormatter(new Type[] { typeof(OutputStatisticMessage) });
+
+                            Message[] message = queueStat.GetAllMessages();
+
+                            List<string> msgsuid = new List<string>();
+                            List<OutputStatisticMessage> StatisticMessage = new List<OutputStatisticMessage>();
+
+                            foreach (var msg in message)
+                            {
+                                if (msg.Label == "NON_USERS")
+                                {
+                                    queueStat.ReceiveById(msg.Id);
+                                    StatisticMessage.Add((OutputStatisticMessage)msg.Body);
+                                }
+                            }
+
+                            foreach (var msg in StatisticMessage)
+                            {
+                                switch (msg.Status)
+                                {
+                                    case 0:
+                                        var FindMessage = db.InputMessage.Find(msg.Message.Id);
+                                        if (FindMessage != null)
+                                        {
+                                            db.InputMessage.Remove(FindMessage);
+                                            try
+                                            {
+                                                await db.SaveChangesAsync();
+                                            }
+                                            catch (DbUpdateConcurrencyException ex)
+                                            {
+                                                ex.Entries.Single().Reload();
+                                            }
+                                        }
+                                        break;
+                                    case -1:
+                                        var FindMsg = db.InputMessage.Find(msg.Message.Id);
+                                        if (FindMsg != null)
+                                        {
+                                            logger.Error("Error in Statistic service. Deleted data from DataBase. Message:" + msg.Error);
+                                            db.InputMessage.Remove(FindMsg);
+                                            try
+                                            {
+                                                await db.SaveChangesAsync();
+                                            }
+                                            catch (DbUpdateConcurrencyException ex)
+                                            {
+                                                ex.Entries.Single().Reload();
+                                            }
+
+                                        }
+                                        break;
+                                    default:
+                                        break;
+                                }
+                            }
+
+                            await db.SaveChangesAsync();
+                        }
 
                         TimeSpan interval = new TimeSpan(0, 2, 30);
                         System.Threading.Thread.Sleep(interval);
 
-                        Message = Context.InputMessage.ToList();
-                        foreach (var item in Message)
+                        InputMessage = db.InputMessage.ToList();
+                        foreach (var temp in InputMessage)
                         {
-                            if (item.CountSendMessage < 3)
+                            if (temp.CountSendMessage < 3)
                             {
-                                item.CountSendMessage++;
-                                queue.Send(item);
+                                temp.CountSendMessage++;
+                                queue.Send(temp);
                                 try
                                 {
-                                    Context.Entry(item).State = EntityState.Modified;
-                                    Context.SaveChanges();
+                                    db.Entry(temp).State = EntityState.Modified;
+                                    db.SaveChanges();
                                 }
                                 catch (Exception)
                                 {
@@ -193,7 +268,6 @@ namespace Users.Controllers
                                 }
                             }
                         }
-
                     }
                     catch
                     {
@@ -201,10 +275,9 @@ namespace Users.Controllers
                         System.Threading.Thread.Sleep(interval);
                     }
                 }
-
             }
         }
-        
+
         public UsersController(IUsersContext context)
         {
             db = context;
@@ -239,6 +312,7 @@ namespace Users.Controllers
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutUser(int id, User user)
         {
+            await Task.Run(() => PutData("Put User", RequestType.PUT));
             logger.Info("Request PUT with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}", id, user.FIO, user.Adress, user.Phone, user.IdFines);
             if (!ModelState.IsValid)
             {
@@ -280,6 +354,7 @@ namespace Users.Controllers
         [ResponseType(typeof(User))]
         public async Task<IHttpActionResult> PostUser(User user)
         {
+            await Task.Run(() => PutData("Post User", RequestType.POST));
             logger.Info("Request POST with ID = {0} FIO = {1} Adress = {2} Phone = {3} IdFines = {4}", user.FIO, user.Adress, user.Phone, user.IdFines);
             if (!ModelState.IsValid)
             {
@@ -297,11 +372,12 @@ namespace Users.Controllers
         [ResponseType(typeof(User))]
         public async Task<IHttpActionResult> DeleteUser(int id)
         {
+            await Task.Run(() => PutData("Delete User", RequestType.DELETE));
             logger.Info("Request DELETE with ID = {0}", id);
             User user = await db.Users.FindAsync(id);
             if (user == null)
             {
-                logger.Error("ERROR request DELETE with ID = {0}. Not found ID", id);
+                logger.Error("Error request DELETE with ID = {0}. Not found ID", id);
                 return NotFound();
             }
 

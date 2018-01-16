@@ -328,3 +328,11 @@ E:\learning\microservice-master\Frontend\obj\Debug\Frontend.csprojResolveAssembl
 E:\learning\microservice-master\Frontend\obj\Debug\Frontend.csproj.CoreCompileInputs.cache
 E:\learning\microservice-master\Frontend\obj\Debug\Frontend.dll
 E:\learning\microservice-master\Frontend\obj\Debug\Frontend.pdb
+E:\learning\microservice-master\Frontend\bin\NLog.config
+E:\learning\microservice-master\Frontend\bin\ServiceFines.dll
+E:\learning\microservice-master\Frontend\bin\EntityFramework.dll
+E:\learning\microservice-master\Frontend\bin\NLog.dll
+E:\learning\microservice-master\Frontend\bin\ServiceFines.pdb
+E:\learning\microservice-master\Frontend\bin\ServiceFines.dll.config
+E:\learning\microservice-master\Frontend\bin\EntityFramework.xml
+E:\learning\microservice-master\Frontend\bin\NLog.xml

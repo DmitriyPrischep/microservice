@@ -1,0 +1,17 @@
+2018-01-16 20:10:28.1113 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-16 20:11:13.6691 | INFO | Machines.Controllers.MachinesController | Request GET with ID = 2
+2018-01-16 20:11:13.7332 | INFO | Machines.Controllers.MachinesController | Success request GET with ID = 2
+2018-01-16 20:11:18.7605 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-16 20:13:06.1984 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-16 20:14:49.5925 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-16 20:14:59.1422 | INFO | Machines.Controllers.MachinesController | Request GET
+2018-01-16 20:47:21.9435 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-16 21:02:13.3689 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-16 21:08:24.9533 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-16 21:10:25.3610 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-16 21:11:17.4635 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-16 21:18:08.7711 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-16 21:19:45.5515 | INFO | Machines.Controllers.MachineInfController | Request GET with OData
+2018-01-16 21:20:03.2630 | INFO | Machines.Controllers.MachinesController | Request POST with ID =  Type = REno Mark = Laguna Model = 0 Year =  VIN = Laguna StateNumber = Laguna IdUser = Laguna
+2018-01-16 21:20:03.3211 | INFO | Machines.Controllers.MachinesController | Success request POST with ID =  Type = REno Mark = Laguna Model = 0 Year =  VIN = Laguna StateNumber = Laguna IdUser = Laguna
+2018-01-16 21:28:41.8169 | INFO | Machines.Controllers.MachineInfController | Request GET with OData

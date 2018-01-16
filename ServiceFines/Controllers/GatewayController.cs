@@ -27,6 +27,7 @@ namespace ServiceFines.Controllers
         public GatewayController()
         {
             Task.Run(() => backwork());
+            Task.Run(() => SendStatistic());
         }
 
 
@@ -126,6 +127,17 @@ namespace ServiceFines.Controllers
                 queue = MessageQueue.Create(".\\private$\\InputStatistic");
             }
 
+
+            MessageQueue queueStat;
+            if (MessageQueue.Exists(@".\private$\OutputStatistic"))
+            {
+                queueStat = new MessageQueue(@".\private$\OutputStatistic");
+            }
+            else
+            {
+                queueStat = MessageQueue.Create(".\\private$\\OutputStatistic");
+            }
+
             using (queue)
             {
                 queue.Formatter = new XmlMessageFormatter(new Type[] { typeof(InputStatisticMessage) });
@@ -135,7 +147,69 @@ namespace ServiceFines.Controllers
                     List<InputStatisticMessage> InputMessage = new List<InputStatisticMessage>();
                     try
                     {
-                        await Task.Run(() => recconf(db));
+                        //await Task.Run(() => recconf(db));
+
+                        using (queueStat)
+                        {
+                            queueStat.Formatter = new XmlMessageFormatter(new Type[] { typeof(OutputStatisticMessage) });
+
+                            Message[] message = queueStat.GetAllMessages();
+
+                            List<string> msgsuid = new List<string>();
+                            List<OutputStatisticMessage> StatisticMessage = new List<OutputStatisticMessage>();
+
+                            foreach (var msg in message)
+                            {
+                                if (msg.Label == "NON_GATEWAY")
+                                {
+                                    queueStat.ReceiveById(msg.Id);
+                                    StatisticMessage.Add((OutputStatisticMessage)msg.Body);
+                                }
+                            }
+
+                            foreach (var msg in StatisticMessage)
+                            {
+                                switch (msg.Status)
+                                {
+                                    case 0:
+                                        var FindMessage = db.InputStatisticMessage.Find(msg.Message.Id);
+                                        if (FindMessage != null)
+                                        {
+                                            db.InputStatisticMessage.Remove(FindMessage);
+                                            try
+                                            {
+                                                await db.SaveChangesAsync();
+                                            }
+                                            catch (DbUpdateConcurrencyException ex)
+                                            {
+                                                ex.Entries.Single().Reload();
+                                            }
+                                        }
+                                        break;
+                                    case -1:
+                                        var FindMsg = db.InputStatisticMessage.Find(msg.Message.Id);
+                                        if (FindMsg != null)
+                                        {
+                                            logger.Error("Error in Statistic service. Deleted data from DataBase. Message:" + msg.Error);
+                                            db.InputStatisticMessage.Remove(FindMsg);
+                                            try
+                                            {
+                                                await db.SaveChangesAsync();
+                                            }
+                                            catch (DbUpdateConcurrencyException ex)
+                                            {
+                                                ex.Entries.Single().Reload();
+                                            }
+
+                                        }
+                                        break;
+                                    default:
+                                        break;
+                                }
+                            }
+
+                            await db.SaveChangesAsync();
+                        }
 
                         TimeSpan interval = new TimeSpan(0, 2, 30);
                         System.Threading.Thread.Sleep(interval);
@@ -1957,7 +2031,7 @@ namespace ServiceFines.Controllers
                 var token = Request.Headers.Authorization.Parameter;
                 AuthRoleModel roleModel = new AuthRoleModel();
                 roleModel.Token = token;
-                roleModel.RequiredRole = "ADMIN";
+                roleModel.RequiredRole = "admin";
 
                 HttpResponseMessage res = await client.PostAsJsonAsync("http://localhost:53722/oauth/check", roleModel);
                 if (res.StatusCode == HttpStatusCode.Unauthorized)

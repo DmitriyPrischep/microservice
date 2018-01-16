@@ -544,5 +544,72 @@ namespace Frontend.Controllers
             return View();
         }
 
+        public async Task<ActionResult> DrawStatistic()
+        {
+            int i = 0;
+            StatisticInformation Information = new StatisticInformation();
+            try
+            {
+                using (HttpClient test = new HttpClient())
+                {
+                    bool flag = false;
+                    while (!flag)
+                    {
+                        test.DefaultRequestHeaders.Clear();
+                        test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        test.DefaultRequestHeaders.Add("Authorization", "Bearer " + HttpContext.Request.Cookies["access_token"].Value);
+                        HttpResponseMessage res = await test.GetAsync("http://localhost:49939/api/gateway/GetStatistic");
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var Response = res.Content.ReadAsStringAsync().Result;
+                            Information = Newtonsoft.Json.JsonConvert.DeserializeObject<StatisticInformation>(Response);
+                            flag = true;
+                        }
+                        else
+                        {
+                            var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                            string str = Newtonsoft.Json.JsonConvert.DeserializeObject<string>(EmpResponse);
+                            if (str != null)
+                            {
+                                return View("SorryPage", (object)str);
+                            }
+                            if ((res.StatusCode == System.Net.HttpStatusCode.Unauthorized) && (i == 0))
+                            {
+                                test.DefaultRequestHeaders.Clear();
+                                test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                                TokenMessage Message = new TokenMessage();
+                                RefreshToken Refresh = new RefreshToken();
+                                Refresh.Token = HttpContext.Request.Cookies["refresh_token"].Value;
+                                res = await test.PostAsJsonAsync("http://localhost:49939/api/gateway/refresh", Refresh);
+                                if (res.IsSuccessStatusCode)
+                                {
+                                    var Response2 = res.Content.ReadAsStringAsync().Result;
+                                    Message = Newtonsoft.Json.JsonConvert.DeserializeObject<TokenMessage>(Response2);
+                                    HttpContext.Request.Cookies["access_token"].Value = Message.AccessToken;
+                                    HttpContext.Request.Cookies["refresh_token"].Value = Message.RefreshToken;
+                                    HttpContext.Response.Cookies["access_token"].Value = Message.AccessToken;
+                                    HttpContext.Response.Cookies["refresh_token"].Value = Message.RefreshToken;
+                                    i++;
+                                }
+                                else
+                                {
+                                    return View("SorryPage", (object)"Ошибка обновления токена. Пожалуйста повторите позже");
+                                }
+                            }
+                            return View("SorryPage", (object)str);
+                        }
+                    }
+                }
+            }
+            catch
+            {
+                string str = "Now system is unavailable";
+                return View("SorryPage", (object)str);
+            }
+
+
+            return View(Information);
+        }
     }
 }
