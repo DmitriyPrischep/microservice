@@ -12,6 +12,7 @@ using System.Web.Http.Description;
 using Users.Models;
 using System.Web.OData;
 using NLog;
+using System.Messaging;
 
 namespace Users.Controllers
 {
@@ -46,9 +47,164 @@ namespace Users.Controllers
     {
         //private UsersContext db = new UsersContext();
         private IUsersContext db = new UsersContext();
+        private ServiceContext dbService = new ServiceContext();
 
-        public UsersController() { }
+        public UsersController()
+        {
+            Task.Run(() => SendStatistic());
+        }
 
+        private async void Configure(ServiceContext Context)
+        {
+            Logger logger = LogManager.GetCurrentClassLogger();
+            MessageQueue queue;
+            if (MessageQueue.Exists(@".\private$\OutputStatistic"))
+            {
+                queue = new MessageQueue(@".\private$\OutputStatistic");
+            }
+            else
+            {
+                queue = MessageQueue.Create(".\\private$\\OutputStatistic");
+            }
+
+            using (queue)
+            {
+                queue.Formatter = new XmlMessageFormatter(new Type[] { typeof(OutputStatisticMessage) });
+                Message[] Messages = queue.GetAllMessages();
+                List<OutputStatisticMessage> OutputMessages = new List<OutputStatisticMessage>();
+
+                foreach (var msg in Messages)
+                {
+                    if (msg.Label == "NON_USERS")
+                    {
+                        queue.ReceiveById(msg.Id);
+                        OutputMessages.Add((OutputStatisticMessage)msg.Body);
+                    }
+                }
+
+                foreach (var msg in OutputMessages)
+                {
+                    switch (msg.Status)
+                    {
+                        case 0:
+                            var FindMsg = Context.InputMessage.Find(msg.Message.Id);
+                            if (FindMsg != null)
+                            {
+                                Context.InputMessage.Remove(FindMsg);
+                                try
+                                {
+                                    await Context.SaveChangesAsync();
+                                }
+                                catch (DbUpdateConcurrencyException ex)
+                                {
+                                    ex.Entries.Single().Reload();
+                                }
+                            }
+                            break;
+                        case -1:
+                            var FindMsg1 = Context.InputMessage.Find(msg.Message.Id);
+                            if (FindMsg1 != null)
+                            {
+                                logger.Error("Error in Statistic. Deleted data from database. Message:" + msg.Error);
+                                Context.InputMessage.Remove(FindMsg1);
+                                try
+                                {
+                                    await Context.SaveChangesAsync();
+                                }
+                                catch (DbUpdateConcurrencyException ex)
+                                {
+                                    ex.Entries.Single().Reload();
+                                }
+                            }
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                await Context.SaveChangesAsync();
+                return;
+            }
+        }
+        
+        private async void putdata(string data, RequestType recType)
+        {
+            ServiceContext Context = new ServiceContext();
+            InputStatisticMessage Message = new InputStatisticMessage();
+            Message.Detail = data;
+            Message.RequestType = recType;
+            Message.ServerName = ServerName.USERS;
+            Message.Time = DateTime.Now;
+            Message.State = Guid.NewGuid();
+
+            try
+            {
+                Context.InputMessage.Add(Message);
+                await Context.SaveChangesAsync();
+            }
+            catch
+            {
+                return;
+            }
+        }
+        
+        private async void SendStatistic()
+        {
+            ServiceContext Context = new ServiceContext();
+            MessageQueue queue;
+            if (MessageQueue.Exists(@".\private$\InputStatistic"))
+            {
+                queue = new MessageQueue(@".\private$\InputStatistic");
+            }
+            else
+            {
+                queue = MessageQueue.Create(".\\private$\\InputStatistic");
+            }
+
+            using (queue)
+            {
+                queue.Formatter = new XmlMessageFormatter(new Type[] { typeof(InputStatisticMessage) });
+                while (true)
+                {
+
+                    await Context.SaveChangesAsync();
+                    List<InputStatisticMessage> Message = new List<InputStatisticMessage>();
+                    try
+                    {
+                        await Task.Run(() => Configure(Context));
+
+                        TimeSpan interval = new TimeSpan(0, 2, 30);
+                        System.Threading.Thread.Sleep(interval);
+
+                        Message = Context.InputMessage.ToList();
+                        foreach (var item in Message)
+                        {
+                            if (item.CountSendMessage < 3)
+                            {
+                                item.CountSendMessage++;
+                                queue.Send(item);
+                                try
+                                {
+                                    Context.Entry(item).State = EntityState.Modified;
+                                    Context.SaveChanges();
+                                }
+                                catch (Exception)
+                                {
+                                    continue;
+                                }
+                            }
+                        }
+
+                    }
+                    catch
+                    {
+                        TimeSpan interval = new TimeSpan(0, 2, 0);
+                        System.Threading.Thread.Sleep(interval);
+                    }
+                }
+
+            }
+        }
+        
         public UsersController(IUsersContext context)
         {
             db = context;
