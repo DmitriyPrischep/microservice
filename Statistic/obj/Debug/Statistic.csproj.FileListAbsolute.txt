@@ -108,3 +108,5 @@ E:\learning\microservice-master\Statistic\obj\Debug\Statistic.csprojResolveAssem
 E:\learning\microservice-master\Statistic\obj\Debug\Statistic.csproj.CoreCompileInputs.cache
 E:\learning\microservice-master\Statistic\obj\Debug\Statistic.dll
 E:\learning\microservice-master\Statistic\obj\Debug\Statistic.pdb
+E:\learning\microservice-master\Statistic\obj\Debug\Statistic.Migrations.Initial.resources
+E:\learning\microservice-master\Statistic\obj\Debug\Statistic.csproj.GenerateResource.Cache

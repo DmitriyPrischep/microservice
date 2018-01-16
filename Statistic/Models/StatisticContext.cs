@@ -19,6 +19,6 @@ namespace Statistic.Models
         {
         }
 
-        public System.Data.Entity.DbSet<Statistic.Models.Statistic> Statistics { get; set; }
+        public System.Data.Entity.DbSet<Statistic> Statistics { get; set; }
     }
 }

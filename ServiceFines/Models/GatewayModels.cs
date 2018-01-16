@@ -171,26 +171,24 @@ namespace ServiceFines.Models
 
     public class GatewayInformation
     {
-        public int Unauth { get; set; }//неуспешн авториз
-        public int Auth { get; set; }//успешн авториз
-
-        public List<int> rasp { get; set; }//рапределение
-        public List<int> resp2 { get; set; }//расп
+        public int NonAuth { get; set; }
+        public int Auth { get; set; }
+        public List<int> StatTime { get; set; }
+        public List<int> StatType { get; set; }
 
     }
 
-    public class LittleInformation
+    public class MicroserviceInformation
     {
-        public List<int> rasp { get; set; }//нагрузка от часов
-        public List<int> resp2 { get; set; }////колво get post delete
-
+        public List<int> StatTime { get; set; }
+        public List<int> StatType { get; set; }
     }
 
     public class StatisticInformation
     {
-        public LittleInformation Information1 { get; set; }
-        public LittleInformation Information2 { get; set; }
-        public LittleInformation Information3 { get; set; }
+        public MicroserviceInformation FinesInfo { get; set; }
+        public MicroserviceInformation UsersInfo { get; set; }
+        public MicroserviceInformation MachineInfo { get; set; }
         public GatewayInformation GateInfo { get; set; }
     }
 
