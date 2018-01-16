@@ -20,7 +20,7 @@ namespace ServiceFines.Controllers
     [RoutePrefix("api/Gateway")]
     public class GatewayController : ApiController
     {
-        AnotherContext db = new AnotherContext();
+        MessageContext db = new MessageContext();
         private static Logger logger = LogManager.GetCurrentClassLogger();
         private static string[] tokens = new string[3];
 
@@ -30,7 +30,7 @@ namespace ServiceFines.Controllers
         }
 
 
-        private async void recconf(AnotherContext db)
+        private async void recconf(MessageContext db)
         {
             Logger logger = LogManager.GetCurrentClassLogger();
             MessageQueue queue;
@@ -45,7 +45,7 @@ namespace ServiceFines.Controllers
 
             using (queue)
             {
-                queue.Formatter = new XmlMessageFormatter(new Type[] { typeof(outstatmes) });
+                queue.Formatter = new XmlMessageFormatter(new Type[] { typeof(OutputStatisticMessage) });
 
                 Message[] message = queue.GetAllMessages();
 
@@ -69,7 +69,7 @@ namespace ServiceFines.Controllers
                             var FindMessage = db.InputStatisticMessage.Find(msg.Message.Id);
                             if (FindMessage != null)
                             {
-                                db.instatmes.Remove(FindMessage);
+                                db.InputStatisticMessage.Remove(FindMessage);
                                 try
                                 {
                                     await db.SaveChangesAsync();
@@ -115,7 +115,7 @@ namespace ServiceFines.Controllers
                 await test.GetAsync("http://localhost:6376/stat/start");
             }
 
-            AnotherContext db = new AnotherContext();
+            MessageContext db = new MessageContext();
             MessageQueue queue;
             if (MessageQueue.Exists(@".\private$\InputStatistic"))
             {
@@ -140,12 +140,12 @@ namespace ServiceFines.Controllers
                         TimeSpan interval = new TimeSpan(0, 2, 30);
                         System.Threading.Thread.Sleep(interval);
 
-                        InputMessage = db.instatmes.ToList();
+                        InputMessage = db.InputStatisticMessage.ToList();
                         foreach (var temp in InputMessage)
                         {
-                            if (temp.Np < 3)
+                            if (temp.CountSendMessage < 3)
                             {
-                                temp.Np++;
+                                temp.CountSendMessage++;
                                 queue.Send(temp);
                                 try
                                 {
@@ -159,20 +159,25 @@ namespace ServiceFines.Controllers
                             }
                         }
                     }
+                    catch
+                    {
+                        TimeSpan interval = new TimeSpan(0, 2, 0);
+                        System.Threading.Thread.Sleep(interval);
+                    }
                 }
             }
         }
 
             private async void PutData(string Information, RequestType reqType)
         {
-            AnotherContext db = new AnotherContext();
+            MessageContext db = new MessageContext();
             InputStatisticMessage message = new InputStatisticMessage();
             message.Detail = Information;
             message.RequestType = reqType;
             message.ServerName = ServerName.GATEWAY;
             message.Time = DateTime.Now;
             message.State = Guid.NewGuid();
-            message.Np = 0;
+            message.CountSendMessage = 0;
 
             try
             {
@@ -1176,7 +1181,7 @@ namespace ServiceFines.Controllers
         [Route("~users/add")]
         public async Task<IHttpActionResult> Post([FromBody]DetailUserModel value)
         {
-            await Task.Run(() => PutData("Post users", RequestType.CHANGE));
+            await Task.Run(() => PutData("Post users", RequestType.POST));
 #if (DEBUG == true)
             int ip = 0;
 #else
@@ -1526,7 +1531,7 @@ namespace ServiceFines.Controllers
 #else
             var ip = Request.GetOwinContext().Request.RemoteIpAddress;
 #endif
-            await Task.Run(() => PutData("Put User", RequestType.CHANGE));
+            await Task.Run(() => PutData("Put User", RequestType.PUT));
             logger.Info("Request PUT from {4} with parametrs 'ID'= {0}, 'FIO'= {1}, 'Phone'= {2}, 'Adress'= {3}", id, user.FIO, user.Phone, user.Adress, ip);
             if ((user.FIO == null) || (user.Phone == null) || (user.Adress == null))
             {
@@ -1599,7 +1604,7 @@ namespace ServiceFines.Controllers
                 }
             }
             await Task.Run(() => PutData("Access is allowed", RequestType.LOGIN));
-            await Task.Run(() => PutData("Delete offender", RequestType.CHANGE));
+            await Task.Run(() => PutData("Delete offender", RequestType.DELETE));
 
             logger.Info("Request DELETE from {1} with parametr 'FIO'= {0}", fio, ip);
 
@@ -1971,7 +1976,7 @@ namespace ServiceFines.Controllers
                 using (HttpClient test = new HttpClient())
                 {
                     test.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage res = await test.GetAsync(new Uri("http://localhost:6376/stat/all"_____));
+                    HttpResponseMessage res = await test.GetAsync(new Uri("http://localhost:6376/stat/all"));
 
                     if (res.IsSuccessStatusCode)
                     {

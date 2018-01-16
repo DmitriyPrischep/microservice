@@ -459,3 +459,5 @@ E:\learning\microservice-master\ServiceFines\obj\Debug\ServiceFines.csprojResolv
 E:\learning\microservice-master\ServiceFines\obj\Debug\ServiceFines.csproj.CoreCompileInputs.cache
 E:\learning\microservice-master\ServiceFines\obj\Debug\ServiceFines.dll
 E:\learning\microservice-master\ServiceFines\obj\Debug\ServiceFines.pdb
+E:\learning\microservice-master\ServiceFines\obj\Debug\ServiceFines.Migrations.Initial.resources
+E:\learning\microservice-master\ServiceFines\obj\Debug\ServiceFines.csproj.GenerateResource.Cache
